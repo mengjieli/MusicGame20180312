@@ -1,0 +1,7 @@
+{
+  "src": [
+    "view/LoadingModule.ts",
+    "view/MainMediator.ts",
+    "view/LoadingView.ts"
+  ]
+}

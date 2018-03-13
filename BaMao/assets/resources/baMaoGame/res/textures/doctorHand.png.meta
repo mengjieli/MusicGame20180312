@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d13e017e-8817-4118-99c1-04a04440bdcc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "doctorHand": {
+      "ver": "1.0.3",
+      "uuid": "8b4cb7c0-42f1-4b25-802f-4156f7fd9733",
+      "rawTextureUuid": "d13e017e-8817-4118-99c1-04a04440bdcc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 75,
+      "height": 75,
+      "rawWidth": 75,
+      "rawHeight": 75,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

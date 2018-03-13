@@ -1,0 +1,22 @@
+{
+  "src": [
+    "proxy/remote/protocol/TestRequest.ts",
+    "proxy/remote/protocol/TestStruct.ts",
+    "proxy/remote/protocol/TestResponse.ts",
+
+    "proxy/remote/struct/LoginDDZServerProxy.ts",
+    "proxy/remote/struct/NoticeProxy.ts",
+    "proxy/remote/struct/TestSendProxy.ts",
+    "proxy/remote/struct/TestRecvProxy.ts",
+    "proxy/remote/struct/TestStructProxy.ts",
+    "proxy/remote/struct/NetDecode.ts",
+    "proxy/remote/NoticeCProxy.ts",
+    "proxy/remote/TestRecvCProxy.ts",
+    "proxy/Resource.ts",
+    "controller/Command.ts",
+    "controller/AutoLoginCommand.ts",
+    "controller/LoginCompleteCommand.ts",
+    "view/LoginModule.ts",
+    "view/MainMediator.ts"
+  ]
+}

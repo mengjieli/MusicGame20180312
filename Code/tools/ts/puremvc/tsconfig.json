@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "ES5",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration":true,
+    "outFile":"./pureMVC.js"
+  },
+  "files": [
+    "./multicore/core/Controller.ts",
+    "./multicore/core/Model.ts",
+    "./multicore/core/View.ts",
+    "./multicore/patterns/observer/Notification.ts",
+    "./multicore/patterns/observer/Notifier.ts",
+    "./multicore/patterns/observer/Observer.ts",
+    "./multicore/patterns/command/MacroCommand.ts",
+    "./multicore/patterns/command/SimpleCommand.ts",
+    "./multicore/patterns/facade/Facade.ts",
+    "./multicore/patterns/mediator/Mediator.ts",
+    "./multicore/patterns/proxy/Proxy.ts"
+  ]
+}

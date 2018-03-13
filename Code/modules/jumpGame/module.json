@@ -1,0 +1,13 @@
+{
+  "src": [
+    "model/protocol/OperateRequest.ts",
+    "model/protocol/AddGameRequest.ts",
+    "model/protocol/OperateStruct.ts",
+    "model/protocol/FrameNotify.ts",
+    "model/protocol/PlayerAddNotify.ts",
+    "view/JumpGameModule.ts",
+    "view/JumpGameMediator.ts",
+    "view/JumpGameComponent.ts",
+    "view/Player.ts"
+  ]
+}

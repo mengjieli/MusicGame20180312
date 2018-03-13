@@ -1,0 +1,9 @@
+{
+  "src": [
+    "controller/Command.ts",
+    "controller/notification/OpenViewNB.ts",
+    "controller/notification/CloseViewNB.ts",
+    "controller/notification/InitModuleNB.ts",
+    "controller/notification/ChangeSceneNB.ts"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "src": [
+    "view/LayerModule.ts",
+    "view/GameLayer.ts",
+    "view/MainUILayer.ts",
+    "view/PopLayer.ts",
+    "view/TopLayer.ts"
+  ]
+}

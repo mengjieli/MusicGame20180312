@@ -1,0 +1,16 @@
+name,value
+monsterEnterTime,400
+tipStartTime,300
+tipEndTime,500
+tipGapTime,500
+operateSrartTime,500
+operateEndTime,500
+monsterExitTime,500
+levelGapTime,500
+gameOverLevel,5
+perfectTime,100
+goodTime,200
+missTime,300
+tipHandTime,200
+tipEffectTime,200
+faceChangeTime,500

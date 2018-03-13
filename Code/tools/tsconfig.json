@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "ES5",
+    "watch": true,
+    "outFile": "./dist/Test.js"
+  },
+  "files": [
+    "./typings/index.d.ts",
+    "./lib/com/com.d.ts",
+    "./lib/net/net.d.ts",
+    "./ts/Test.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

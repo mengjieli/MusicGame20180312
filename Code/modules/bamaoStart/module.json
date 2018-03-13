@@ -1,0 +1,7 @@
+{
+  "src": [
+    "proxy/Resource.ts",
+    "view/BaMaoStartModule.ts",
+    "view/MainMediator.ts"
+  ]
+}

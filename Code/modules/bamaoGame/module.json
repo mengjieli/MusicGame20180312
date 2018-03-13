@@ -1,0 +1,24 @@
+{
+  "src": [
+    "proxy/Resource.ts",
+    "proxy/RoundProxy.ts",
+    "proxy/ConfigProxy.ts",
+    "proxy/GameMoment.ts",
+    "view/BaMaoGameModule.ts",
+    "view/MainMediator.ts",
+    "view/MainComponent.ts",
+    "view/Effect.ts",
+    "view/gameEvents/GameEvent.ts",
+    "view/gameEvents/GameStartEvent.ts",
+    "view/gameEvents/GameFinishEvent.ts",
+    "view/gameEvents/OperateRhythmEvent.ts",
+    "view/gameEvents/OperateRoundFinishEvent.ts",
+    "view/gameEvents/OperateRoundStartEvent.ts",
+    "view/gameEvents/TipRhythmEvent.ts",
+    "view/gameEvents/TipRoundFinishEvent.ts",
+    "view/gameEvents/TipRoundStartEvent.ts",
+    "view/gameEvents/MonsterEnterEvent.ts",
+    "view/gameEvents/MonsterExitEvent.ts",
+    "view/gameEvents/OperateEvent.ts"
+  ]
+}

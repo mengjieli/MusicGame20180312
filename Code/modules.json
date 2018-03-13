@@ -1,0 +1,12 @@
+{
+  "modules": [
+    "common",
+    "layer",
+    "startup",
+    "loading",
+    "bamaoStart",
+    "bamaoGame",
+    "bamaoResult",
+    "musicTest"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "src": [
+    "AppFacade.ts",
+    "controller/Command.ts",
+    "controller/startup/StartupCommand.ts",
+    "controller/startup/InitModuleCommand.ts",
+
+    "controller/restart/RestartCommand.ts",
+    "controller/restart/ClearMVCCommand.ts",
+    "controller/restart/ClearDataCommand.ts",
+    "controller/restart/ClearLibCommand.ts"
+  ]
+}
