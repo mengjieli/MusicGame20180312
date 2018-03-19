@@ -10,6 +10,9 @@ namespace game {
                 this.facade.registerModule(new bamaoResult.BaMaoResultModule());
                 this.facade.registerModule(new loading.LoadingModule());
                 this.facade.registerModule(new musicTest.MusicTestModule());
+                this.facade.registerModule(new runGame.RunGameModule());
+                this.facade.registerModule(new motion.MotionModule());
+                this.facade.registerModule(new crg.CRGModule());
                 // this.facade.registerModule(new login.LoginModule());
                 // this.facade.registerModule(new jumpGame.JumpGameModule());
 
@@ -22,7 +25,7 @@ namespace game {
                 if (progress.percent != max) { //如果模块初始化已完成
                     await progress.percentValue.valueEqual(max);
                 }
-                this.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("musicTest"));
+                this.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("crg"));
             }
         }
     }

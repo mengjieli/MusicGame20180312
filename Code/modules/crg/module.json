@@ -1,0 +1,37 @@
+{
+  "src": [
+    "model/proxy/ResourceProxy.ts",
+    "model/proxy/ConfigProxy.ts",
+    "model/proxy/DataProxy.ts",
+
+    "model/vo/GameData.ts",
+    "model/vo/BackgroundData.ts",
+    "model/vo/BackgroundItemData.ts",
+
+    "controller/Command.ts",
+    "controller/OperateCommand.ts",
+
+    "view/CRGModule.ts",
+    "view/MainMediator.ts",
+
+    "view/ui/UIMediator.ts",
+    "view/ui/GameUI.ts",
+
+    "view/utils/Effect.ts",
+    "view/utils/DisplayFactory.ts",
+    "view/utils/Filter.ts",
+    "view/utils/NoneFilter.ts",
+    "view/utils/ColorFilter.ts",
+
+    "view/game/gameEvents/GameEvent.ts",
+    "view/game/gameEvents/GameStartEvent.ts",
+    "view/game/gameEvents/OperateRhythmEvent.ts",
+    "view/game/gameEvents/OperateEvent.ts",
+
+    "view/game/GameMain.ts",
+    "view/game/background/Background.ts",
+    "view/game/background/BackgroundContainer.ts",
+    "view/game/background/BackgroundGround.ts",
+    "view/game/background/BackgroundItem.ts"
+  ]
+}

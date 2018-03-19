@@ -1,0 +1,33 @@
+{
+  "src": [
+    "esc/Component.ts",
+    "esc/Entity.ts",
+    "esc/EntityManager.ts",
+    "esc/System.ts",
+
+    "proxy/RoundProxy.ts",
+    "proxy/ConfigProxy.ts",
+    "proxy/GameMoment.ts",
+    "proxy/Resource.ts",
+
+    "controller/Command.ts",
+    "controller/LifeChangeCommand.ts",
+
+    "view/utils/Effect.ts",
+    "view/utils/DisplayFactory.ts",
+
+    "view/RunGameModule.ts",
+    "view/MainMediator.ts",
+    "view/MainComponent.ts",
+
+    "view/ui/GameUI.ts",
+
+    "view/game/BackGround.ts",
+
+    "view/gameEvents/GameEvent.ts",
+    "view/gameEvents/GameStartEvent.ts",
+    "view/gameEvents/OperateRhythmEvent.ts",
+    "view/gameEvents/OperateEvent.ts",
+    "view/gameEVents/GameBackGroundEvent.ts"
+  ]
+}

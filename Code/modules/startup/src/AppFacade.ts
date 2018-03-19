@@ -33,9 +33,9 @@ namespace game {
             /**
              * 启动
              */
-            public start(rootView:cc.Node): void {
+            public start(rootView: cc.Node): void {
                 //发送启动消息
-                this.sendNotification(Command.IN.START_UP,new common.InitModuleNB(rootView,lib.DataManager.createData("ProgressData")));
+                this.sendNotification(Command.IN.START_UP, new common.InitModuleNB(rootView, lib.DataManager.createData("ProgressData")));
             }
 
             public static NAME: string = "gameApp";
@@ -45,7 +45,7 @@ namespace game {
             /**
              * 启动
              */
-            public static start(rootView:cc.Node): void {
+            public static start(rootView: cc.Node): void {
                 if (!AppFacade.instance) {
                     AppFacade.instance = new AppFacade(AppFacade.NAME);
                     AppFacade.instance.start(rootView);

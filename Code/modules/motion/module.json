@@ -1,0 +1,7 @@
+{
+  "src": [
+    "view/MotionModule.ts",
+    "view/MainMediator.ts",
+    "view/MainView.ts"
+  ]
+}

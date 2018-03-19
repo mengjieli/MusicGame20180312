@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "18dc3d3f-3f66-4269-bc41-7cd6825cd30e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "special pirate cannons smoke_6": {
+      "ver": "1.0.3",
+      "uuid": "41eba1c4-d7d9-4512-8289-2ade1a3fcec7",
+      "rawTextureUuid": "18dc3d3f-3f66-4269-bc41-7cd6825cd30e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -5,
+      "offsetY": -6.5,
+      "trimX": 4,
+      "trimY": 22,
+      "width": 62,
+      "height": 49,
+      "rawWidth": 80,
+      "rawHeight": 80,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

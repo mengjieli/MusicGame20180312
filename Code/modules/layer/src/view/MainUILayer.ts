@@ -1,6 +1,7 @@
 namespace game {
     export namespace layer {
         export class MainUILayer extends cc.Node {
+
             constructor() {
                 super();
                 MainUILayer.instance = this;

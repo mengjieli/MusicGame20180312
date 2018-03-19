@@ -1,12 +1,16 @@
 {
   "modules": [
     "common",
+    "ui",
     "layer",
     "startup",
     "loading",
     "bamaoStart",
     "bamaoGame",
     "bamaoResult",
-    "musicTest"
+    "musicTest",
+    "runGame",
+    "motion",
+    "crg"
   ]
 }

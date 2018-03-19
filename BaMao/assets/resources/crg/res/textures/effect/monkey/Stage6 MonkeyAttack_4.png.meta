@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d883465c-cc5e-461f-b85d-14f768bfaede",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Stage6 MonkeyAttack_4": {
+      "ver": "1.0.3",
+      "uuid": "137462a2-1071-46d2-ad17-21676fcd9128",
+      "rawTextureUuid": "d883465c-cc5e-461f-b85d-14f768bfaede",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2.5,
+      "offsetY": 7,
+      "trimX": 6,
+      "trimY": 0,
+      "width": 73,
+      "height": 58,
+      "rawWidth": 80,
+      "rawHeight": 72,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
