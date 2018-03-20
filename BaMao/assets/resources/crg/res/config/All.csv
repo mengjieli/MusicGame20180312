@@ -1,7 +1,7 @@
 name,value
-perfectTime,100
-goodTime,200
-missTime,300
+perfectTime,75
+goodTime,150
+missTime,200
 tipHandTime,200
 tipEffectTime,200
 faceChangeTime,500

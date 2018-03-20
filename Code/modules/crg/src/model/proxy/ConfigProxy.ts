@@ -63,12 +63,12 @@ namespace game {
 
             public static getGameConfig(): any[] {
                 let cfg: any[] = [];
-                let time = 0;
-                let len = 3;
+                let time = ConfigProxy.getConfig("gameStartTime");
+                let len = 10;
                 for (let i = 0; i < len; i++) {
                     let levelCfg = ConfigProxy.getRandomLevel(time);
                     cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg) + ConfigProxy.getConfig("levelGapTime");
+                    time = ConfigProxy.getLevelConfigTime(levelCfg);
                 }
                 // //临时加入游戏结束
                 // cfg.push({
@@ -86,11 +86,11 @@ namespace game {
                     }
                 }
                 let cfg: any[] = [];
-                let len = 3;
+                let len = 10;
                 for (let i = 0; i < len; i++) {
                     let levelCfg = ConfigProxy.getRandomLevel(time);
                     cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg) + ConfigProxy.getConfig("levelGapTime");
+                    time = ConfigProxy.getLevelConfigTime(levelCfg);
                 }
                 oldCfg = oldCfg.concat(cfg);
                 return oldCfg;

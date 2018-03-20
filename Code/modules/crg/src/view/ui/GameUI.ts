@@ -14,6 +14,7 @@ namespace game {
                 node.y = lib.data.system.screen.height / 2 - 60;
                 node.addComponent(cc.Label);
                 let label = node.getComponent(cc.Label);
+                label.string = "";
 
                 node = new cc.Node();
                 this.operate = node;
@@ -21,6 +22,7 @@ namespace game {
                 node.y = lib.data.system.screen.height / 2 - 140;
                 node.addComponent(cc.Label);
                 label = node.getComponent(cc.Label);
+                label.string = "";
             }
 
             public showCombo(val: number) {

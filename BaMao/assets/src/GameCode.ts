@@ -4261,39 +4261,13 @@ namespace game {
                     nameFileEnd: "png",
                     frameTime: 66
                 },
-                {
-                    name: "monster1",
-                    url: "resources/crg/res/textures/enemy/mushroom1/",
-                    resourceType: "effect",
-                    namePre: "mushroom1_",
-                    nameCount: 1,
-                    nameBegin: 1,
-                    nameEnd: 6,
-                    nameFileEnd: "png",
-                    frameTime: 66
-                },
-                {
-                    name: "monster2",
-                    url: "resources/crg/res/textures/enemy/mushroom2/",
-                    resourceType: "effect",
-                    namePre: "mushroom2_",
-                    nameCount: 1,
-                    nameBegin: 1,
-                    nameEnd: 3,
-                    nameFileEnd: "png",
-                    frameTime: 132
-                },
-                {
-                    name: "monster3",
-                    url: "resources/crg/res/textures/enemy/mushroom3/",
-                    resourceType: "effect",
-                    namePre: "mushroom3_",
-                    nameCount: 1,
-                    nameBegin: 1,
-                    nameEnd: 3,
-                    nameFileEnd: "png",
-                    frameTime: 132
-                }
+                {name: "monster1", url: "resources/crg/res/textures/enemy/rank1.png"},
+                {name: "monster2", url: "resources/crg/res/textures/enemy/rank2.png"},
+                {name: "monster3", url: "resources/crg/res/textures/enemy/rank3.png"},
+                {name: "monster4", url: "resources/crg/res/textures/enemy/rank4.png"},
+                {name: "monster5", url: "resources/crg/res/textures/enemy/rank5.png"},
+                {name: "monster6", url: "resources/crg/res/textures/enemy/rank6.png"},
+                {name: "monsterStar", url: "resources/crg/res/textures/enemy/star2.png"},
             ];
 
             private static loadList: any[];
@@ -4435,12 +4409,12 @@ namespace game {
 
             public static getGameConfig(): any[] {
                 let cfg: any[] = [];
-                let time = 0;
-                let len = 3;
+                let time = ConfigProxy.getConfig("gameStartTime");
+                let len = 10;
                 for (let i = 0; i < len; i++) {
                     let levelCfg = ConfigProxy.getRandomLevel(time);
                     cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg) + ConfigProxy.getConfig("levelGapTime");
+                    time = ConfigProxy.getLevelConfigTime(levelCfg);
                 }
                 // //临时加入游戏结束
                 // cfg.push({
@@ -4458,11 +4432,11 @@ namespace game {
                     }
                 }
                 let cfg: any[] = [];
-                let len = 3;
+                let len = 10;
                 for (let i = 0; i < len; i++) {
                     let levelCfg = ConfigProxy.getRandomLevel(time);
                     cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg) + ConfigProxy.getConfig("levelGapTime");
+                    time = ConfigProxy.getLevelConfigTime(levelCfg);
                 }
                 oldCfg = oldCfg.concat(cfg);
                 return oldCfg;
@@ -4751,8 +4725,13 @@ namespace game {
                 let data = note.body.data;
 
                 //播放音效
-                if (!(type == "MISS" || type == "AutoMiss" || type == "OutMiss"))
-                    cc.audioEngine.play(ResourceProxy.getResource("rhythm" + (type == "AutoMiss" || type == "OutMiss" ? "Miss" : type)), false, 1);
+                if (type == "Miss" || type == "AutoMiss" || type == "OutMiss") {
+                    if (type == "Miss" || type == "OutMiss") {
+                        cc.audioEngine.play(ResourceProxy.getResource("rhythmMiss"), false, 1);
+                    }
+                } else {
+                    cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.music), false, 1);
+                }
                 //添加绷带
                 if (type == "AutoMiss") {
                     proxy.miss++;
@@ -4772,7 +4751,7 @@ namespace game {
                 }
 
                 //显示操作结果
-                mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
+                mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type);//type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
 
                 //combo文字
                 if (type == "Miss" || type == "AutoMiss" || type == "OutMiss") {
@@ -4794,7 +4773,7 @@ namespace game {
                     }
                     if (list.length) {
                         let item = list[~~(Math.random() * list.length)];
-                        if(item.changeValue.value + item.changeSpeed > 1) {
+                        if (item.changeValue.value + item.changeSpeed > 1) {
                             item.changeValue.value = 1;
                         } else {
                             item.changeValue.value += item.changeSpeed;
@@ -5006,6 +4985,7 @@ namespace game {
                 node.y = lib.data.system.screen.height / 2 - 60;
                 node.addComponent(cc.Label);
                 let label = node.getComponent(cc.Label);
+                label.string = "";
 
                 node = new cc.Node();
                 this.operate = node;
@@ -5013,6 +4993,7 @@ namespace game {
                 node.y = lib.data.system.screen.height / 2 - 140;
                 node.addComponent(cc.Label);
                 label = node.getComponent(cc.Label);
+                label.string = "";
             }
 
             public showCombo(val: number) {
@@ -5500,9 +5481,13 @@ namespace game {
                 for (let i = 0; i < list.length; i++) {
                     if (list[i].operate == 6 && !data.monsterShow[list[i].time]) {
                         if ((list[i].time - 5000 < 0 || (list[i].time - 5000) >= data.lastTime) && (list[i].time - 5000) < data.time) {
-                            let monster = new Effect(ResourceProxy.getResource("monster" + ((~~(3 * Math.random())) + 1)), true);
+                            let monster:any = new cc.Node();
+                            monster.addComponent(cc.Sprite);
+                            let sprite = monster.getComponent(cc.Sprite);
+                            sprite.spriteFrame = new cc.SpriteFrame();
+                            sprite.spriteFrame.setTexture(ResourceProxy.getResource("monster" + ((~~(6 * Math.random())) + 1)));
                             data.monsterLayer.addChild(monster);
-                            monster.x = data.player.x + (list[i].time - data.time) * speed / 1000;
+                            monster.x = data.player.x + (10*Math.random()) + (list[i].time - data.time) * speed / 1000;
                             monster.y = data.player.y;
                             monster.opacity = 0;
                             monster.scaleX = 0;
@@ -5516,9 +5501,9 @@ namespace game {
                 for (let i = 0; i < data.monsters.length; i++) {
                     let last = data.monsters[i].x;
                     data.monsters[i].x -= (data.time - data.lastTime) * speed / 1000;
-                    if (last >= lib.data.system.screen.width - 100 && data.monsters[i].x < lib.data.system.screen.width - 100) {
-                        lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 1, scaleY: 1});
-                        cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
+                    if ((last >= lib.data.system.screen.width - 100 && data.monsters[i].x < lib.data.system.screen.width - 100) || data.monsters[i].x < lib.data.system.screen.width - 100 &&  !list[i].tween) {
+                        list[i].tween = lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 1, scaleY: 1});
+                        // cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
                     }
                 }
                 for (let i = 0; i < data.monsters.length; i++) {

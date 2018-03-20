@@ -8,8 +8,13 @@ namespace game {
                 let data = note.body.data;
 
                 //播放音效
-                if (!(type == "MISS" || type == "AutoMiss" || type == "OutMiss"))
-                    cc.audioEngine.play(ResourceProxy.getResource("rhythm" + (type == "AutoMiss" || type == "OutMiss" ? "Miss" : type)), false, 1);
+                if (type == "Miss" || type == "AutoMiss" || type == "OutMiss") {
+                    if (type == "Miss" || type == "OutMiss") {
+                        cc.audioEngine.play(ResourceProxy.getResource("rhythmMiss"), false, 1);
+                    }
+                } else {
+                    cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.music), false, 1);
+                }
                 //添加绷带
                 if (type == "AutoMiss") {
                     proxy.miss++;
@@ -29,7 +34,7 @@ namespace game {
                 }
 
                 //显示操作结果
-                mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
+                mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type);//type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
 
                 //combo文字
                 if (type == "Miss" || type == "AutoMiss" || type == "OutMiss") {
@@ -51,7 +56,7 @@ namespace game {
                     }
                     if (list.length) {
                         let item = list[~~(Math.random() * list.length)];
-                        if(item.changeValue.value + item.changeSpeed > 1) {
+                        if (item.changeValue.value + item.changeSpeed > 1) {
                             item.changeValue.value = 1;
                         } else {
                             item.changeValue.value += item.changeSpeed;

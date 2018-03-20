@@ -57,39 +57,13 @@ namespace game {
                     nameFileEnd: "png",
                     frameTime: 66
                 },
-                {
-                    name: "monster1",
-                    url: "resources/crg/res/textures/enemy/mushroom1/",
-                    resourceType: "effect",
-                    namePre: "mushroom1_",
-                    nameCount: 1,
-                    nameBegin: 1,
-                    nameEnd: 6,
-                    nameFileEnd: "png",
-                    frameTime: 66
-                },
-                {
-                    name: "monster2",
-                    url: "resources/crg/res/textures/enemy/mushroom2/",
-                    resourceType: "effect",
-                    namePre: "mushroom2_",
-                    nameCount: 1,
-                    nameBegin: 1,
-                    nameEnd: 3,
-                    nameFileEnd: "png",
-                    frameTime: 132
-                },
-                {
-                    name: "monster3",
-                    url: "resources/crg/res/textures/enemy/mushroom3/",
-                    resourceType: "effect",
-                    namePre: "mushroom3_",
-                    nameCount: 1,
-                    nameBegin: 1,
-                    nameEnd: 3,
-                    nameFileEnd: "png",
-                    frameTime: 132
-                }
+                {name: "monster1", url: "resources/crg/res/textures/enemy/rank1.png"},
+                {name: "monster2", url: "resources/crg/res/textures/enemy/rank2.png"},
+                {name: "monster3", url: "resources/crg/res/textures/enemy/rank3.png"},
+                {name: "monster4", url: "resources/crg/res/textures/enemy/rank4.png"},
+                {name: "monster5", url: "resources/crg/res/textures/enemy/rank5.png"},
+                {name: "monster6", url: "resources/crg/res/textures/enemy/rank6.png"},
+                {name: "monsterStar", url: "resources/crg/res/textures/enemy/star2.png"},
             ];
 
             private static loadList: any[];
