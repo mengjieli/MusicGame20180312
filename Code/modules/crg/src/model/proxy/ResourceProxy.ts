@@ -47,15 +47,34 @@ namespace game {
                 {name: "bg4", url: "resources/crg/res/textures/bg/bg4.png"},
                 {name: "effect", url: "resources/crg/res/textures/bg/effect.png"},
                 {
-                    name: "player",
+                    name: "player1",
                     url: "resources/crg/res/textures/player/run/",
                     resourceType: "effect",
-                    namePre: "player",
+                    namePre: "him",
                     nameCount: 1,
                     nameBegin: 1,
                     nameEnd: 4,
                     nameFileEnd: "png",
-                    frameTime: 66
+                    properties: {
+                        frameTime: 66,
+                        scaleX: 1.2,
+                        scaleY: 1.2
+                    }
+                },
+                {
+                    name: "player2",
+                    url: "resources/crg/res/textures/player/run/",
+                    resourceType: "effect",
+                    namePre: "her",
+                    nameCount: 1,
+                    nameBegin: 1,
+                    nameEnd: 4,
+                    nameFileEnd: "png",
+                    properties: {
+                        frameTime: 66,
+                        scaleX: -1.2,
+                        scaleY: 1.2
+                    }
                 },
                 {name: "monster1", url: "resources/crg/res/textures/enemy/rank1.png"},
                 {name: "monster2", url: "resources/crg/res/textures/enemy/rank2.png"},
@@ -98,9 +117,13 @@ namespace game {
                                 res.loadIndex = 0;
                                 res.loadLength = res.nameEnd - res.nameBegin + 1;
                                 res.data = {
-                                    pictures: [],
-                                    frameTime: res.frameTime
+                                    pictures: []
                                 };
+                                if (res.properties) {
+                                    for (let key in res.properties) {
+                                        res.data[key] = res.properties[key];
+                                    }
+                                }
                             } else {
                                 if (res.loadIndex == res.loadLength) {
                                     index++;

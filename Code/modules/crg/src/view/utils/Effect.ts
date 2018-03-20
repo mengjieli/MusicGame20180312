@@ -12,7 +12,7 @@ namespace game {
             loop: any;
             frame: number;
 
-            data:any;
+            data: any;
 
             /**
              * @param config
@@ -29,6 +29,12 @@ namespace game {
                 this.length = this.pictures.length;
                 this.loop = loop != null ? loop : !!config.loop;
                 this.frame = 0;
+                if (config.scaleX != null) {
+                    this.scaleX = config.scaleX;
+                }
+                if (config.scaleY != null) {
+                    this.scaleY = config.scaleY;
+                }
 
                 this.update = this.update.bind(this);
 

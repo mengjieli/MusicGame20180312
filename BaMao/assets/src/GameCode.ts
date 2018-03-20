@@ -4251,15 +4251,34 @@ namespace game {
                 {name: "bg4", url: "resources/crg/res/textures/bg/bg4.png"},
                 {name: "effect", url: "resources/crg/res/textures/bg/effect.png"},
                 {
-                    name: "player",
+                    name: "player1",
                     url: "resources/crg/res/textures/player/run/",
                     resourceType: "effect",
-                    namePre: "player",
+                    namePre: "him",
                     nameCount: 1,
                     nameBegin: 1,
                     nameEnd: 4,
                     nameFileEnd: "png",
-                    frameTime: 66
+                    properties: {
+                        frameTime: 66,
+                        scaleX: 1.2,
+                        scaleY: 1.2
+                    }
+                },
+                {
+                    name: "player2",
+                    url: "resources/crg/res/textures/player/run/",
+                    resourceType: "effect",
+                    namePre: "her",
+                    nameCount: 1,
+                    nameBegin: 1,
+                    nameEnd: 4,
+                    nameFileEnd: "png",
+                    properties: {
+                        frameTime: 66,
+                        scaleX: -1.2,
+                        scaleY: 1.2
+                    }
                 },
                 {name: "monster1", url: "resources/crg/res/textures/enemy/rank1.png"},
                 {name: "monster2", url: "resources/crg/res/textures/enemy/rank2.png"},
@@ -4302,9 +4321,13 @@ namespace game {
                                 res.loadIndex = 0;
                                 res.loadLength = res.nameEnd - res.nameBegin + 1;
                                 res.data = {
-                                    pictures: [],
-                                    frameTime: res.frameTime
+                                    pictures: []
                                 };
+                                if (res.properties) {
+                                    for (let key in res.properties) {
+                                        res.data[key] = res.properties[key];
+                                    }
+                                }
                             } else {
                                 if (res.loadIndex == res.loadLength) {
                                     index++;
@@ -4566,6 +4589,9 @@ namespace game {
             public good: number = 0;
             //miss
             public miss: number = 0;
+
+            //背景音乐
+            public bgm:any;
 
             //记录配置最大时间
             public configTime:number;
@@ -5052,7 +5078,7 @@ namespace game {
             loop: any;
             frame: number;
 
-            data:any;
+            data: any;
 
             /**
              * @param config
@@ -5069,6 +5095,12 @@ namespace game {
                 this.length = this.pictures.length;
                 this.loop = loop != null ? loop : !!config.loop;
                 this.frame = 0;
+                if (config.scaleX != null) {
+                    this.scaleX = config.scaleX;
+                }
+                if (config.scaleY != null) {
+                    this.scaleY = config.scaleY;
+                }
 
                 this.update = this.update.bind(this);
 
@@ -5469,11 +5501,13 @@ namespace game {
             execute() {
                 let data = DataProxy.data;
                 if (data.lastTime == 0) {
-                    let player = new Effect(ResourceProxy.getResource("player"), true);
+                    let player = new Effect(ResourceProxy.getResource("player" + (1 + (~~(2 * Math.random())))), true);
                     data.playerLayer.addChild(player);
                     player.x = 100;
                     player.y = 150;
                     data.player = player;
+
+                    data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm"), true, 0.05);
                 }
             }
         }
@@ -5514,7 +5548,7 @@ namespace game {
                     let last = data.monsters[i].x;
                     data.monsters[i].x -= (data.time - data.lastTime) * speed / 1000;
                     if ((last >= lib.data.system.screen.width - 100 && data.monsters[i].x < lib.data.system.screen.width - 100) || data.monsters[i].x < lib.data.system.screen.width - 100 &&  !list[i].tween) {
-                        list[i].tween = lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 1, scaleY: 1});
+                        list[i].tween = lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 0.75, scaleY: 0.75});
                         // cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
                     }
                 }

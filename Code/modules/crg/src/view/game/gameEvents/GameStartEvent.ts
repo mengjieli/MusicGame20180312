@@ -5,11 +5,13 @@ namespace game {
             execute() {
                 let data = DataProxy.data;
                 if (data.lastTime == 0) {
-                    let player = new Effect(ResourceProxy.getResource("player"), true);
+                    let player = new Effect(ResourceProxy.getResource("player" + (1 + (~~(2 * Math.random())))), true);
                     data.playerLayer.addChild(player);
                     player.x = 100;
                     player.y = 150;
                     data.player = player;
+
+                    data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm"), true, 0.05);
                 }
             }
         }

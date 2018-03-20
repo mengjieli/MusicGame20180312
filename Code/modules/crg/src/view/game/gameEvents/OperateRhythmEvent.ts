@@ -31,7 +31,7 @@ namespace game {
                     let last = data.monsters[i].x;
                     data.monsters[i].x -= (data.time - data.lastTime) * speed / 1000;
                     if ((last >= lib.data.system.screen.width - 100 && data.monsters[i].x < lib.data.system.screen.width - 100) || data.monsters[i].x < lib.data.system.screen.width - 100 &&  !list[i].tween) {
-                        list[i].tween = lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 1, scaleY: 1});
+                        list[i].tween = lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 0.75, scaleY: 0.75});
                         // cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
                     }
                 }

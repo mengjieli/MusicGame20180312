@@ -69,6 +69,9 @@ namespace game {
             //miss
             public miss: number = 0;
 
+            //背景音乐
+            public bgm:any;
+
             //记录配置最大时间
             public configTime:number;
             public config: any[] = [ //拍子
