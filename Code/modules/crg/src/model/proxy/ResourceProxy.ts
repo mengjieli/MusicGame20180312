@@ -13,10 +13,10 @@ namespace game {
 
             private static initList: any[] = [
                 {name: "bgm", url: "resources/crg/res/bgm/game1.wav"},
-                {name: "rhythmTip", url: "resources/runGame/res/music/tip.wav"},
-                {name: "rhythmMiss", url: "resources/runGame/res/music/miss.wav"},
-                {name: "rhythmGood", url: "resources/runGame/res/music/good.wav"},
-                {name: "rhythmPerfect", url: "resources/runGame/res/music/perfect.wav"},
+                {name: "rhythmTip", url: "resources/crg/res/music/tip.wav"},
+                {name: "rhythmMiss", url: "resources/crg/res/music/miss.wav"},
+                {name: "rhythmGood", url: "resources/crg/res/music/good.wav"},
+                {name: "rhythmPerfect", url: "resources/crg/res/music/perfect.wav"},
 
                 {name: "allConfig", url: "resources/crg/res/config/All.csv"},
                 {name: "levelConfig", url: "resources/crg/res/config/Level.csv"},

@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6dae894-d666-4cb5-82c4-52c720d900f4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player1.png.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player2.png.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player3.png.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/textures/player/run/player4.png.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" afterPath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameStartEvent.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameStartEvent.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="107" lean-forward="false" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
+            <state relative-caret-position="150">
+              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -43,7 +30,7 @@
       <file leaf-file-name="Effect.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
+            <state relative-caret-position="525">
               <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
               <folding />
             </state>
@@ -60,11 +47,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceProxy.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OperateEvent.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OperateCommand.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceProxy.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="73" column="37" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+            <state relative-caret-position="-259">
+              <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -73,7 +80,7 @@
       <file leaf-file-name="GameData.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="1080">
               <caret line="72" column="27" lean-forward="false" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
               <folding />
             </state>
@@ -93,7 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>con</find>
       <find>lowp</find>
       <find>CRGModule</find>
       <find>Resource</find>
@@ -106,7 +112,6 @@
       <find>effect</find>
       <find>this.node.addChild</find>
       <find>),</find>
-      <find>runGame</find>
       <find>MainMediator</find>
       <find>miss</find>
       <find>ConfigProxy</find>
@@ -123,6 +128,8 @@
       <find>.data</find>
       <find>audioEngine</find>
       <find>frameTime</find>
+      <find>rhythmMiss</find>
+      <find>runGame</find>
     </findStrings>
     <replaceStrings>
       <replace>operate: 0</replace>
@@ -132,11 +139,11 @@
       <replace>/crg/</replace>
       <replace>this.bgs.push</replace>
       <replace>,2),</replace>
-      <replace>crg</replace>
       <replace>event:1</replace>
       <replace>event:2</replace>
       <replace>event:3</replace>
       <replace>DataProxy.data</replace>
+      <replace>crg</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Code/modules/bamapResult</dir>
@@ -197,8 +204,8 @@
         <option value="$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" />
       </list>
     </option>
   </component>
@@ -231,8 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -427,6 +432,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -509,19 +516,20 @@
       <workItem from="1521180654944" duration="4288000" />
       <workItem from="1521198382458" duration="69000" />
       <workItem from="1521254214370" duration="48317000" />
-      <workItem from="1521532782596" duration="879000" />
+      <workItem from="1521532782596" duration="1213000" />
+      <workItem from="1521536143818" duration="53000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175392000" />
+    <option name="totallyTimeSpent" value="175779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26779422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26779422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -586,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="20840" column="17" lean-forward="false" selection-start-line="20840" selection-start-column="17" selection-end-line="20840" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="3493" column="8" lean-forward="false" selection-start-line="3493" selection-start-column="8" selection-end-line="3493" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6798" column="37" lean-forward="false" selection-start-line="6798" selection-start-column="37" selection-end-line="6798" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="6049" column="15" lean-forward="false" selection-start-line="6049" selection-start-column="12" selection-end-line="6049" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-106">
           <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,25 +861,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,22 +886,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="1080">
           <caret line="72" column="27" lean-forward="false" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts">
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="73" column="37" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        <state relative-caret-position="525">
+          <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -929,18 +921,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts">
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+        <state relative-caret-position="326">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts">
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="107" lean-forward="false" selection-start-line="7" selection-start-column="107" selection-end-line="7" selection-end-column="107" />
+        <state relative-caret-position="180">
+          <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
           <folding />
         </state>
       </provider>
