@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6dae894-d666-4cb5-82c4-52c720d900f4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/All.csv" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/All.csv" />
       <change beforePath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" afterPath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" />
-      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,21 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OperateRhythmEvent.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts">
+      <file leaf-file-name="UIMediator.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperateEvent.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="165">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -46,48 +31,8 @@
       <file leaf-file-name="GameUI.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperateCommand.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameMain.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/GameMain.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceProxy.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="922">
-              <caret line="65" column="82" lean-forward="false" selection-start-line="65" selection-start-column="82" selection-end-line="65" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigProxy.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="76" column="22" lean-forward="false" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+            <state relative-caret-position="372">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -221,10 +166,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="805" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -477,15 +422,15 @@
       <workItem from="1521171200844" duration="4000" />
       <workItem from="1521180654944" duration="4288000" />
       <workItem from="1521198382458" duration="69000" />
-      <workItem from="1521254214370" duration="46408000" />
+      <workItem from="1521254214370" duration="48317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172604000" />
+    <option name="totallyTimeSpent" value="174513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="793" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -686,14 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -908,8 +845,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+        <state relative-caret-position="315">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -922,18 +867,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts">
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="372">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding />
         </state>
       </provider>

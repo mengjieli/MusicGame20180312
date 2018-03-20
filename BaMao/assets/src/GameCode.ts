@@ -4994,6 +4994,18 @@ namespace game {
                 node.addComponent(cc.Label);
                 label = node.getComponent(cc.Label);
                 label.string = "";
+
+                // node = new cc.Node();
+                // node.anchorX = 0;
+                // node.anchorY = 1;
+                // node.opacity = 150;
+                // this.addChild(node);
+                // node.x = -lib.data.system.screen.width / 2;
+                // node.y = lib.data.system.screen.height / 2;
+                // node.addComponent(cc.Label);
+                // label = node.getComponent(cc.Label);
+                // label.fontSize = 24;
+                // label.string = "all: 1000\ntime:123"
             }
 
             public showCombo(val: number) {
