@@ -19,11 +19,15 @@ namespace game {
                                         data: list[i],
                                         operateType: "Perfect"
                                     });
+                                    //删除节拍对象
+                                    this.pressOK(list[i]);
                                 } else if (Math.abs(data.time - list[i].time) < goodTime) { //good
                                     mainMediator.sendNotification(Command.IN.OPERATE, {
                                         data: list[i],
                                         operateType: "Good"
                                     });
+                                    //删除节拍对象
+                                    this.pressOK(list[i]);
                                 } else if (Math.abs(data.time - list[i].time) < missTime) { //good
                                     mainMediator.sendNotification(Command.IN.OPERATE, {
                                         data: list[i],
@@ -49,6 +53,25 @@ namespace game {
                             mainMediator.sendNotification(Command.IN.OPERATE, {data: null, operateType: "AutoMiss"});
                             data.operate[list[i].time] = true;
                         }
+                    }
+                }
+            }
+
+            private pressOK(cfg: any) {
+                //删除节拍对象
+                let monsters = DataProxy.data.monsters;
+                for (let i = 0; i < monsters.length; i++) {
+                    if (monsters[i].data == cfg) {
+                        let monster = monsters[i];
+                        monster.destroy();
+                        monsters.splice(i, 1);
+
+                        //显示特效
+                        let effect = new Effect(ResourceProxy.getResource("pressok"));
+                        effect.x = DataProxy.data.player.x;
+                        effect.y = DataProxy.data.player.y - 80;
+                        DataProxy.data.monsterLayer.addChild(effect);
+                        break;
                     }
                 }
             }

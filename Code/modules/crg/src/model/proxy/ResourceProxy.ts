@@ -83,6 +83,20 @@ namespace game {
                 {name: "monster5", url: "resources/crg/res/textures/enemy/rank5.png"},
                 {name: "monster6", url: "resources/crg/res/textures/enemy/rank6.png"},
                 {name: "monsterStar", url: "resources/crg/res/textures/enemy/star2.png"},
+                {
+                    name: "pressok",
+                    url: "resources/crg/res/textures/effect/pressok/",
+                    resourceType: "effect",
+                    namePre: "hero alien shipAttack_",
+                    nameCount: 1,
+                    nameBegin: 1,
+                    nameEnd: 8,
+                    nameFileEnd: "png",
+                    properties: {
+                        frameTime: 33,
+                        anchorY:0
+                    }
+                },
             ];
 
             private static loadList: any[];

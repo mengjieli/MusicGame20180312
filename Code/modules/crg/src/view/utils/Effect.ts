@@ -35,6 +35,13 @@ namespace game {
                 if (config.scaleY != null) {
                     this.scaleY = config.scaleY;
                 }
+                if (config.anchorX != null) {
+                    this.anchorX = config.anchorX;
+                }
+                if (config.anchorY != null) {
+                    this.anchorY = config.anchorY;
+                }
+
 
                 this.update = this.update.bind(this);
 

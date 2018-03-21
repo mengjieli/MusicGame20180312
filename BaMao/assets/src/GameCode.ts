@@ -4217,10 +4217,10 @@ namespace game {
 
             private static initList: any[] = [
                 {name: "bgm", url: "resources/crg/res/bgm/game1.wav"},
-                {name: "rhythmTip", url: "resources/runGame/res/music/tip.wav"},
-                {name: "rhythmMiss", url: "resources/runGame/res/music/miss.wav"},
-                {name: "rhythmGood", url: "resources/runGame/res/music/good.wav"},
-                {name: "rhythmPerfect", url: "resources/runGame/res/music/perfect.wav"},
+                {name: "rhythmTip", url: "resources/crg/res/music/tip.wav"},
+                {name: "rhythmMiss", url: "resources/crg/res/music/miss.wav"},
+                {name: "rhythmGood", url: "resources/crg/res/music/good.wav"},
+                {name: "rhythmPerfect", url: "resources/crg/res/music/perfect.wav"},
 
                 {name: "allConfig", url: "resources/crg/res/config/All.csv"},
                 {name: "levelConfig", url: "resources/crg/res/config/Level.csv"},
@@ -4287,6 +4287,20 @@ namespace game {
                 {name: "monster5", url: "resources/crg/res/textures/enemy/rank5.png"},
                 {name: "monster6", url: "resources/crg/res/textures/enemy/rank6.png"},
                 {name: "monsterStar", url: "resources/crg/res/textures/enemy/star2.png"},
+                {
+                    name: "pressok",
+                    url: "resources/crg/res/textures/effect/pressok/",
+                    resourceType: "effect",
+                    namePre: "hero alien shipAttack_",
+                    nameCount: 1,
+                    nameBegin: 1,
+                    nameEnd: 8,
+                    nameFileEnd: "png",
+                    properties: {
+                        frameTime: 33,
+                        anchorY:0
+                    }
+                },
             ];
 
             private static loadList: any[];
@@ -5101,6 +5115,13 @@ namespace game {
                 if (config.scaleY != null) {
                     this.scaleY = config.scaleY;
                 }
+                if (config.anchorX != null) {
+                    this.anchorX = config.anchorX;
+                }
+                if (config.anchorY != null) {
+                    this.anchorY = config.anchorY;
+                }
+
 
                 this.update = this.update.bind(this);
 
@@ -5503,7 +5524,7 @@ namespace game {
                 if (data.lastTime == 0) {
                     let player = new Effect(ResourceProxy.getResource("player" + (1 + (~~(2 * Math.random())))), true);
                     data.playerLayer.addChild(player);
-                    player.x = 100;
+                    player.x = 200;
                     player.y = 150;
                     data.player = player;
 
@@ -5549,7 +5570,7 @@ namespace game {
                     data.monsters[i].x -= (data.time - data.lastTime) * speed / 1000;
                     if ((last >= lib.data.system.screen.width - 100 && data.monsters[i].x < lib.data.system.screen.width - 100) || data.monsters[i].x < lib.data.system.screen.width - 100 &&  !list[i].tween) {
                         list[i].tween = lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 0.75, scaleY: 0.75});
-                        // cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
+                        cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
                     }
                 }
                 for (let i = 0; i < data.monsters.length; i++) {
@@ -5586,11 +5607,15 @@ namespace game {
                                         data: list[i],
                                         operateType: "Perfect"
                                     });
+                                    //删除节拍对象
+                                    this.pressOK(list[i]);
                                 } else if (Math.abs(data.time - list[i].time) < goodTime) { //good
                                     mainMediator.sendNotification(Command.IN.OPERATE, {
                                         data: list[i],
                                         operateType: "Good"
                                     });
+                                    //删除节拍对象
+                                    this.pressOK(list[i]);
                                 } else if (Math.abs(data.time - list[i].time) < missTime) { //good
                                     mainMediator.sendNotification(Command.IN.OPERATE, {
                                         data: list[i],
@@ -5616,6 +5641,25 @@ namespace game {
                             mainMediator.sendNotification(Command.IN.OPERATE, {data: null, operateType: "AutoMiss"});
                             data.operate[list[i].time] = true;
                         }
+                    }
+                }
+            }
+
+            private pressOK(cfg: any) {
+                //删除节拍对象
+                let monsters = DataProxy.data.monsters;
+                for (let i = 0; i < monsters.length; i++) {
+                    if (monsters[i].data == cfg) {
+                        let monster = monsters[i];
+                        monster.destroy();
+                        monsters.splice(i, 1);
+
+                        //显示特效
+                        let effect = new Effect(ResourceProxy.getResource("pressok"));
+                        effect.x = DataProxy.data.player.x;
+                        effect.y = DataProxy.data.player.y - 80;
+                        DataProxy.data.monsterLayer.addChild(effect);
+                        break;
                     }
                 }
             }

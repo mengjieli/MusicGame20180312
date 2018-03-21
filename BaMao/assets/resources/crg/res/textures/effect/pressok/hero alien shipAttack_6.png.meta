@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "2e5ecffd-ae14-4028-8f57-007a83a19196",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "hero alien shipAttack_6": {
+      "ver": "1.0.3",
+      "uuid": "e23ccb99-bed7-43e3-9cdb-da7ffd6d58cc",
+      "rawTextureUuid": "2e5ecffd-ae14-4028-8f57-007a83a19196",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -35.5,
+      "trimX": 22,
+      "trimY": 75,
+      "width": 97,
+      "height": 185,
+      "rawWidth": 140,
+      "rawHeight": 264,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
