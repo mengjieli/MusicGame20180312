@@ -10,6 +10,7 @@ namespace game {
                     player.x = 200;
                     player.y = 150;
                     data.player = player;
+                    //
 
                     data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm" + data.level), true, 1);
                 }
