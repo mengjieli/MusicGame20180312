@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "herJump",
+    "texture": "15411e5c-776a-457a-9c20-8794c38d386a",
+    "atlas": "",
+    "rect": [
+      10,
+      7,
+      46,
+      86
+    ],
+    "offset": [
+      1.5,
+      -2
+    ],
+    "originalSize": [
+      63,
+      96
+    ]
+  }
+}

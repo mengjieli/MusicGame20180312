@@ -1,0 +1,1762 @@
+{
+  "f8e6b000-5643-4b86-9080-aa680ce1f599": {
+    "asset": 1521685602677,
+    "meta": 1520937982000,
+    "relativePath": "image"
+  },
+  "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
+    "asset": 1520937982000,
+    "meta": 1521686026563,
+    "relativePath": "image\\default_btn_normal.png"
+  },
+  "71561142-4c83-4933-afca-cb7a17f67053": {
+    "asset": 1520937982000,
+    "meta": 1521686026564,
+    "relativePath": "image\\default_btn_disabled.png"
+  },
+  "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
+    "asset": 1520937982000,
+    "meta": 1521686026569,
+    "relativePath": "image\\default_panel.png"
+  },
+  "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
+    "asset": 1520937982000,
+    "meta": 1521686026570,
+    "relativePath": "image\\default_btn_pressed.png"
+  },
+  "99170b0b-d210-46f1-b213-7d9e3f23098a": {
+    "asset": 1520937982000,
+    "meta": 1521686026574,
+    "relativePath": "image\\default_progressbar_bg.png"
+  },
+  "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
+    "asset": 1520937982000,
+    "meta": 1521686026575,
+    "relativePath": "image\\default_progressbar.png"
+  },
+  "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
+    "asset": 1520937982000,
+    "meta": 1521686026579,
+    "relativePath": "image\\default_radio_button_on.png"
+  },
+  "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
+    "asset": 1520937982000,
+    "meta": 1521686026581,
+    "relativePath": "image\\default_radio_button_off.png"
+  },
+  "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
+    "asset": 1520937982000,
+    "meta": 1521686026586,
+    "relativePath": "image\\default_scrollbar_vertical_bg.png"
+  },
+  "4bab67cb-18e6-4099-b840-355f0473f890": {
+    "asset": 1520937982000,
+    "meta": 1521686026587,
+    "relativePath": "image\\default_scrollbar_bg.png"
+  },
+  "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
+    "asset": 1520937982000,
+    "meta": 1521686026591,
+    "relativePath": "image\\default_scrollbar_vertical.png"
+  },
+  "0291c134-b3da-4098-b7b5-e397edbe947f": {
+    "asset": 1520937982000,
+    "meta": 1521686026592,
+    "relativePath": "image\\default_scrollbar.png"
+  },
+  "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
+    "asset": 1520937982000,
+    "meta": 1521686026598,
+    "relativePath": "image\\default_sprite_splash.png"
+  },
+  "6e056173-d285-473c-b206-40a7fff5386e": {
+    "asset": 1520937982000,
+    "meta": 1521686026598,
+    "relativePath": "image\\default_sprite.png"
+  },
+  "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
+    "asset": 1520937982000,
+    "meta": 1521686026603,
+    "relativePath": "image\\default_toggle_checkmark.png"
+  },
+  "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
+    "asset": 1520937982000,
+    "meta": 1521686026604,
+    "relativePath": "image\\default_toggle_disabled.png"
+  },
+  "d29077ba-1627-4a72-9579-7b56a235340c": {
+    "asset": 1520937982000,
+    "meta": 1521686026609,
+    "relativePath": "image\\default_toggle_normal.png"
+  },
+  "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
+    "asset": 1520937982000,
+    "meta": 1521686026610,
+    "relativePath": "image\\default_toggle_pressed.png"
+  },
+  "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
+    "asset": 1521685590619,
+    "meta": 1520937982000,
+    "relativePath": "misc"
+  },
+  "2be36297-9abb-4fee-8049-9ed5e271da8a": {
+    "asset": 1520937982000,
+    "meta": 1520937982000,
+    "relativePath": "misc\\default_video.mp4"
+  },
+  "f6e6dd15-71d1-4ffe-ace7-24fd39942c05": {
+    "asset": 1521685593201,
+    "meta": 1520937982000,
+    "relativePath": "obsolete"
+  },
+  "b8223619-7e38-47c4-841f-9160c232495a": {
+    "asset": 1520937982000,
+    "meta": 1520937982000,
+    "relativePath": "obsolete\\atom.plist"
+  },
+  "f743d2b6-b7ea-4c14-a55b-547ed4d0a045": {
+    "asset": 1521685590619,
+    "meta": 1520937982000,
+    "relativePath": "particle"
+  },
+  "b2687ac4-099e-403c-a192-ff477686f4f5": {
+    "asset": 1520937982000,
+    "meta": 1520937982000,
+    "relativePath": "particle\\atom.plist"
+  },
+  "ae6c6c98-11e4-452f-8758-75f5c6a56e83": {
+    "asset": 1521685623929,
+    "meta": 1520937982000,
+    "relativePath": "prefab"
+  },
+  "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
+    "asset": 1520937982000,
+    "meta": 1521686026619,
+    "relativePath": "prefab\\button.prefab"
+  },
+  "2c937608-2562-40ea-b264-7395df6f0cea": {
+    "asset": 1520937982000,
+    "meta": 1521686026621,
+    "relativePath": "prefab\\canvas.prefab"
+  },
+  "61aeb05b-3b32-452b-8eed-2b76deeed554": {
+    "asset": 1520937982000,
+    "meta": 1521686026622,
+    "relativePath": "prefab\\editbox.prefab"
+  },
+  "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
+    "asset": 1520937982000,
+    "meta": 1521686026623,
+    "relativePath": "prefab\\label.prefab"
+  },
+  "785a442c-3ceb-45be-a46e-7317f625f3b9": {
+    "asset": 1520937982000,
+    "meta": 1521686026624,
+    "relativePath": "prefab\\layout.prefab"
+  },
+  "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
+    "asset": 1520937982000,
+    "meta": 1521686026625,
+    "relativePath": "prefab\\pageview.prefab"
+  },
+  "cd33edea-55f5-46c2-958d-357a01384a36": {
+    "asset": 1520937982000,
+    "meta": 1521686026626,
+    "relativePath": "prefab\\particlesystem.prefab"
+  },
+  "5965ffac-69da-4b55-bcde-9225d0613c28": {
+    "asset": 1520937982000,
+    "meta": 1521686026632,
+    "relativePath": "prefab\\progressBar.prefab"
+  },
+  "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
+    "asset": 1520937982000,
+    "meta": 1521686026633,
+    "relativePath": "prefab\\richtext.prefab"
+  },
+  "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
+    "asset": 1520937982000,
+    "meta": 1521686026634,
+    "relativePath": "prefab\\scrollview.prefab"
+  },
+  "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
+    "asset": 1520937982000,
+    "meta": 1521686026635,
+    "relativePath": "prefab\\slider.prefab"
+  },
+  "1f55e3be-b89b-4b79-88de-47fd31018044": {
+    "asset": 1520937982000,
+    "meta": 1521686026636,
+    "relativePath": "prefab\\sprite_splash.prefab"
+  },
+  "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
+    "asset": 1520937982000,
+    "meta": 1521686026638,
+    "relativePath": "prefab\\sprite.prefab"
+  },
+  "7de03a80-4457-438d-95a7-3e7cdffd6086": {
+    "asset": 1520937982000,
+    "meta": 1521686026639,
+    "relativePath": "prefab\\tiledmap.prefab"
+  },
+  "0d784963-d024-4ea6-a7db-03be0ad63010": {
+    "asset": 1520937982000,
+    "meta": 1521686026640,
+    "relativePath": "prefab\\toggle.prefab"
+  },
+  "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
+    "asset": 1520937982000,
+    "meta": 1521686026641,
+    "relativePath": "prefab\\toggleContainer.prefab"
+  },
+  "d1b8be49-b0a0-435c-83b7-552bed4bbe35": {
+    "asset": 1520937982000,
+    "meta": 1521686026643,
+    "relativePath": "prefab\\toggleGroup.prefab"
+  },
+  "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
+    "asset": 1520937982000,
+    "meta": 1521686026645,
+    "relativePath": "prefab\\videoplayer.prefab"
+  },
+  "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
+    "asset": 1520937982000,
+    "meta": 1521686026645,
+    "relativePath": "prefab\\webview.prefab"
+  },
+  "f0930ee6-df19-40b2-be97-cdafe2829c60": {
+    "asset": 1521685963506,
+    "meta": 1521686035850,
+    "relativePath": "Go.ts"
+  },
+  "e0c6e5ca-44a5-4e32-8cc9-0e83d0bec028": {
+    "asset": 1521685963510,
+    "meta": 1521685963506,
+    "relativePath": "lib"
+  },
+  "ef168be1-6ac1-42d0-a9b8-4cbad2d23917": {
+    "asset": 1521690883222,
+    "meta": 1521690883234,
+    "relativePath": "Go.fire"
+  },
+  "30423220-d084-438f-b8bd-c74ea37867bc": {
+    "asset": 1521685963508,
+    "meta": 1521685963507,
+    "relativePath": "lib\\component"
+  },
+  "639fecf2-e475-4c53-ac85-90f7fc3e0827": {
+    "asset": 1521685963507,
+    "meta": 1521686036095,
+    "relativePath": "lib\\component\\Panel.js"
+  },
+  "a3d4d52a-3dd1-4121-904d-a3a6029cdcd3": {
+    "asset": 1521685963510,
+    "meta": 1521686036095,
+    "relativePath": "lib\\lib.ts"
+  },
+  "e10e817f-2574-4f53-8487-0e36df50325b": {
+    "asset": 1521685963508,
+    "meta": 1521686036097,
+    "relativePath": "lib\\component\\Panel.prefab"
+  },
+  "64ad30ee-13f3-4c92-b1ca-53815b7a6372": {
+    "asset": 1521685963830,
+    "meta": 1521685963511,
+    "relativePath": "resources"
+  },
+  "1f8d9cb8-de25-44d6-ad3e-dee8747e46cc": {
+    "asset": 1521685963512,
+    "meta": 1521685963511,
+    "relativePath": "resources\\baMaoGame"
+  },
+  "e380c765-02b9-4655-acc1-324edd8a1f23": {
+    "asset": 1521685963546,
+    "meta": 1521685963512,
+    "relativePath": "resources\\baMaoGame\\res"
+  },
+  "adf61089-34fb-4529-a05d-8c64746f5fc5": {
+    "asset": 1521685963541,
+    "meta": 1521685963512,
+    "relativePath": "resources\\baMaoGame\\res\\bgm"
+  },
+  "3e1899d7-6244-4441-bc57-1e933c34ea70": {
+    "asset": 1521685963837,
+    "meta": 1521685963837,
+    "relativePath": "resources\\runGame\\res\\bgm\\game1.ogg"
+  },
+  "7303c77c-95d1-41ff-ac68-8cc6a69365cb": {
+    "asset": 1521685963857,
+    "meta": 1521685963858,
+    "relativePath": "resources\\runGame\\res\\bgm\\game1.wav"
+  },
+  "3aef970f-5b51-4211-b549-1a3d6a6a397f": {
+    "asset": 1521685963542,
+    "meta": 1521685963542,
+    "relativePath": "resources\\baMaoGame\\res\\config"
+  },
+  "dd73d13b-24ca-4c79-a866-e36570a226fe": {
+    "asset": 1521685963858,
+    "meta": 1521685963858,
+    "relativePath": "resources\\runGame\\res\\config\\All.csv"
+  },
+  "8b583da7-3c52-48fa-a563-8942637509af": {
+    "asset": 1521685963858,
+    "meta": 1521685963859,
+    "relativePath": "resources\\runGame\\res\\config\\Level.csv"
+  },
+  "94084b2f-199e-4d8b-a57e-29751d9ade0a": {
+    "asset": 1521685963546,
+    "meta": 1521685963543,
+    "relativePath": "resources\\baMaoGame\\res\\music"
+  },
+  "6da3e091-bd3c-4266-9502-e79f4734a8ed": {
+    "asset": 1521685963860,
+    "meta": 1521685963860,
+    "relativePath": "resources\\runGame\\res\\music\\good.wav"
+  },
+  "f2670cde-91a0-454e-845a-4ff1ee9037da": {
+    "asset": 1521685963861,
+    "meta": 1521685963861,
+    "relativePath": "resources\\runGame\\res\\music\\miss.wav"
+  },
+  "90687138-aa64-4b5c-957b-49e1a07099ba": {
+    "asset": 1521685963861,
+    "meta": 1521685963862,
+    "relativePath": "resources\\runGame\\res\\music\\perfect.wav"
+  },
+  "713b5e6e-43f1-486f-96ef-d72c4e534503": {
+    "asset": 1521685963862,
+    "meta": 1521685963862,
+    "relativePath": "resources\\runGame\\res\\music\\readygo.mp3"
+  },
+  "601efcd0-ed91-4813-a5e6-137ae7fa4dd7": {
+    "asset": 1521685963862,
+    "meta": 1521685963863,
+    "relativePath": "resources\\runGame\\res\\music\\tip.wav"
+  },
+  "330dd52d-a4d4-4be6-84c3-996bdfdb7542": {
+    "asset": 1521685963566,
+    "meta": 1521685963546,
+    "relativePath": "resources\\baMaoGame\\res\\textures"
+  },
+  "50746c1f-e063-4011-b0b9-f05948e5acb5": {
+    "asset": 1521685963913,
+    "meta": 1521685963912,
+    "relativePath": "resources\\runGame\\res\\textures\\background"
+  },
+  "b7ee5644-25d9-4a69-a248-51caa89bedf6": {
+    "asset": 1521685963912,
+    "meta": 1521686037624,
+    "relativePath": "resources\\runGame\\res\\textures\\background\\back2.png"
+  },
+  "f4daf5e0-065c-4078-92b9-36d4dae8f545": {
+    "asset": 1521685963912,
+    "meta": 1521686037623,
+    "relativePath": "resources\\runGame\\res\\textures\\background\\back1.png"
+  },
+  "e4efbd9b-84b0-47f1-b0be-c550eb0efff1": {
+    "asset": 1521685963893,
+    "meta": 1521686037417,
+    "relativePath": "resources\\runGame\\res\\texture\\band.png"
+  },
+  "ba12f2eb-cc91-43e2-849d-fdfbcca87bd2": {
+    "asset": 1521685963893,
+    "meta": 1521686037422,
+    "relativePath": "resources\\runGame\\res\\texture\\cut.png"
+  },
+  "d13e017e-8817-4118-99c1-04a04440bdcc": {
+    "asset": 1521685963894,
+    "meta": 1521686037426,
+    "relativePath": "resources\\runGame\\res\\texture\\doctorHand.png"
+  },
+  "458fb851-7849-450f-bbfe-cabb93e8fef6": {
+    "asset": 1521685963933,
+    "meta": 1521685963920,
+    "relativePath": "resources\\runGame\\res\\textures\\effect"
+  },
+  "ab39c741-75d0-4c04-936d-3011ce850a89": {
+    "asset": 1521685963913,
+    "meta": 1521686037641,
+    "relativePath": "resources\\runGame\\res\\textures\\background\\back3.png"
+  },
+  "eef6ef84-8cf0-4b37-8197-c63c1231db81": {
+    "asset": 1521685963894,
+    "meta": 1521686037439,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0001.png"
+  },
+  "45d43aee-b3ac-436d-8feb-f0acb6c7350e": {
+    "asset": 1521685963895,
+    "meta": 1521686037440,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0002.png"
+  },
+  "1b7b2a74-09d3-4b36-90a5-52884b8fb44e": {
+    "asset": 1521685963896,
+    "meta": 1521686037448,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0003.png"
+  },
+  "cd6ab728-7649-4794-9646-7c5453eb5d51": {
+    "asset": 1521685963896,
+    "meta": 1521686037450,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0004.png"
+  },
+  "df9e7992-4122-4b5c-9684-1c95c2bca192": {
+    "asset": 1521685963897,
+    "meta": 1521686037459,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0006.png"
+  },
+  "fa87ccd6-796f-4160-a038-f557f84b564a": {
+    "asset": 1521685963897,
+    "meta": 1521686037457,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0005.png"
+  },
+  "99010b0b-ba21-4861-9b56-20f4b60de31d": {
+    "asset": 1521685963898,
+    "meta": 1521686037469,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0007.png"
+  },
+  "1934a3c8-bf26-466b-8e54-641b205fcc22": {
+    "asset": 1521685963898,
+    "meta": 1521686037467,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0008.png"
+  },
+  "14fc9a04-6c66-4710-b068-550b2052dd06": {
+    "asset": 1521685963899,
+    "meta": 1521686037481,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0010.png"
+  },
+  "20c0cd13-1bfd-4024-bb9c-d020a229a913": {
+    "asset": 1521685963899,
+    "meta": 1521686037479,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0009.png"
+  },
+  "e974bab3-5eb1-4d47-81ff-806ff2e1763a": {
+    "asset": 1521685963900,
+    "meta": 1521686037489,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0011.png"
+  },
+  "c2ddcca3-d66a-4aad-8328-81b74b41b1d9": {
+    "asset": 1521685963900,
+    "meta": 1521686037491,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0012.png"
+  },
+  "5323d958-1165-4267-ad1d-eee2feed14e0": {
+    "asset": 1521685963901,
+    "meta": 1521686037500,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0013.png"
+  },
+  "52eaeefc-da17-4f06-87c6-74596adca73f": {
+    "asset": 1521685963901,
+    "meta": 1521686037502,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0014.png"
+  },
+  "b2df02d3-0a18-4b27-a304-bee7498bf942": {
+    "asset": 1521685963902,
+    "meta": 1521686037513,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0015.png"
+  },
+  "9cf426fe-80bf-45f9-86ec-2ad5c0c57dc3": {
+    "asset": 1521685963906,
+    "meta": 1521685963902,
+    "relativePath": "resources\\runGame\\res\\texture\\face"
+  },
+  "07afc1bc-083c-4112-b349-0bd0b82cb7e4": {
+    "asset": 1521685963902,
+    "meta": 1521686037511,
+    "relativePath": "resources\\runGame\\res\\texture\\effect\\jl0016.png"
+  },
+  "05e4972c-276f-4349-b659-755f52f9a766": {
+    "asset": 1521685963903,
+    "meta": 1521686037519,
+    "relativePath": "resources\\runGame\\res\\texture\\face\\good.png"
+  },
+  "eaff21cd-a397-4016-a5ac-a72ffd15a106": {
+    "asset": 1521685963903,
+    "meta": 1521686037520,
+    "relativePath": "resources\\runGame\\res\\texture\\face\\miss.png"
+  },
+  "2625b74c-340c-4279-8d79-f120e6435408": {
+    "asset": 1521685963904,
+    "meta": 1521686037527,
+    "relativePath": "resources\\runGame\\res\\texture\\face\\normal.png"
+  },
+  "b06b393c-3aba-447e-aebc-976c2404985a": {
+    "asset": 1521685963905,
+    "meta": 1521686037534,
+    "relativePath": "resources\\runGame\\res\\texture\\face\\result1.png"
+  },
+  "b05c9ddb-b6d1-4216-872c-c18e187bf986": {
+    "asset": 1521685963904,
+    "meta": 1521686037528,
+    "relativePath": "resources\\runGame\\res\\texture\\face\\perfect.png"
+  },
+  "f547a765-95f2-419a-8d68-7f769ac54ae1": {
+    "asset": 1521685963906,
+    "meta": 1521686037540,
+    "relativePath": "resources\\runGame\\res\\texture\\face\\result3.png"
+  },
+  "0028b876-7502-4ab3-89d3-37fcaeca5aeb": {
+    "asset": 1521685963905,
+    "meta": 1521686037535,
+    "relativePath": "resources\\runGame\\res\\texture\\face\\result2.png"
+  },
+  "2548bcd8-99dc-4ab9-bf84-bac5848b0805": {
+    "asset": 1521685963907,
+    "meta": 1521686037547,
+    "relativePath": "resources\\runGame\\res\\texture\\monsterHand.png"
+  },
+  "8eb3d624-4366-4083-9c78-4e281b4afe91": {
+    "asset": 1521685963910,
+    "meta": 1521685963907,
+    "relativePath": "resources\\runGame\\res\\texture\\role"
+  },
+  "1622b32f-9032-44dd-8b90-63aaa732e2d3": {
+    "asset": 1521685963907,
+    "meta": 1521686037558,
+    "relativePath": "resources\\runGame\\res\\texture\\monster.png"
+  },
+  "19462851-90f5-4b92-aa30-74d7e5efa0ae": {
+    "asset": 1521685963908,
+    "meta": 1521686037575,
+    "relativePath": "resources\\runGame\\res\\texture\\role\\role1.png"
+  },
+  "2bd9bc48-a18c-460a-baf3-e956f1ff0060": {
+    "asset": 1521685963909,
+    "meta": 1521686037588,
+    "relativePath": "resources\\runGame\\res\\texture\\role\\role2.png"
+  },
+  "5ff50999-ad57-4afd-8cdb-c39692ba2917": {
+    "asset": 1521685963570,
+    "meta": 1521685963569,
+    "relativePath": "resources\\baMaoResult"
+  },
+  "3164d950-36d7-453d-aeae-316f983f9277": {
+    "asset": 1521686026879,
+    "meta": 1521685963570,
+    "relativePath": "resources\\baMaoResult\\res"
+  },
+  "443d2e0a-ab00-435a-a6f3-615f52e004da": {
+    "asset": 1521710814587,
+    "meta": 1521710814593,
+    "relativePath": "resources\\baMaoResult\\res\\ui.prefab"
+  },
+  "0b9fd33b-9c61-4e77-9646-73299e51dfd9": {
+    "asset": 1521685963572,
+    "meta": 1521685963571,
+    "relativePath": "resources\\baMaoStart"
+  },
+  "1a79ca0b-ff1c-4bc2-8416-bd002015428e": {
+    "asset": 1521685963910,
+    "meta": 1521686037604,
+    "relativePath": "resources\\runGame\\res\\texture\\role\\role3.png"
+  },
+  "6ffb8a9d-126a-4585-aac6-3339f86a5009": {
+    "asset": 1521699636398,
+    "meta": 1521685963572,
+    "relativePath": "resources\\baMaoStart\\res"
+  },
+  "3d48c33b-fbd9-45d9-9bcf-27032a064aad": {
+    "asset": 1521698420521,
+    "meta": 1521685963572,
+    "relativePath": "resources\\baMaoStart\\res\\bgm"
+  },
+  "c1ded122-718a-4931-ab92-2ee6119de6ac": {
+    "asset": 1521699586618,
+    "meta": 1521685963593,
+    "relativePath": "resources\\baMaoStart\\res\\textures"
+  },
+  "1462ac53-c046-41a8-b5e7-2b253b6988b8": {
+    "asset": 1521685963599,
+    "meta": 1521685963599,
+    "relativePath": "resources\\crg"
+  },
+  "76aaa316-7c84-4cc8-b54d-0dc4d5dc5b22": {
+    "asset": 1521690646870,
+    "meta": 1521685963599,
+    "relativePath": "resources\\crg\\res"
+  },
+  "012431a0-627a-4a71-b710-8225d4059f94": {
+    "asset": 1521705939567,
+    "meta": 1521685963599,
+    "relativePath": "resources\\crg\\res\\bgm"
+  },
+  "e048abbe-adad-4aa3-bdf7-f380e2e81708": {
+    "asset": 1521707125994,
+    "meta": 1521685963683,
+    "relativePath": "resources\\crg\\res\\config"
+  },
+  "107fbc67-f49e-4c95-9d60-c5b865c232dd": {
+    "asset": 1521685963687,
+    "meta": 1521685963684,
+    "relativePath": "resources\\crg\\res\\music"
+  },
+  "39d579f8-5d5b-449f-adb9-84dbd690ef11": {
+    "asset": 1521685963685,
+    "meta": 1521685963685,
+    "relativePath": "resources\\crg\\res\\music\\good.wav"
+  },
+  "5e401051-1671-4a00-a3f7-6e1b6361a086": {
+    "asset": 1521685963686,
+    "meta": 1521685963686,
+    "relativePath": "resources\\crg\\res\\music\\miss.wav"
+  },
+  "8ebd951c-0a51-4af8-b995-f3d1dca89a77": {
+    "asset": 1521685963686,
+    "meta": 1521685963686,
+    "relativePath": "resources\\crg\\res\\music\\perfect.wav"
+  },
+  "8b9c059d-dd01-4823-93aa-d5304e2024e5": {
+    "asset": 1521685963687,
+    "meta": 1521685963687,
+    "relativePath": "resources\\crg\\res\\music\\readygo.mp3"
+  },
+  "e3828e7d-f532-478c-9b1c-45ba42416aba": {
+    "asset": 1521685963687,
+    "meta": 1521685963688,
+    "relativePath": "resources\\crg\\res\\music\\tip.wav"
+  },
+  "b3412289-f479-4f5a-87ea-01778310a597": {
+    "asset": 1521685963697,
+    "meta": 1521685963688,
+    "relativePath": "resources\\crg\\res\\rhythm"
+  },
+  "503e0b8d-df08-4df4-9555-b7929aed9df1": {
+    "asset": 1521685963692,
+    "meta": 1521685963692,
+    "relativePath": "resources\\crg\\res\\rhythm\\a.wav"
+  },
+  "655e63bd-2f29-427e-b10d-36e4a5a532a1": {
+    "asset": 1521685963688,
+    "meta": 1521685963688,
+    "relativePath": "resources\\crg\\res\\rhythm\\A1.ogg"
+  },
+  "9849951c-68d9-47db-b810-63f4db6fbe04": {
+    "asset": 1521685963689,
+    "meta": 1521685963689,
+    "relativePath": "resources\\crg\\res\\rhythm\\A2.ogg"
+  },
+  "cfb3ff02-3938-4094-945a-757fd9f72db6": {
+    "asset": 1521685963689,
+    "meta": 1521685963689,
+    "relativePath": "resources\\crg\\res\\rhythm\\A3.ogg"
+  },
+  "7998059a-0094-490d-96eb-f4a2ff727750": {
+    "asset": 1521685963598,
+    "meta": 1521686036415,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\start.png"
+  },
+  "57e1b918-d3c1-41e8-8c8f-037a6f84ae25": {
+    "asset": 1521685963689,
+    "meta": 1521685963690,
+    "relativePath": "resources\\crg\\res\\rhythm\\A4.ogg"
+  },
+  "72380eeb-c9f5-4fab-9462-1f03c8d0dc46": {
+    "asset": 1521685963690,
+    "meta": 1521685963690,
+    "relativePath": "resources\\crg\\res\\rhythm\\A5.ogg"
+  },
+  "fbec8e3e-633f-41ea-8673-f85cea68671d": {
+    "asset": 1521685963690,
+    "meta": 1521685963690,
+    "relativePath": "resources\\crg\\res\\rhythm\\A6.ogg"
+  },
+  "93ae1b6e-dde5-48e6-a359-b21b462f8fba": {
+    "asset": 1521685963691,
+    "meta": 1521685963691,
+    "relativePath": "resources\\crg\\res\\rhythm\\A7.ogg"
+  },
+  "0adc3a74-5bde-4900-8f08-9caa8ee8cd17": {
+    "asset": 1521685963694,
+    "meta": 1521685963694,
+    "relativePath": "resources\\crg\\res\\rhythm\\b.wav"
+  },
+  "246fe754-cfcd-4170-8bad-c9de9aabddbc": {
+    "asset": 1521685963695,
+    "meta": 1521685963695,
+    "relativePath": "resources\\crg\\res\\rhythm\\c.wav"
+  },
+  "dd238682-e092-49ba-bcce-a2d9e5ec1b56": {
+    "asset": 1521685963697,
+    "meta": 1521685963697,
+    "relativePath": "resources\\crg\\res\\rhythm\\d.wav"
+  },
+  "2cfa13bb-0e9f-4b31-ba3d-05ddbd64a2f0": {
+    "asset": 1521685963776,
+    "meta": 1521685963697,
+    "relativePath": "resources\\crg\\res\\textures"
+  },
+  "dce18855-ecb8-4b19-98e9-a4304bf20ee5": {
+    "asset": 1521685963707,
+    "meta": 1521685963698,
+    "relativePath": "resources\\crg\\res\\textures\\bg"
+  },
+  "29844351-73ce-4bc6-a972-130a2584c896": {
+    "asset": 1521685963699,
+    "meta": 1521686036458,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\bg2.png"
+  },
+  "c07c48ee-acd1-4a70-b72c-6e44d938004c": {
+    "asset": 1521685963698,
+    "meta": 1521686036468,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\bg1.png"
+  },
+  "cdda3bb5-4a64-4935-a8ec-311c9879d045": {
+    "asset": 1521685963700,
+    "meta": 1521686036504,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\bg4.png"
+  },
+  "4e428d11-140f-4d5b-9195-223bea750b16": {
+    "asset": 1521685963699,
+    "meta": 1521686036506,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\bg3.png"
+  },
+  "07cc3ec1-787c-4b97-93db-35c3790622b9": {
+    "asset": 1521685963701,
+    "meta": 1521686036552,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\cloud1.png"
+  },
+  "00368c44-4ebe-4740-9893-bfb8fda06007": {
+    "asset": 1521685963701,
+    "meta": 1521686036562,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\cloud2.png"
+  },
+  "1e895309-5c1b-441b-ab37-308ed6d388a2": {
+    "asset": 1521685963702,
+    "meta": 1521686036578,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\ground.png"
+  },
+  "7dc4ffe0-5bf4-4089-8cf3-a5ce4cb3e71e": {
+    "asset": 1521685963702,
+    "meta": 1521686036594,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\effect.png"
+  },
+  "4ba7e558-4b68-4793-9c11-debd1e50c484": {
+    "asset": 1521685963703,
+    "meta": 1521686036631,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\ground1.png"
+  },
+  "0957c439-7305-4e20-a6a9-01e5c88647db": {
+    "asset": 1521685963703,
+    "meta": 1521686036649,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\ground2.png"
+  },
+  "02804f94-5c41-43c9-a26a-7f43309b03eb": {
+    "asset": 1521685963704,
+    "meta": 1521686036692,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\ground3.png"
+  },
+  "dd7ca936-a32f-4e7b-b591-b520aef29b5b": {
+    "asset": 1521685963704,
+    "meta": 1521686036709,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\tree1.png"
+  },
+  "75f6a573-fdd4-4706-9828-e61fa9eec32a": {
+    "asset": 1521685963705,
+    "meta": 1521686036748,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\tree3.png"
+  },
+  "c9ba6d87-26db-4d1a-b1e5-29cdd0f972ee": {
+    "asset": 1521685963705,
+    "meta": 1521686036764,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\tree2.png"
+  },
+  "acd24cd5-4877-413f-83b4-33f955b62fed": {
+    "asset": 1521685963706,
+    "meta": 1521686036811,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\tree5.png"
+  },
+  "b1def2f5-4a7b-4f94-af65-cbaf2239d713": {
+    "asset": 1521685963706,
+    "meta": 1521686036826,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\tree4.png"
+  },
+  "ed5cca30-7135-4263-8ea9-d8f514614239": {
+    "asset": 1521685963707,
+    "meta": 1521686036873,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\tree7.png"
+  },
+  "23c8399a-5a15-445f-b8cb-f663cf7dce3a": {
+    "asset": 1521685963707,
+    "meta": 1521686036889,
+    "relativePath": "resources\\crg\\res\\textures\\bg\\tree6.png"
+  },
+  "83d5cf53-8382-44a2-998b-ca699e57a148": {
+    "asset": 1521685963753,
+    "meta": 1521685963708,
+    "relativePath": "resources\\crg\\res\\textures\\effect"
+  },
+  "fd1b9af9-116b-480c-9edb-96eb57ac272e": {
+    "asset": 1521685963923,
+    "meta": 1521685963920,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime"
+  },
+  "c431015d-421b-47ec-a26a-6bb3b2c5cbd9": {
+    "asset": 1521685963921,
+    "meta": 1521686037683,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather2.png"
+  },
+  "09db0268-ad97-4927-82af-3a85f8a7af34": {
+    "asset": 1521685963920,
+    "meta": 1521686037677,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather1.png"
+  },
+  "cb55fbd6-5678-4aed-8d0e-b400098fdc50": {
+    "asset": 1521685963922,
+    "meta": 1521686037687,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather4.png"
+  },
+  "44c4e72c-2978-44d7-8698-e5d9d99793d8": {
+    "asset": 1521685963921,
+    "meta": 1521686037683,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather3.png"
+  },
+  "aa88c494-3840-4c34-b650-6729721e11fe": {
+    "asset": 1521685963922,
+    "meta": 1521686037688,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather5.png"
+  },
+  "2a460baf-7bf2-4bb0-bcb8-90603751ccf4": {
+    "asset": 1521685963922,
+    "meta": 1521686037692,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather6.png"
+  },
+  "8ff4bf8e-c42a-4bc0-814f-7106c89ac5c8": {
+    "asset": 1521685963923,
+    "meta": 1521686037697,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather8.png"
+  },
+  "b9dae398-d3d7-4305-a4ba-7fca5abb7164": {
+    "asset": 1521685963923,
+    "meta": 1521686037693,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather7.png"
+  },
+  "8c1d798c-9a28-4447-a8fe-b97cff1a20aa": {
+    "asset": 1521685963926,
+    "meta": 1521685963923,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\good"
+  },
+  "ca347431-6246-47f4-b47e-92b332098e58": {
+    "asset": 1521685963923,
+    "meta": 1521686037698,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\addTime\\Gather9.png"
+  },
+  "bdf92f49-8da0-4ec2-8dae-b28f0d208614": {
+    "asset": 1521685963924,
+    "meta": 1521686037720,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\good\\dead01.png"
+  },
+  "abbe1a17-e5f8-4f38-a2f8-725dd41a3919": {
+    "asset": 1521685963924,
+    "meta": 1521686037721,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\good\\dead02.png"
+  },
+  "c22aa09c-347e-4d65-a6b1-0d8f77381a29": {
+    "asset": 1521685963925,
+    "meta": 1521686037744,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\good\\dead03.png"
+  },
+  "18e11583-9c06-4e5d-bb98-2633a4a89c5a": {
+    "asset": 1521685963926,
+    "meta": 1521686037743,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\good\\dead04.png"
+  },
+  "6cf82a07-3d28-4de1-a206-f899a5ac227c": {
+    "asset": 1521685963928,
+    "meta": 1521685963927,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\miss"
+  },
+  "f274d1e7-d221-4dca-b19c-013d7128518c": {
+    "asset": 1521685963927,
+    "meta": 1521685963927,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\miss\\ef_001_p_gl_515.png"
+  },
+  "3b928653-5311-4873-b91a-1722eff2e817": {
+    "asset": 1521685963927,
+    "meta": 1521685963928,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\miss\\ef_001_p_gl_516.png"
+  },
+  "cc524914-5179-4a28-b6d0-f456c39214ee": {
+    "asset": 1521685963933,
+    "meta": 1521685963928,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey"
+  },
+  "f2193dd0-3ea0-45e0-b49d-1243ced48117": {
+    "asset": 1521685963928,
+    "meta": 1521685963928,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\miss\\ef_001_p_gl_517.png"
+  },
+  "2206daf5-b035-431c-925c-345482dff5b8": {
+    "asset": 1521685963928,
+    "meta": 1521686037761,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_10.png"
+  },
+  "00d209ac-e8eb-4353-9726-cf9cfb626c91": {
+    "asset": 1521685963926,
+    "meta": 1521686037767,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\good\\dead05.png"
+  },
+  "627ee04a-8bb0-4af8-b0ea-bb5847847683": {
+    "asset": 1521685963929,
+    "meta": 1521686037765,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_11.png"
+  },
+  "05ca647a-762d-4b24-9583-5d2646070978": {
+    "asset": 1521685963929,
+    "meta": 1521686037769,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_12.png"
+  },
+  "a946350e-361a-4b0e-a2a5-37e964497b17": {
+    "asset": 1521685963930,
+    "meta": 1521686037771,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_2.png"
+  },
+  "56e66f00-9b70-4a45-a224-9da236373444": {
+    "asset": 1521685963930,
+    "meta": 1521686037773,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_3.png"
+  },
+  "d883465c-cc5e-461f-b85d-14f768bfaede": {
+    "asset": 1521685963930,
+    "meta": 1521686037775,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_4.png"
+  },
+  "af1b7e02-95e9-454a-b812-058b0e88c290": {
+    "asset": 1521685963931,
+    "meta": 1521686037781,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_5.png"
+  },
+  "46f6b7fe-6ecc-41f8-9770-8560c1f34fe8": {
+    "asset": 1521685963931,
+    "meta": 1521686037782,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_6.png"
+  },
+  "10fdfad2-381b-4213-8360-9511fc7d9b31": {
+    "asset": 1521685963932,
+    "meta": 1521686037786,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_7.png"
+  },
+  "40f38e31-7609-490e-ad92-6575624d2565": {
+    "asset": 1521685963932,
+    "meta": 1521686037787,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_8.png"
+  },
+  "d23aa65e-dca4-45d7-bfce-7b22d3bb6b7d": {
+    "asset": 1521685963752,
+    "meta": 1521685963747,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok"
+  },
+  "bb2c0646-0ad3-4a90-ae07-663a69b420bb": {
+    "asset": 1521685963933,
+    "meta": 1521686037790,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\monkey\\Stage6 MonkeyAttack_9.png"
+  },
+  "eb9af57d-dc0c-4440-952c-df644446d6df": {
+    "asset": 1521685963747,
+    "meta": 1521686037035,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_1.png"
+  },
+  "5920b8fd-b4ce-472d-b2c8-8d20d8254b3e": {
+    "asset": 1521685963748,
+    "meta": 1521686037037,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_2.png"
+  },
+  "b37407c7-880b-4331-9d1f-d795ec8f923c": {
+    "asset": 1521685963749,
+    "meta": 1521686037044,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_3.png"
+  },
+  "277ef32e-b50a-46c2-b768-77b1f7ffd8c5": {
+    "asset": 1521685963749,
+    "meta": 1521686037045,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_4.png"
+  },
+  "2e5ecffd-ae14-4028-8f57-007a83a19196": {
+    "asset": 1521685963750,
+    "meta": 1521686037053,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_6.png"
+  },
+  "623f9c39-71d3-4fac-b19c-e768caf9efcc": {
+    "asset": 1521685963750,
+    "meta": 1521686037054,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_5.png"
+  },
+  "98282e58-7fd4-4b0e-88f9-297bab22b408": {
+    "asset": 1521685963752,
+    "meta": 1521686037062,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_8.png"
+  },
+  "4b6924a7-698b-4e95-b86c-e6e03946c36d": {
+    "asset": 1521685963751,
+    "meta": 1521686037064,
+    "relativePath": "resources\\crg\\res\\textures\\effect\\pressok\\hero alien shipAttack_7.png"
+  },
+  "1e63ab91-77b1-456e-995e-1483dd23def3": {
+    "asset": 1521685963938,
+    "meta": 1521685963933,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke"
+  },
+  "8c1f72c6-6d46-4ce3-9819-6fcf699b9d44": {
+    "asset": 1521685963934,
+    "meta": 1521686037794,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_10.png"
+  },
+  "3ec22e74-bbf6-4367-90a7-92b1ada0070d": {
+    "asset": 1521685963933,
+    "meta": 1521686037792,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_1.png"
+  },
+  "761e5bbd-fa95-4edb-bc02-14ddd8bb5fe5": {
+    "asset": 1521685963934,
+    "meta": 1521686037798,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_12.png"
+  },
+  "3249f9cc-be5a-4dc6-a539-92b919a787b2": {
+    "asset": 1521685963934,
+    "meta": 1521686037796,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_11.png"
+  },
+  "2bf5be88-047a-438f-8bc5-f7270c1b6a9b": {
+    "asset": 1521685963935,
+    "meta": 1521686037800,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_13.png"
+  },
+  "26c2180b-14c6-4a46-8060-9b2a12a7e81a": {
+    "asset": 1521685963935,
+    "meta": 1521686037802,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_14.png"
+  },
+  "7b2a93c7-b535-4f5a-93cd-d85af0ab1b01": {
+    "asset": 1521685963935,
+    "meta": 1521686037804,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_15.png"
+  },
+  "5d2e54c9-ea7c-43d4-aa9d-a521ffa6c0a8": {
+    "asset": 1521685963936,
+    "meta": 1521686037806,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_2.png"
+  },
+  "b22ddfff-4ab4-4b52-b6ab-1f4f519df9ad": {
+    "asset": 1521685963936,
+    "meta": 1521686037808,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_3.png"
+  },
+  "8222fdca-e108-44b3-8e1e-5800b1c57365": {
+    "asset": 1521685963936,
+    "meta": 1521686037810,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_4.png"
+  },
+  "74762ae4-0181-4ab3-97a0-8fc94adcd6d6": {
+    "asset": 1521685963937,
+    "meta": 1521686037812,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_5.png"
+  },
+  "18dc3d3f-3f66-4269-bc41-7cd6825cd30e": {
+    "asset": 1521685963937,
+    "meta": 1521686037814,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_6.png"
+  },
+  "48614040-392e-4730-8959-db7fd79b3e62": {
+    "asset": 1521685963937,
+    "meta": 1521686037816,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_7.png"
+  },
+  "c2125b7f-5c59-4559-a723-41e434c3effc": {
+    "asset": 1521685963938,
+    "meta": 1521686037818,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_8.png"
+  },
+  "f0818411-c90a-421a-8eb1-64d26a737e78": {
+    "asset": 1521685963770,
+    "meta": 1521685963760,
+    "relativePath": "resources\\crg\\res\\textures\\enemy"
+  },
+  "05b48efc-ed57-4395-a3a8-6bd89db3e7bc": {
+    "asset": 1521685963763,
+    "meta": 1521685963760,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom1"
+  },
+  "49639d1a-3694-4f63-8a2f-47ba667ff881": {
+    "asset": 1521685963938,
+    "meta": 1521686037820,
+    "relativePath": "resources\\runGame\\res\\textures\\effect\\smoke\\special pirate cannons smoke_9.png"
+  },
+  "e08b06a9-d836-4783-8b29-4f1afd4286b5": {
+    "asset": 1521685963760,
+    "meta": 1521686037112,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom1\\mushroom1_1.png"
+  },
+  "a8577c5a-6d25-4f6b-a4ce-e3e8d7549f1b": {
+    "asset": 1521685963761,
+    "meta": 1521686037114,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom1\\mushroom1_2.png"
+  },
+  "6f1daa8b-dbbb-4479-83dc-e95fc908493c": {
+    "asset": 1521685963761,
+    "meta": 1521686037118,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom1\\mushroom1_3.png"
+  },
+  "86daaaf5-6fbe-4af2-8765-399f1a5dc385": {
+    "asset": 1521685963762,
+    "meta": 1521686037119,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom1\\mushroom1_4.png"
+  },
+  "b4898e0e-b426-4bcc-802b-4cc6e6ec8590": {
+    "asset": 1521685963762,
+    "meta": 1521686037123,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom1\\mushroom1_5.png"
+  },
+  "24c70f31-ff33-41e9-980e-141b4b249bd9": {
+    "asset": 1521685963765,
+    "meta": 1521685963763,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom2"
+  },
+  "ae302e40-ec9d-49b9-ba99-a570eb8cb882": {
+    "asset": 1521685963763,
+    "meta": 1521686037124,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom1\\mushroom1_6.png"
+  },
+  "c768aa4f-354a-4fa0-ba60-6a3f885a90cb": {
+    "asset": 1521685963764,
+    "meta": 1521686037128,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom2\\mushroom2_1.png"
+  },
+  "5774d8e0-e233-4f08-b881-73cbb795fdcf": {
+    "asset": 1521685963764,
+    "meta": 1521686037131,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom2\\mushroom2_2.png"
+  },
+  "867a58e4-bf5e-4707-b8a2-bd3d8dd9c2e8": {
+    "asset": 1521685963766,
+    "meta": 1521685963765,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom3"
+  },
+  "9f553481-ab0c-4b42-b192-3496e85ae594": {
+    "asset": 1521685963765,
+    "meta": 1521686037133,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom2\\mushroom2_3.png"
+  },
+  "86f21920-7808-4b0f-a8b2-daff928b9dda": {
+    "asset": 1521685963765,
+    "meta": 1521686037137,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom3\\mushroom3_1.png"
+  },
+  "202e5999-7064-4200-bacf-18f52039d12f": {
+    "asset": 1521685963766,
+    "meta": 1521686037140,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom3\\mushroom3_2.png"
+  },
+  "e5f5bbab-a298-46c1-8506-6c45f331a3fb": {
+    "asset": 1521685963766,
+    "meta": 1521686037145,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\mushroom3\\mushroom3_3.png"
+  },
+  "f5f9e171-b771-40a0-aa0c-c2194aae9efd": {
+    "asset": 1521685963767,
+    "meta": 1521686037160,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\rank1.png"
+  },
+  "f56b2033-2f2f-4ec3-8bd2-af3c214fb92a": {
+    "asset": 1521685963767,
+    "meta": 1521686037165,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\rank2.png"
+  },
+  "c95084dd-8e59-475c-afbc-220cec8ad2a4": {
+    "asset": 1521685963767,
+    "meta": 1521686037177,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\rank3.png"
+  },
+  "4e11c315-aa2d-4573-9d5c-587c173d0fbe": {
+    "asset": 1521685963768,
+    "meta": 1521686037183,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\rank4.png"
+  },
+  "ed833025-c659-4d1e-9d14-becb601edb7d": {
+    "asset": 1521685963768,
+    "meta": 1521686037196,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\rank5.png"
+  },
+  "b61f640c-bdf5-4319-a63e-9320c1936e5b": {
+    "asset": 1521685963769,
+    "meta": 1521686037201,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\rank6.png"
+  },
+  "5483972e-adc7-42e4-99d5-29829fa74886": {
+    "asset": 1521685963769,
+    "meta": 1521686037218,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\star2.png"
+  },
+  "8b9057cb-bdbd-412b-a2b2-51805d959e3a": {
+    "asset": 1521685963771,
+    "meta": 1521685963770,
+    "relativePath": "resources\\crg\\res\\textures\\player"
+  },
+  "1d452677-1086-420a-8c00-6a881fe454b7": {
+    "asset": 1521685963775,
+    "meta": 1521685963770,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run"
+  },
+  "b1bede44-110c-4ac5-9e5b-866247c869fe": {
+    "asset": 1521685963770,
+    "meta": 1521686037220,
+    "relativePath": "resources\\crg\\res\\textures\\enemy\\starGame2.png"
+  },
+  "83bf58a1-bc8e-46b3-b658-5aa39bf74114": {
+    "asset": 1521685963771,
+    "meta": 1521686037237,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\her1.png"
+  },
+  "dd419de9-1af7-4153-a644-9780e582c122": {
+    "asset": 1521685963772,
+    "meta": 1521686037238,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\her2.png"
+  },
+  "338cd6c6-f568-477c-a615-7ee63562c958": {
+    "asset": 1521685963772,
+    "meta": 1521686037256,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\her3.png"
+  },
+  "19e77246-d657-4c70-a362-3d3a3558de14": {
+    "asset": 1521685963773,
+    "meta": 1521686037258,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\her4.png"
+  },
+  "15411e5c-776a-457a-9c20-8794c38d386a": {
+    "asset": 1521685963773,
+    "meta": 1521686037276,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\herJump.png"
+  },
+  "f84ae2e7-d395-41a9-a235-21ddc32f5f3c": {
+    "asset": 1521685963774,
+    "meta": 1521686037278,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\him1.png"
+  },
+  "a7872d0f-7e74-49f6-9e1f-1645d930888f": {
+    "asset": 1521685963774,
+    "meta": 1521686037297,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\him2.png"
+  },
+  "e057b9de-c5d3-44cf-a5d1-2386b4a478f9": {
+    "asset": 1521685963774,
+    "meta": 1521686037298,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\him3.png"
+  },
+  "0e84d607-2bca-43ac-9d5c-2cc5554de075": {
+    "asset": 1521685963775,
+    "meta": 1521686037317,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\him4.png"
+  },
+  "359567f9-025c-4eaa-9b50-0a607219eee1": {
+    "asset": 1521704097341,
+    "meta": 1521685963776,
+    "relativePath": "resources\\crg\\res\\textures\\ui"
+  },
+  "19e2b584-52ea-49ee-a441-b4086b3156f4": {
+    "asset": 1521685963775,
+    "meta": 1521686037319,
+    "relativePath": "resources\\crg\\res\\textures\\player\\run\\himJump.png"
+  },
+  "d8958dca-075c-47a7-96b2-5502efc9c79a": {
+    "asset": 1521685963776,
+    "meta": 1521686037323,
+    "relativePath": "resources\\crg\\res\\textures\\ui\\click.png"
+  },
+  "cc54a4c2-8427-4f7b-9e0e-b03213e488fb": {
+    "asset": 1521685963948,
+    "meta": 1521686037864,
+    "relativePath": "resources\\runGame\\res\\textures\\ui\\progress.png"
+  },
+  "8dd79873-837c-41c5-b5fc-4547792793b2": {
+    "asset": 1521685963778,
+    "meta": 1521685963777,
+    "relativePath": "resources\\login"
+  },
+  "1e8fdc0b-b39b-4494-aea8-c05cc483246f": {
+    "asset": 1521685963779,
+    "meta": 1521685963777,
+    "relativePath": "resources\\login\\res"
+  },
+  "9fce74e0-3823-4ed2-b56d-12b3bb5647db": {
+    "asset": 1521685963778,
+    "meta": 1521686037327,
+    "relativePath": "resources\\login\\res\\Main.prefab"
+  },
+  "537ce0d1-d5a1-44a3-8656-c9d5a41981d3": {
+    "asset": 1521685963948,
+    "meta": 1521686037865,
+    "relativePath": "resources\\runGame\\res\\textures\\ui\\progressbg.png"
+  },
+  "026405a6-fc04-4bba-b385-314c71a9bbf1": {
+    "asset": 1521685963785,
+    "meta": 1521685963778,
+    "relativePath": "resources\\login\\res\\textures"
+  },
+  "921380a8-d72f-417b-a4a3-28a273aae134": {
+    "asset": 1521685963785,
+    "meta": 1521685963779,
+    "relativePath": "resources\\login\\res\\textures\\loadinglogic"
+  },
+  "6af93030-93ba-452c-a52b-99b77e4b53cc": {
+    "asset": 1521685963779,
+    "meta": 1521686037359,
+    "relativePath": "resources\\login\\res\\textures\\loadinglogic\\bg_alert.png"
+  },
+  "97e573e3-00f5-4469-839b-4e7edd21f818": {
+    "asset": 1521685963787,
+    "meta": 1521685963785,
+    "relativePath": "resources\\login\\res\\textures\\login"
+  },
+  "49d66b6a-f5c0-46e1-9410-00b119ee9850": {
+    "asset": 1521685963786,
+    "meta": 1521686037365,
+    "relativePath": "resources\\login\\res\\textures\\login\\btn_ traveler.png"
+  },
+  "e47252ad-8d83-457d-813f-9c578d08815c": {
+    "asset": 1521685963785,
+    "meta": 1521686037374,
+    "relativePath": "resources\\login\\res\\textures\\loadinglogic\\bg_loading.png"
+  },
+  "b61cc8dd-4493-4f42-83b5-8cd0b0179dff": {
+    "asset": 1521685963787,
+    "meta": 1521686037379,
+    "relativePath": "resources\\login\\res\\textures\\login\\sq_loading_weixin.png"
+  },
+  "66373954-2e67-4797-b6aa-a86f737ae79e": {
+    "asset": 1521685963788,
+    "meta": 1521685963787,
+    "relativePath": "resources\\musicTest"
+  },
+  "ffb7158b-65b8-42b8-b837-548ee487d890": {
+    "asset": 1521685963830,
+    "meta": 1521685963788,
+    "relativePath": "resources\\musicTest\\res"
+  },
+  "8dea8ed9-ba0c-468c-8c70-4605271aedf3": {
+    "asset": 1521685963808,
+    "meta": 1521685963808,
+    "relativePath": "resources\\musicTest\\res\\startbgm.data.wav"
+  },
+  "7f2c2535-7f2b-4cf6-ad32-6693640f4007": {
+    "asset": 1521685963829,
+    "meta": 1521685963830,
+    "relativePath": "resources\\musicTest\\res\\startbgm.wav"
+  },
+  "7d991ba1-4607-4dd2-a8c6-8e023e61a42b": {
+    "asset": 1521685963830,
+    "meta": 1521685963830,
+    "relativePath": "resources\\runGame"
+  },
+  "dc119ed4-36ea-4181-8ffb-cd79e443a293": {
+    "asset": 1521685963912,
+    "meta": 1521685963830,
+    "relativePath": "resources\\runGame\\res"
+  },
+  "9edea0eb-69c8-4b54-b7f3-2593507e5602": {
+    "asset": 1521685963858,
+    "meta": 1521685963830,
+    "relativePath": "resources\\runGame\\res\\bgm"
+  },
+  "f421b759-b683-4394-8332-367237999d9f": {
+    "asset": 1521685963859,
+    "meta": 1521685963858,
+    "relativePath": "resources\\runGame\\res\\config"
+  },
+  "607227dc-7daa-4cc7-83d1-108264c66954": {
+    "asset": 1521685963859,
+    "meta": 1521685963859,
+    "relativePath": "resources\\runGame\\res\\config\\Music.csv"
+  },
+  "b107c133-73c1-40fb-b3ba-9a26c77900d8": {
+    "asset": 1521685963863,
+    "meta": 1521685963859,
+    "relativePath": "resources\\runGame\\res\\music"
+  },
+  "6c89bad8-161d-41e8-bb4c-fd1667960c3d": {
+    "asset": 1521685963786,
+    "meta": 1521686037386,
+    "relativePath": "resources\\login\\res\\textures\\login\\loading1.png"
+  },
+  "cabb9afd-49d0-4518-a1d3-c200fa3b3f5e": {
+    "asset": 1521685963885,
+    "meta": 1521685963863,
+    "relativePath": "resources\\runGame\\res\\music\\音效"
+  },
+  "90aa90bc-49ff-4054-89ff-1d1f00f45cc5": {
+    "asset": 1521685963864,
+    "meta": 1521685963865,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\3.wav"
+  },
+  "ba75c5f2-8ab4-4110-9a3d-a1449054d11b": {
+    "asset": 1521685963865,
+    "meta": 1521685963865,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\5a57065c97a8f.mp3"
+  },
+  "15a07194-b997-4d8e-8869-661fb367a2d0": {
+    "asset": 1521685963865,
+    "meta": 1521685963866,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\5a59937ea442f.mp3"
+  },
+  "627ad475-87ea-4cb9-ae1b-444118aa5d34": {
+    "asset": 1521685963869,
+    "meta": 1521685963869,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\amazing.mp3"
+  },
+  "428485e8-264a-4999-91c3-b8fe8b6033af": {
+    "asset": 1521685963869,
+    "meta": 1521685963869,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\readyGo.mp3"
+  },
+  "2c014174-14fc-405a-bcfd-c941e3e5ceda": {
+    "asset": 1521685963868,
+    "meta": 1521685963868,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\SlowDown1.wav"
+  },
+  "4b9455d2-b9f9-4408-8519-04d8057c681b": {
+    "asset": 1521685963871,
+    "meta": 1521685963871,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\吃到蘑菇（P,G）.wav"
+  },
+  "7dbab2f5-d527-497a-a3d7-13fde7cec561": {
+    "asset": 1521685963871,
+    "meta": 1521685963872,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\拍子音.mp3"
+  },
+  "8187b1e5-0517-4158-a483-ebccba955088": {
+    "asset": 1521685963881,
+    "meta": 1521685963881,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\游戏bgm.mp3"
+  },
+  "4c1284bd-8257-4f1b-ab72-23fac898051a": {
+    "asset": 1521685963884,
+    "meta": 1521685963884,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\游戏主界面bgm.mp3"
+  },
+  "9c73a3d1-7389-4e52-9ac4-0ba24ba0c910": {
+    "asset": 1521685963885,
+    "meta": 1521685963885,
+    "relativePath": "resources\\runGame\\res\\music\\音效\\蘑菇出现提示音.mp3"
+  },
+  "f5da66ff-cf2f-4fdc-ba30-68481ae41936": {
+    "asset": 1521685963891,
+    "meta": 1521685963885,
+    "relativePath": "resources\\runGame\\res\\rhythm"
+  },
+  "07a06962-1421-4c0b-9e77-ee0ec46cb676": {
+    "asset": 1521685963886,
+    "meta": 1521685963886,
+    "relativePath": "resources\\runGame\\res\\rhythm\\a.wav"
+  },
+  "fa91d6a4-d149-4c2b-ad2a-4ec535becf39": {
+    "asset": 1521685963888,
+    "meta": 1521685963888,
+    "relativePath": "resources\\runGame\\res\\rhythm\\b.wav"
+  },
+  "e6820c85-e108-416e-95f6-5d564c7dcdaa": {
+    "asset": 1521685963889,
+    "meta": 1521685963889,
+    "relativePath": "resources\\runGame\\res\\rhythm\\c.wav"
+  },
+  "2095cc94-f698-4c16-aa31-87a0fc204c08": {
+    "asset": 1521685963891,
+    "meta": 1521685963891,
+    "relativePath": "resources\\runGame\\res\\rhythm\\d.wav"
+  },
+  "006dbe0b-eb0a-45ad-ab55-84ea5c361240": {
+    "asset": 1521685963910,
+    "meta": 1521685963891,
+    "relativePath": "resources\\runGame\\res\\texture"
+  },
+  "7197ad8f-b70a-4a50-a9c2-43d7931cccfb": {
+    "asset": 1521685963911,
+    "meta": 1521685963910,
+    "relativePath": "resources\\runGame\\res\\texture\\爱心"
+  },
+  "2d1ee29a-2296-4391-a47e-43a6a6f7be1f": {
+    "asset": 1521685963911,
+    "meta": 1521686037593,
+    "relativePath": "resources\\runGame\\res\\texture\\爱心\\爱心1.png"
+  },
+  "d2bcfafc-b844-4de4-be37-744c2f9cb608": {
+    "asset": 1521685963911,
+    "meta": 1521686037600,
+    "relativePath": "resources\\runGame\\res\\texture\\爱心\\爱心2.png"
+  },
+  "0a9bb108-bf68-4bc3-80a2-9d18bcd94e89": {
+    "asset": 1521685963947,
+    "meta": 1521685963911,
+    "relativePath": "resources\\runGame\\res\\textures"
+  },
+  "38ae1a97-1255-494e-bb34-88c246af5613": {
+    "asset": 1521685963920,
+    "meta": 1521685963913,
+    "relativePath": "resources\\runGame\\res\\textures\\bg"
+  },
+  "d6d3ae65-a308-4e9f-8099-675c2169b50b": {
+    "asset": 1521685963915,
+    "meta": 1521686037649,
+    "relativePath": "resources\\runGame\\res\\textures\\bg\\bg1.png"
+  },
+  "506ee857-9f9e-495a-b96e-58cbefe96f1a": {
+    "asset": 1521685963916,
+    "meta": 1521686037659,
+    "relativePath": "resources\\runGame\\res\\textures\\bg\\bg2.png"
+  },
+  "8096b8a8-f88e-47e6-9910-378c8a395330": {
+    "asset": 1521685963918,
+    "meta": 1521686037671,
+    "relativePath": "resources\\runGame\\res\\textures\\bg\\bg3.png"
+  },
+  "9ad74acf-2d96-4f9a-b08a-52c2ab3d0ffc": {
+    "asset": 1521685963919,
+    "meta": 1521686037678,
+    "relativePath": "resources\\runGame\\res\\textures\\bg\\bg4.png"
+  },
+  "ffeaff64-ef0e-4981-8756-1d964f021a8d": {
+    "asset": 1521685963944,
+    "meta": 1521685963938,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy"
+  },
+  "72d68482-f08f-4872-a233-e1daf77594dc": {
+    "asset": 1521685963941,
+    "meta": 1521685963939,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom1"
+  },
+  "75e57b85-4b9f-4b8f-8159-e687951b09c3": {
+    "asset": 1521685963939,
+    "meta": 1521686037823,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom1\\mushroom1_1.png"
+  },
+  "237c76a7-3116-468d-816b-22526d2c79b2": {
+    "asset": 1521685963940,
+    "meta": 1521686037824,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom1\\mushroom1_2.png"
+  },
+  "7f4c1638-1d72-405d-9f95-005ee98517b3": {
+    "asset": 1521685963940,
+    "meta": 1521686037827,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom1\\mushroom1_3.png"
+  },
+  "2525a8b0-4cce-46f5-a8a9-7f48c03d8af5": {
+    "asset": 1521685963940,
+    "meta": 1521686037829,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom1\\mushroom1_4.png"
+  },
+  "84434307-f157-4656-8f8c-b457df4dc745": {
+    "asset": 1521685963941,
+    "meta": 1521686037832,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom1\\mushroom1_5.png"
+  },
+  "c5962dcc-878b-4a39-a28b-41d61b81b5a5": {
+    "asset": 1521685963943,
+    "meta": 1521685963941,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom2"
+  },
+  "15d8b963-0070-4f8c-aa56-7620434a037e": {
+    "asset": 1521685963941,
+    "meta": 1521686037834,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom1\\mushroom1_6.png"
+  },
+  "dbb81567-86d5-4b3d-b9f6-628a11e41370": {
+    "asset": 1521685963942,
+    "meta": 1521686037837,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom2\\mushroom2_1.png"
+  },
+  "a4ceaa2d-2096-4cca-9311-5d8eeaf4a783": {
+    "asset": 1521685963943,
+    "meta": 1521686037838,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom2\\mushroom2_2.png"
+  },
+  "909aca59-274f-4543-acec-3dc48fc7bcd5": {
+    "asset": 1521685963945,
+    "meta": 1521685963943,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom3"
+  },
+  "85853614-e8ef-4667-9e77-ea2b978f691a": {
+    "asset": 1521685963943,
+    "meta": 1521686037842,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom2\\mushroom2_3.png"
+  },
+  "278680d4-623f-4d4e-8455-0feba8ac4c20": {
+    "asset": 1521685963944,
+    "meta": 1521686037843,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom3\\mushroom3_1.png"
+  },
+  "e85a29d4-d344-4660-a5cb-73e0bdbd39cf": {
+    "asset": 1521685963944,
+    "meta": 1521686037846,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom3\\mushroom3_2.png"
+  },
+  "4c42c316-e091-4127-a9b9-99c32182c495": {
+    "asset": 1521685963945,
+    "meta": 1521685963945,
+    "relativePath": "resources\\runGame\\res\\textures\\player"
+  },
+  "1b6386b0-6ccc-4bb9-98bf-b5e63db280d1": {
+    "asset": 1521685963947,
+    "meta": 1521685963945,
+    "relativePath": "resources\\runGame\\res\\textures\\player\\run"
+  },
+  "b64a3389-eb75-4afa-b127-d68151ec5782": {
+    "asset": 1521685963945,
+    "meta": 1521686037848,
+    "relativePath": "resources\\runGame\\res\\textures\\enemy\\mushroom3\\mushroom3_3.png"
+  },
+  "fd953bad-3325-4ab9-8b08-d9f2c214607a": {
+    "asset": 1521685963946,
+    "meta": 1521686037854,
+    "relativePath": "resources\\runGame\\res\\textures\\player\\run\\player1.png"
+  },
+  "a0d8ccc1-d237-4fc8-987e-26fad0acded8": {
+    "asset": 1521685963946,
+    "meta": 1521686037854,
+    "relativePath": "resources\\runGame\\res\\textures\\player\\run\\player2.png"
+  },
+  "1984a4c2-1507-49f5-8e74-3b43eec0c855": {
+    "asset": 1521685963947,
+    "meta": 1521686037859,
+    "relativePath": "resources\\runGame\\res\\textures\\player\\run\\player3.png"
+  },
+  "b7726f52-2a31-44a9-b740-fddfb35ec16a": {
+    "asset": 1521685963948,
+    "meta": 1521685963947,
+    "relativePath": "resources\\runGame\\res\\textures\\ui"
+  },
+  "ae97380f-5d91-498f-be20-b24e24bf626e": {
+    "asset": 1521685963947,
+    "meta": 1521686037860,
+    "relativePath": "resources\\runGame\\res\\textures\\player\\run\\player4.png"
+  },
+  "978cdcaf-291d-4524-ae7e-13a1aa4016ed": {
+    "asset": 1521685963950,
+    "meta": 1521685963948,
+    "relativePath": "src"
+  },
+  "50bd5b61-023a-4700-b013-d06063378ec3": {
+    "asset": 1521689900548,
+    "meta": 1521690661469,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\Title.png"
+  },
+  "ba999fb6-6370-48e9-a090-fa1eda74fb8c": {
+    "asset": 1521690039718,
+    "meta": 1521690731800,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\changeBtn.png"
+  },
+  "17da7123-3452-40d5-b2be-6389e9a66c06": {
+    "asset": 1521690558803,
+    "meta": 1521690731812,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\go.png"
+  },
+  "4c17f65d-485e-4778-85e6-a156dafd740d": {
+    "asset": 1521689934164,
+    "meta": 1521690731857,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\level1.png"
+  },
+  "8d7131fe-cf5b-4b8c-8b1d-10870588828f": {
+    "asset": 1521689923790,
+    "meta": 1521690731864,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\bg.png"
+  },
+  "0211b6d9-8708-47f6-b462-f1e648702661": {
+    "asset": 1521689942340,
+    "meta": 1521690731902,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\level2.png"
+  },
+  "2ad984fe-15da-4069-a295-15c2beb61d0b": {
+    "asset": 1521689977447,
+    "meta": 1521690731916,
+    "relativePath": "resources\\baMaoStart\\res\\textures\\messagebg.png"
+  },
+  "d159efa7-dfae-4651-b87d-55bf69487b6a": {
+    "asset": 1521698583649,
+    "meta": 1521698583654,
+    "relativePath": "resources\\baMaoStart\\baMaoUI.prefab"
+  },
+  "f8b7fe1f-f515-4dd3-b6cb-b9418c568ea6": {
+    "asset": 1521691680486,
+    "meta": 1521698313236,
+    "relativePath": "resources\\baMaoStart\\res\\bgm\\1.mp3"
+  },
+  "8e77551b-461c-4ffc-9c96-11289381844c": {
+    "asset": 1521691679799,
+    "meta": 1521698313237,
+    "relativePath": "resources\\baMaoStart\\res\\bgm\\2.mp3"
+  },
+  "0724e25f-41cf-42d1-84f6-53542b58e098": {
+    "asset": 1521701925836,
+    "meta": 1521699636398,
+    "relativePath": "resources\\baMaoStart\\res\\config"
+  },
+  "fbfe47ae-91c2-4dc5-8997-339d3cf0ef73": {
+    "asset": 1521702951270,
+    "meta": 1521700044369,
+    "relativePath": "resources\\baMaoStart\\res\\config\\level.csv"
+  },
+  "2adf2a40-f9e9-4115-8eeb-c951916d6812": {
+    "asset": 1521703602138,
+    "meta": 1521704098428,
+    "relativePath": "resources\\crg\\res\\textures\\ui\\heart.png"
+  },
+  "8d08bdec-18c7-4502-a346-68346d0c7766": {
+    "asset": 1521703773763,
+    "meta": 1521704098432,
+    "relativePath": "resources\\crg\\res\\textures\\ui\\heart2.png"
+  },
+  "981623a9-086f-4a44-bf22-489a0ffb10c8": {
+    "asset": 1521704758384,
+    "meta": 1521705939564,
+    "relativePath": "resources\\crg\\res\\config\\all.csv"
+  },
+  "ef1ff3ef-bd82-46e4-b1d1-3206a3517ede": {
+    "asset": 1521685963684,
+    "meta": 1521705939565,
+    "relativePath": "resources\\crg\\res\\config\\music.csv"
+  },
+  "2e1bc4a8-0613-42e2-b1d8-d4f7370ff0b7": {
+    "asset": 1521691680486,
+    "meta": 1521705939566,
+    "relativePath": "resources\\crg\\res\\bgm\\1.mp3"
+  },
+  "9c53e23c-3b0b-4790-8435-ab979bb406be": {
+    "asset": 1521691679799,
+    "meta": 1521705939567,
+    "relativePath": "resources\\crg\\res\\bgm\\2.mp3"
+  },
+  "0816c239-7cdc-4a48-8aed-e8007fbe8572": {
+    "asset": 1521705297119,
+    "meta": 1521705939571,
+    "relativePath": "resources\\crg\\res\\config\\level1.csv"
+  },
+  "1393843a-cb5d-4a6f-a4a3-19f373f2b4bd": {
+    "asset": 1521705297119,
+    "meta": 1521707125994,
+    "relativePath": "resources\\crg\\res\\config\\level2.csv"
+  },
+  "66edc5c0-a9ba-4097-9b9a-19b7735a41ec": {
+    "asset": 1521710501349,
+    "meta": 1521710501348,
+    "relativePath": "resources\\baMaoResult\\res\\textures"
+  },
+  "0030afb7-3217-4faa-8778-a88f6d0ffd75": {
+    "asset": 1521710493490,
+    "meta": 1521710502486,
+    "relativePath": "resources\\baMaoResult\\res\\textures\\result.png"
+  },
+  "bb21488f-0d9f-4c5b-a045-29b218c26925": {
+    "asset": 1521710645673,
+    "meta": 1521710663402,
+    "relativePath": "resources\\baMaoResult\\res\\textures\\ok.png"
+  },
+  "5fa8f422-b798-4863-bde9-88bac176f10b": {
+    "asset": 1521711717350,
+    "meta": 1521685963511,
+    "relativePath": "modules.json"
+  },
+  "c5fc8bac-f0bf-4f58-9d1a-030a067f48e3": {
+    "asset": 1521711689805,
+    "meta": 1521705939570,
+    "relativePath": "resources\\crg\\res\\config\\allLevel.csv"
+  },
+  "a3e4df95-e266-4a8e-9e67-42b23f6a4af3": {
+    "asset": 1521711717351,
+    "meta": 1521711719731,
+    "relativePath": "src\\GameCode.ts"
+  }
+}

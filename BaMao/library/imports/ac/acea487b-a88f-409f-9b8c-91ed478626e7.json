@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hero alien shipAttack_1",
+    "texture": "eb9af57d-dc0c-4440-952c-df644446d6df",
+    "atlas": "",
+    "rect": [
+      22,
+      75,
+      97,
+      185
+    ],
+    "offset": [
+      0.5,
+      -35.5
+    ],
+    "originalSize": [
+      140,
+      264
+    ]
+  }
+}

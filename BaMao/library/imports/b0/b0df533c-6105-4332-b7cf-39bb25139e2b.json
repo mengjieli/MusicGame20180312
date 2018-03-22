@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Stage6 MonkeyAttack_3",
+    "texture": "56e66f00-9b70-4a45-a224-9da236373444",
+    "atlas": "",
+    "rect": [
+      6,
+      0,
+      71,
+      58
+    ],
+    "offset": [
+      1.5,
+      7
+    ],
+    "originalSize": [
+      80,
+      72
+    ]
+  }
+}

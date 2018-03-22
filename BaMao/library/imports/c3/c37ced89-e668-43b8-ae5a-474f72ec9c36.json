@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "her4",
+    "texture": "19e77246-d657-4c70-a362-3d3a3558de14",
+    "atlas": "",
+    "rect": [
+      10,
+      6,
+      46,
+      88
+    ],
+    "offset": [
+      1.5,
+      -2
+    ],
+    "originalSize": [
+      63,
+      96
+    ]
+  }
+}

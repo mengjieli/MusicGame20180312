@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Gather3",
+    "texture": "44c4e72c-2978-44d7-8698-e5d9d99793d8",
+    "atlas": "",
+    "rect": [
+      0,
+      4,
+      124,
+      85
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      124,
+      92
+    ]
+  }
+}

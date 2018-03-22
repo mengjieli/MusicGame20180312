@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "himJump",
+    "texture": "19e2b584-52ea-49ee-a441-b4086b3156f4",
+    "atlas": "",
+    "rect": [
+      4,
+      0,
+      47,
+      94
+    ],
+    "offset": [
+      -4,
+      1
+    ],
+    "originalSize": [
+      63,
+      96
+    ]
+  }
+}

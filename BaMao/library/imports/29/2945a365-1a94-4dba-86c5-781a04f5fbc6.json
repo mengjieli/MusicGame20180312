@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sq_loading_weixin",
+    "texture": "b61cc8dd-4493-4f42-83b5-8cd0b0179dff",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      309,
+      100
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      309,
+      100
+    ]
+  }
+}

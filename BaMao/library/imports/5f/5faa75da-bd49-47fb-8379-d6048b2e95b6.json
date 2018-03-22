@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "special pirate cannons smoke_3",
+    "texture": "b22ddfff-4ab4-4b52-b6ab-1f4f519df9ad",
+    "atlas": "",
+    "rect": [
+      3,
+      32,
+      57,
+      38
+    ],
+    "offset": [
+      -8.5,
+      -11
+    ],
+    "originalSize": [
+      80,
+      80
+    ]
+  }
+}

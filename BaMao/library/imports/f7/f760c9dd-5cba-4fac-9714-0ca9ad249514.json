@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tree2",
+    "texture": "c9ba6d87-26db-4d1a-b1e5-29cdd0f972ee",
+    "atlas": "",
+    "rect": [
+      900,
+      0,
+      133,
+      551
+    ],
+    "offset": [
+      299.5,
+      99.5
+    ],
+    "originalSize": [
+      1334,
+      750
+    ]
+  }
+}

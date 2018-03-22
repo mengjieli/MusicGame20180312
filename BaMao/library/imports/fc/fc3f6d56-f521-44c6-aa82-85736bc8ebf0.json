@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "monsterHand",
+    "texture": "2548bcd8-99dc-4ab9-bf84-bac5848b0805",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      134,
+      150
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      135,
+      150
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "him2",
+    "texture": "a7872d0f-7e74-49f6-9e1f-1645d930888f",
+    "atlas": "",
+    "rect": [
+      13,
+      0,
+      39,
+      93
+    ],
+    "offset": [
+      1,
+      1.5
+    ],
+    "originalSize": [
+      63,
+      96
+    ]
+  }
+}
