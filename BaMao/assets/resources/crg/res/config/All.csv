@@ -8,4 +8,5 @@ faceChangeTime,500
 gameStartTime,2000
 levelTimeGap,1000
 moveSpeed,300
-timeSpeed,300
+timeSpeed,300,
+addHp,5

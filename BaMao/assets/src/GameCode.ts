@@ -39,6 +39,12 @@ namespace game {
              */
             public static CLOSE_VIEW: string = "close_view";
 
+            /**
+             * 关闭场景
+             * @type {string}
+             */
+            public static CLOSE_SCENE:string = "close_scene";
+
 
             /**
              * 注册网络监听
@@ -126,6 +132,31 @@ namespace game {
     export namespace common {
 
         export class ChangeSceneNB {
+
+            private _sceneName: string;
+            private _data: any;
+
+            constructor(sceneName: string, data: any = null) {
+                this._sceneName = sceneName;
+                this._data = data;
+            }
+
+            public get sceneName(): string {
+                return this._sceneName;
+            }
+
+            public get data():any {
+                return this._data;
+            }
+        }
+    }
+}
+
+//////////controller/notification/CloseSceneNB.ts//////////
+namespace game {
+    export namespace common {
+
+        export class CloseSceneNB {
 
             private _sceneName: string;
             private _data: any;
@@ -448,7 +479,7 @@ namespace game {
                 if (progress.percent != max) { //如果模块初始化已完成
                     await progress.percentValue.valueEqual(max);
                 }
-                this.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("crg"));
+                this.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("bamaoStart"));
             }
         }
     }
@@ -621,7 +652,7 @@ namespace game {
                 super();
                 this.addComponent(cc.Label);
                 this.label = this.getComponent(cc.Label);
-                this.label.fontSize = 12;
+                this.label.fontSize = 20;
                 this.color = new cc.Color(255, 255, 255);
             }
 
@@ -644,15 +675,30 @@ namespace game {
 
             loadList: any[] = [
                 {name: "ui", data: game.prefab.ui1, url: "resources/baMaoStart/res/baMaoUI.prefab"},
-                {name: "bgm", url: "resources/baMaoStart/res/bgm/startbgm.wav"},
-                {name: "bg0", url: "resources/baMaoStart/res/textures/bg0.png"},
-                {name: "bg1", url: "resources/baMaoStart/res/textures/bg1.png"},
+                {name: "bgm", url: "resources/baMaoStart/res/bgm/1.mp3"},
+                {
+                    name: "levelConfig",
+                    url: "resources/bamaoStart/res/config/level.csv",
+                    execute: Resource.configLoadComplete
+                }
             ];
 
-            public static async loadResources() {
-                if (!Resource.instance) {
-                    Resource.instance = new Resource();
+            public static configLoadComplete() {
+                ConfigProxy.init();
+                let len = ConfigProxy.levelCount;
+                for (let i = 0; i < len; i++) {
+                    let cfg = ConfigProxy.getLevelAt(i);
+                    Resource.instance.loadList.push(
+                        {name: "levelBackground" + cfg.level, url: "resources/baMaoStart/res/textures/" + cfg.background}
+                    );
+                    Resource.instance.loadList.push(
+                        {name: "levelBgm" + cfg.level, url: "resources/baMaoStart/res/bgm/" + cfg.music}
+                    );
                 }
+            }
+
+            public static async loadResources() {
+                Resource.instance = new Resource();
                 let list: any[] = Resource.instance.loadList;
                 return new Promise<void>(function (resolve: Function) {
                     let index = 0;
@@ -665,7 +711,7 @@ namespace game {
                         }
                         let res = list[index];
                         mainMediator.sendNotification(common.Command.OPEN_VIEW, new common.OpenViewNB("loading.MainMediator", {text: "Loading " + (~~((index / list.length) * 100)) + "%  " + res.name}));
-                        if(res.data) {
+                        if (res.data) {
                             index++;
                             load();
                         } else {
@@ -679,6 +725,9 @@ namespace game {
                                 cc.loader.load(cc.url.raw(res.url), function (e: any, data: any) {
                                     res.data = data;
                                     index++;
+                                    if (res.execute) {
+                                        res.execute();
+                                    }
                                     load();
                                 });
                             }
@@ -696,6 +745,70 @@ namespace game {
                     }
                 }
                 return null;
+            }
+        }
+    }
+}
+
+//////////proxy/ConfigProxy.ts//////////
+namespace game {
+    export namespace bamaoStart {
+        export class ConfigProxy {
+
+            private static flag: boolean = false;
+
+            public static init() {
+                if (!ConfigProxy.flag) {
+                    ConfigProxy.flag = true;
+
+                    // //分析 AllConfig
+                    // ConfigProxy.allConfig = ConfigProxy.decodeConfig(ResourceProxy.getResource("allConfig"));
+
+                    //分析 LevelConfig
+                    ConfigProxy.levelConfig = ConfigProxy.decodeConfig(Resource.getResource("levelConfig"));
+
+                }
+            }
+
+            private static levelConfig: lib.ArrayValue = new lib.ArrayValue();
+
+            public static getLevelAt(index:number):any {
+                return ConfigProxy.levelConfig.getItemAt(index);
+            }
+
+            public static get levelCount():number {
+                return ConfigProxy.levelConfig.length;
+            }
+
+            private static decodeConfig(content: string): lib.ArrayValue {
+                let res: lib.ArrayValue = new lib.ArrayValue();
+                let list: any = content.split("\n");
+                let keys = [];
+                for (let i = 0; i < list.length; i++) {
+                    list[i] = lib.StringDo.replaceString(list[i], "\n", "");
+                    list[i] = lib.StringDo.replaceString(list[i], "\r", "");
+                    list[i] = lib.StringDo.replaceString(list[i], "\t", "");
+                    list[i] = lib.StringDo.replaceString(list[i], "\v", "");
+                    list[i] = lib.StringDo.replaceString(list[i], "\f", "");
+                    let itemList: any[] = list[i].split(",");
+                    if (i == 0) {
+                        keys = itemList;
+                    } else {
+                        let item: any = {};
+                        for (let j = 0; j < itemList.length; j++) {
+                            if (j == 0 && !itemList[j]) {
+                                item = null;
+                                break;
+                            }
+                            itemList[j] = lib.StringDo.parseNumber(itemList[j]) != null ? lib.StringDo.parseNumber(itemList[j]) : itemList[j];
+                            item[keys[j]] = itemList[j];
+                        }
+                        if (item) {
+                            res.push(item);
+                        }
+                    }
+                }
+                return res;
             }
         }
     }
@@ -758,9 +871,6 @@ namespace game {
 
         export class MainMediator extends mvc.Mediator {
 
-            private bgm: any;
-            private change: any;
-
             constructor() {
                 super(MainMediator.NAME, null);
                 mainMediator = this;
@@ -768,28 +878,7 @@ namespace game {
 
             private initUI(): void {
                 this.viewComponent = new cc.Node();
-                this.viewComponent = cc.instantiate(Resource.getResource("ui"));
-                //获取开始按钮
-                let startBtn = this.viewComponent.getChildByName("startBtn");
-                startBtn.on(cc.Node.EventType.TOUCH_END, this.onClickStart, this);
-
-                //获取背景
-                let background = this.viewComponent.getChildByName("bg");
-                background.getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame();
-                let index = 0;
-                this.change = setInterval(function () {
-                    background.getComponent(cc.Sprite).spriteFrame.setTexture(Resource.getResource("bg" + index));
-                    index++;
-                    index = index % 2;
-                }, 250);
-
-                //播放背景音乐
-                this.bgm = cc.audioEngine.play(Resource.getResource("bgm"), false, 1);
-            }
-
-            onClickStart(): void {
-                this.sendNotification(common.Command.CLOSE_VIEW, new common.CloseViewNB(MainMediator.NAME));
-                this.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("bamaoGame"));
+                this.viewComponent.addComponent(MainComponent);
             }
 
             /**
@@ -819,6 +908,7 @@ namespace game {
                         }
                         if (this.viewComponent) {
                             layer.MainUILayer.show(this.viewComponent);
+                            lib.Tween.to(this.viewComponent, 1, {opacity: 255}, null, {opacity: 0});
                         }
                         break;
                     case common.Command.CLOSE_VIEW:
@@ -830,16 +920,97 @@ namespace game {
                             this.viewComponent.destroy();
                             this.viewComponent = null;
                         }
-                        if (this.change) {
-                            clearInterval(this.change);
-                            this.change = null;
-                        }
-                        cc.audioEngine.stop(this.bgm);
                         break;
                 }
             }
 
             public static NAME = "bamaoStart.MainMediator";
+        }
+    }
+}
+
+//////////view/MainComponent.ts//////////
+namespace game {
+    export namespace bamaoStart {
+        export class MainComponent extends cc.Component {
+
+            private nameLabel: cc.Label;
+            private descLabel: cc.Label;
+            private backgroundContainer: cc.Node;
+            private background: cc.Node;
+            private bgm: any;
+            private levelIndex: number = 0;
+
+            start() {
+                let ui = cc.instantiate(Resource.getResource("ui"));
+                this.node.addChild(ui);
+
+
+                //开始按钮
+                ui.getChildByName("startBtn").on(cc.Node.EventType.TOUCH_END, this.onClickStart, this);
+                ui.getChildByName("leftBtn").on(cc.Node.EventType.TOUCH_END, this.onClickLeft, this);
+                ui.getChildByName("rightBtn").on(cc.Node.EventType.TOUCH_END, this.onClickRight, this);
+
+
+                this.nameLabel = ui.getChildByName("levelName").getComponent(cc.Label);
+                this.descLabel = ui.getChildByName("levelDesc").getComponent(cc.Label);
+                this.backgroundContainer = ui.getChildByName("levelBg");
+
+                this.showLevel();
+            }
+
+            private onClickLeft(): void {
+                this.levelIndex--;
+                if (this.levelIndex == -1) {
+                    this.levelIndex = ConfigProxy.levelCount - 1;
+                }
+                this.showLevel();
+            }
+
+            private onClickRight(): void {
+                this.levelIndex++;
+                if (this.levelIndex == ConfigProxy.levelCount) {
+                    this.levelIndex = 0;
+                }
+                this.showLevel();
+            }
+
+            private showLevel(): void {
+                let cfg = ConfigProxy.getLevelAt(this.levelIndex);
+                this.nameLabel.string = cfg.name;
+                this.descLabel.string = lib.StringDo.replaceString(cfg.desc, "<br>", "\n");
+                if (this.bgm != null) {
+                    cc.audioEngine.stop(this.bgm);
+                }
+                this.bgm = cc.audioEngine.play(Resource.getResource("levelBgm" + cfg.level), true, 1);
+                let old = this.background;
+                if (this.background) {
+                    lib.Tween.to(this.background, 0.5, {opacity: 0}).call(
+                        function () {
+                            old.destroy();
+                        }
+                    );
+                }
+                this.background = new cc.Node();
+                this.background.addComponent(cc.Sprite);
+                let sprite = this.background.getComponent(cc.Sprite);
+                sprite.spriteFrame = new cc.SpriteFrame();
+                sprite.spriteFrame.setTexture(Resource.getResource("levelBackground" + cfg.level));
+                this.backgroundContainer.addChild(this.background);
+                if (old) {
+                    this.background.opacity = 0;
+                    lib.Tween.to(this.background, 0.5, {opacity: 255});
+                }
+            }
+
+            onClickStart(): void {
+                if (this.bgm != null) {
+                    cc.audioEngine.stop(this.bgm);
+                }
+                this.destroy();
+                mainMediator.sendNotification(common.Command.CLOSE_VIEW, new common.CloseViewNB(MainMediator.NAME));
+                mainMediator.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("crg", ConfigProxy.getLevelAt(this.levelIndex).level));
+            }
         }
     }
 }
@@ -2346,24 +2517,30 @@ namespace game {
             private initUI(): void {
                 this.viewComponent = new cc.Node();
                 this.viewComponent = cc.instantiate(Resource.getResource("ui"));
-                //获取分数
-                let scoreTxt = this.viewComponent.getChildByName("scoreTxt");
-                scoreTxt.getComponent(cc.Label).string = this.data.score + "";
-                //获取perfect
-                let perfectTxt = this.viewComponent.getChildByName("perfectTxt");
-                perfectTxt.getComponent(cc.Label).string = this.data.perfect + "";
-                //获取good
-                let goodTxt = this.viewComponent.getChildByName("goodTxt");
-                goodTxt.getComponent(cc.Label).string = this.data.good + "";
-                //获取miss
-                let missTxt = this.viewComponent.getChildByName("missTxt");
-                missTxt.getComponent(cc.Label).string = this.data.miss + "";
+                // //获取分数
+                // let scoreTxt = this.viewComponent.getChildByName("scoreTxt");
+                // scoreTxt.getComponent(cc.Label).string = this.data.score + "";
+                // //获取perfect
+                // let perfectTxt = this.viewComponent.getChildByName("perfectTxt");
+                // perfectTxt.getComponent(cc.Label).string = this.data.perfect + "";
+                // //获取good
+                // let goodTxt = this.viewComponent.getChildByName("goodTxt");
+                // goodTxt.getComponent(cc.Label).string = this.data.good + "";
+                // //获取miss
+                // let missTxt = this.viewComponent.getChildByName("missTxt");
+                // missTxt.getComponent(cc.Label).string = this.data.miss + "";
+
+
+                //获取progress
+                let progressTxt = this.viewComponent.getChildByName("progress");
+                progressTxt.getComponent(cc.Label).string = "完成进度：" + this.data.progress;
+
                 //获取返回主界面按钮
                 let mainBtn = this.viewComponent.getChildByName("mainBtn");
                 mainBtn.on(cc.Node.EventType.TOUCH_END, this.onClickReturnMainMeu, this);
-                //获取开始游戏按钮
-                let gameBtn = this.viewComponent.getChildByName("gameBtn");
-                gameBtn.on(cc.Node.EventType.TOUCH_END, this.onClickStartGame, this);
+                // //获取开始游戏按钮
+                // let gameBtn = this.viewComponent.getChildByName("gameBtn");
+                // gameBtn.on(cc.Node.EventType.TOUCH_END, this.onClickStartGame, this);
             }
 
             private onClickReturnMainMeu() {
@@ -2403,13 +2580,20 @@ namespace game {
                             await this.load();
                         }
                         layer.MainUILayer.show(this.viewComponent);
+                        lib.Tween.to(this.viewComponent, 0.8, {y: 0}, lib.Ease.CUBIC_EASE_OUT, {y: lib.data.system.screen.height});
+                        this.sendNotification(common.Command.CLOSE_SCENE, new common.CloseSceneNB("crg"));
                         break;
                     case common.Command.CLOSE_VIEW:
                         if (note.body.name != MainMediator.NAME) {
                             return;
                         }
                         if (this.viewComponent) {
-                            this.viewComponent.destroy();
+                            let node = this.viewComponent;
+                            lib.Tween.to(this.viewComponent, 0.5, {opacity: 0}).call(
+                                function () {
+                                    node.destroy();
+                                }.bind(this)
+                            )
                             this.viewComponent = null;
                         }
                         cc.audioEngine.stop(this.bgm);
@@ -4213,24 +4397,37 @@ namespace game {
                     let item = {name: "rhythm" + list[i].name, url: "resources/crg/res/rhythm/" + list[i].url};
                     ResourceProxy.loadList.push(item);
                 }
+                list = ConfigProxy.levelConfig;
+                for (let i = 0; i < list.length; i++) {
+                    ResourceProxy.loadList.push({
+                        name: "bgm" + list[i].LevelId,
+                        url: "resources/crg/res/bgm/" + list[i].music
+                    });
+                    ResourceProxy.loadList.push({
+                        name: "level" + list[i].LevelId,
+                        url: "resources/crg/res/config/level" + list[i].LevelId + ".csv"
+                    });
+                }
             }
 
             private static initList: any[] = [
-                {name: "bgm", url: "resources/crg/res/bgm/game1.wav"},
                 {name: "rhythmTip", url: "resources/crg/res/music/tip.wav"},
                 {name: "rhythmMiss", url: "resources/crg/res/music/miss.wav"},
                 {name: "rhythmGood", url: "resources/crg/res/music/good.wav"},
                 {name: "rhythmPerfect", url: "resources/crg/res/music/perfect.wav"},
 
-                {name: "allConfig", url: "resources/crg/res/config/All.csv"},
-                {name: "levelConfig", url: "resources/crg/res/config/Level.csv"},
+
+                {name: "allConfig", url: "resources/crg/res/config/all.csv"},
+                {name: "levelConfig", url: "resources/crg/res/config/allLevel.csv"},
                 {
                     name: "musicConfig",
-                    url: "resources/crg/res/config/Music.csv",
+                    url: "resources/crg/res/config/music.csv",
                     execute: ResourceProxy.configLoadComplete
                 },
 
                 {name: "click", url: "resources/crg/res/textures/ui/click.png"},
+                {name: "heart", url: "resources/crg/res/textures/ui/heart.png"},
+                {name: "heart2", url: "resources/crg/res/textures/ui/heart2.png"},
 
                 {name: "ground", url: "resources/crg/res/textures/bg/ground.png"},
                 {name: "ground1", url: "resources/crg/res/textures/bg/ground1.png"},
@@ -4298,7 +4495,7 @@ namespace game {
                     nameFileEnd: "png",
                     properties: {
                         frameTime: 33,
-                        anchorY:0
+                        anchorY: 0
                     }
                 },
             ];
@@ -4315,9 +4512,7 @@ namespace game {
             }
 
             public static async loadResources() {
-                if (!ResourceProxy.loadList) {
-                    ResourceProxy.loadList = ResourceProxy.initList.concat();
-                }
+                ResourceProxy.loadList = ResourceProxy.initList.concat();
                 let list: any[] = ResourceProxy.loadList;
                 return new Promise<void>(function (resolve: Function) {
                     let index = 0;
@@ -4343,7 +4538,7 @@ namespace game {
                                     }
                                 }
                             } else {
-                                if (res.loadIndex == res.loadLength) {
+                                if (res.loadIndex >= res.loadLength) {
                                     index++;
                                     load();
                                     return;
@@ -4354,7 +4549,8 @@ namespace game {
                             while (name.length < res.nameCount) {
                                 name = "0" + name;
                             }
-                            cc.loader.load(cc.url.raw(res.url + res.namePre + name + "." + res.nameFileEnd), function (e: any, data: any) {
+                            let loadURL = cc.url.raw(res.url + res.namePre + name + "." + res.nameFileEnd);
+                            cc.loader.load(loadURL, function (e: any, data: any) {
                                 res.data.pictures.push(data);
                                 res.loadIndex++;
                                 if (res.loadIndex == res.loadLength) {
@@ -4411,7 +4607,28 @@ namespace game {
 
             public static musicConfig: lib.ArrayValue;
 
-            private static levelConfig: lib.ArrayValue = new lib.ArrayValue();
+            public static levelConfig: lib.ArrayValue = new lib.ArrayValue();
+
+            public static getLevelConfig(levelId: number): lib.ArrayValue {
+                let levelAllCfg = ConfigProxy.levelConfig.getItemWith("LevelId", levelId);
+                let levelCfg: any = ConfigProxy.decodeConfig(ResourceProxy.getResource("level" + levelId));
+
+                let cfg: any[] = [];
+                let time = ConfigProxy.getConfig("gameStartTime");
+                let len = levelCfg.length;
+                for (let i = 0; i < len; i++) {
+                    let levelItemCfg = ConfigProxy.getRandomLevel(time, levelCfg[i]);
+                    cfg = cfg.concat(levelItemCfg);
+                    time = ConfigProxy.getLevelConfigTime(levelItemCfg);
+                }
+
+                cfg.push({
+                    operate: 9, //游戏结束
+                    time: levelAllCfg.time
+                });
+
+                return new lib.ArrayValue(cfg);
+            }
 
             private static decodeConfig(content: string): lib.ArrayValue {
                 let res: lib.ArrayValue = new lib.ArrayValue();
@@ -4444,43 +4661,8 @@ namespace game {
                 return res;
             }
 
-            public static getGameConfig(): any[] {
-                let cfg: any[] = [];
-                let time = ConfigProxy.getConfig("gameStartTime");
-                let len = 10;
-                for (let i = 0; i < len; i++) {
-                    let levelCfg = ConfigProxy.getRandomLevel(time);
-                    cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg);
-                }
-                // //临时加入游戏结束
-                // cfg.push({
-                //     operate: 9, //游戏结束
-                //     time: time
-                // });
-                return cfg;
-            }
-
-            public static addGameConfig(oldCfg: any): any[] {
-                let time: number = ConfigProxy.getLevelConfigTime(oldCfg);
-                for (let i = 0; i < oldCfg.length; i++) {
-                    if (oldCfg[i].time < time - 30000) {
-                        oldCfg.splice(i, 1);
-                    }
-                }
-                let cfg: any[] = [];
-                let len = 10;
-                for (let i = 0; i < len; i++) {
-                    let levelCfg = ConfigProxy.getRandomLevel(time);
-                    cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg);
-                }
-                oldCfg = oldCfg.concat(cfg);
-                return oldCfg;
-            }
-
-            private static getRandomLevel(startTime: number): any[] {
-                let levelConfig = ConfigProxy.levelConfig.getItemAt(~~(Math.random() * ConfigProxy.levelConfig.length));
+            private static getRandomLevel(startTime: number, item: any): any[] {
+                let levelConfig = item;
                 let list = [];
                 let time = startTime;
 
@@ -4538,6 +4720,11 @@ namespace game {
         export class GameData {
 
             /**
+             * 关卡 id
+             */
+            public level: number;
+
+            /**
              * 移动的位置
              * @type {number}
              */
@@ -4562,6 +4749,12 @@ namespace game {
             public lastTime: number = 0;
 
             /**
+             * 游戏是否结束
+             * @type {boolean}
+             */
+            public gameOver = false;
+
+            /**
              * 背景数据
              * @type {game.crg.BackgroundData}
              */
@@ -4572,9 +4765,9 @@ namespace game {
             public root: cc.Node;
 
             //怪物层
-            public monsterLayer:cc.Node;
+            public monsterLayer: cc.Node;
 
-            public playerLayer:cc.Node;
+            public playerLayer: cc.Node;
 
             //角色
             public player: Effect;
@@ -4583,15 +4776,15 @@ namespace game {
             public monsters: any[] = [];
 
             //动画
-            public tweenList:lib.Tween[] = [];
+            public tweenList: lib.Tween[] = [];
 
             //点击
-            public clickFlag:boolean = false;
+            public clickFlag: boolean = false;
 
             //记录是否操作过
-            public operate:any = {};
+            public operate: any = {};
             //记录怪兽是否出现过
-            public monsterShow:any = {};
+            public monsterShow: any = {};
 
             //combo数
             public combo: number = 0;
@@ -4603,58 +4796,24 @@ namespace game {
             public good: number = 0;
             //miss
             public miss: number = 0;
+            //连续 perfect
+            public continuousPerfect: number = 0;
+
+            //最大血量
+            public maxHp: number = 3;
+            //血量
+            public hp: lib.IntValue = new lib.IntValue(3);
 
             //背景音乐
-            public bgm:any;
+            public bgm: any;
 
             //记录配置最大时间
-            public configTime:number;
-            public config: any[] = [ //拍子
-                {
-                    id: 0,
-                    operate: 6,
-                    time: 3000,
-                    index: 0,
-                    event:3
-                },
-                {
-                    id: 1,
-                    operate: 6,
-                    time: 4000,
-                    index: 1,
-                    event:3
-                },
-                {
-                    id: 2,
-                    operate: 6,
-                    time: 5000,
-                    index: 2,
-                    event:3
-                },
-                {
-                    id: 3,
-                    operate: 6,
-                    time: 6000,
-                    index: 3,
-                    event:3
-                },
+            public configTime: number;
 
-                //第二关
-                {
-                    id: 4,
-                    operate: 6,
-                    time: 8000,
-                    index: 0,
-                    event:3
-                },
-                {
-                    id: 5,
-                    operate: 6,
-                    time: 9000,
-                    index: 2,
-                    event:3
-                }
-            ];
+            public progress: number = 0;
+            public progressAll: number = 0;
+
+            public config:any;
         }
     }
 }
@@ -4744,6 +4903,7 @@ namespace game {
                 OPERATE: "operate", //操作
                 SHOW_COMBO: "show_combo", //显示连击
                 SHOW_OPERATE_RESULT: "show_operate_result", //显示操作结果
+                GAME_OVER : "game_over", //游戏结束
             };
 
             /**
@@ -4825,6 +4985,39 @@ namespace game {
     }
 }
 
+//////////controller/GameOverCommand.ts//////////
+namespace game {
+    export namespace crg {
+        export class GameOverCommand extends mvc.SimpleCommand {
+
+            execute(note: mvc.Notification) {
+                let data = DataProxy.data;
+                if (data.bgm != null) {
+                    cc.audioEngine.stop(data.bgm);
+                    data.bgm = null;
+                }
+
+                data.gameOver = true;
+
+                //清除动画
+                while (data.tweenList.length) {
+                    data.tweenList.pop().dispose();
+                }
+
+                // 弹出结果内容
+                mainMediator.sendNotification(common.Command.CHANGE_SCENE,
+                    new common.ChangeSceneNB("bamaoResult", {
+                        score: data.score,
+                        perfect: data.perfect,
+                        good: data.good,
+                        miss: data.miss,
+                        progress: (~~(10000 * data.progress / data.progressAll)) / 100
+                    }));
+            }
+        }
+    }
+}
+
 //////////view/CRGModule.ts//////////
 namespace game {
     export namespace crg {
@@ -4835,7 +5028,7 @@ namespace game {
             }
 
             public listNotificationInterests(): string[] {
-                return [common.Command.INIT_MODULE, common.Command.CHANGE_SCENE, common.Command.REGISTER_NET];
+                return [common.Command.INIT_MODULE, common.Command.CHANGE_SCENE, common.Command.REGISTER_NET,common.Command.CLOSE_SCENE];
             }
 
             public handleNotification(note: mvc.Notification): void {
@@ -4848,10 +5041,20 @@ namespace game {
 
                         //初始化 controller
                         this.facade.registerCommand(Command.IN.OPERATE, OperateCommand);
+                        this.facade.registerCommand(Command.IN.GAME_OVER, GameOverCommand);
                         break;
                     case common.Command.CHANGE_SCENE: //切换场景
                         if (note.body.sceneName == CRGModule.NAME) {
-                            this.sendNotification(common.Command.OPEN_VIEW, new common.OpenViewNB(MainMediator.NAME));
+                            this.sendNotification(common.Command.OPEN_VIEW, new common.OpenViewNB(MainMediator.NAME,note.body.data));
+                        }
+                        break;
+                    case common.Command.CLOSE_SCENE:
+                        if (note.body.sceneName == CRGModule.NAME) {
+                            mainMediator.sendNotification(common.Command.CLOSE_VIEW,
+                                new common.CloseViewNB(MainMediator.NAME));
+
+                            mainMediator.sendNotification(common.Command.CLOSE_VIEW,
+                                new common.CloseViewNB(UIMediator.NAME));
                         }
                         break;
                 }
@@ -4872,6 +5075,8 @@ namespace game {
 
         export class MainMediator extends mvc.Mediator {
 
+            private level: number;
+
             constructor() {
                 super(MainMediator.NAME, null);
                 mainMediator = this;
@@ -4879,6 +5084,7 @@ namespace game {
 
             private initUI(): void {
                 DataProxy.data = new GameData();
+                DataProxy.data.level = this.level;
 
                 this.viewComponent = new cc.Node();
                 this.viewComponent.anchorX = 0;
@@ -4916,6 +5122,7 @@ namespace game {
                         if (note.body.name != MainMediator.NAME) {
                             return;
                         }
+                        this.level = note.body.data;
                         if (!this.viewComponent) {
                             await this.load();
                         }
@@ -4928,8 +5135,12 @@ namespace game {
                             return;
                         }
                         if (this.viewComponent && this.viewComponent.parent) {
-                            this.viewComponent.parent.removeChild(this.viewComponent);
-                            this.viewComponent.destroy();
+                            let node = this.viewComponent;
+                            lib.Tween.to(this.viewComponent, 1, {opacity: 0}).call(
+                                function () {
+                                    node.destroy();
+                                }.bind(this)
+                            )
                             this.viewComponent = null;
                         }
                         break;
@@ -4989,8 +5200,12 @@ namespace game {
                             return;
                         }
                         if (this.viewComponent && this.viewComponent.parent) {
-                            this.viewComponent.parent.removeChild(this.viewComponent);
-                            this.viewComponent.destroy();
+                            let node = this.viewComponent;
+                            lib.Tween.to(this.viewComponent, 1, {opacity: 0}).call(
+                                function () {
+                                    node.destroy();
+                                }.bind(this)
+                            )
                             this.viewComponent = null;
                         }
                         break;
@@ -5015,6 +5230,7 @@ namespace game {
 
             private combo: cc.Node;
             private operate: cc.Node;
+            private hearts: cc.SpriteFrame[];
 
             constructor() {
                 super();
@@ -5035,23 +5251,39 @@ namespace game {
                 label = node.getComponent(cc.Label);
                 label.string = "";
 
-                // node = new cc.Node();
-                // node.anchorX = 0;
-                // node.anchorY = 1;
-                // node.opacity = 150;
-                // this.addChild(node);
-                // node.x = -lib.data.system.screen.width / 2;
-                // node.y = lib.data.system.screen.height / 2;
-                // node.addComponent(cc.Label);
-                // label = node.getComponent(cc.Label);
-                // label.fontSize = 24;
-                // label.string = "all: 1000\ntime:123"
+                this.hearts = [];
+                let data = DataProxy.data;
+                for (let i = 0; i < data.maxHp; i++) {
+                    let node = new cc.Node();
+                    node.anchorX = 0;
+                    node.anchorY = 1;
+                    node.x = -lib.data.system.screen.width / 2 + 10 + i * 70;
+                    node.y = lib.data.system.screen.height / 2 - 10;
+                    this.addChild(node);
+                    node.addComponent(cc.Sprite);
+                    let sprite = node.getComponent(cc.Sprite);
+                    sprite.spriteFrame = new cc.SpriteFrame();
+                    sprite.spriteFrame.setTexture(ResourceProxy.getResource("heart"));
+                    this.hearts.push(sprite.spriteFrame);
+                }
+                data.hp.addListener(lib.Event.CHANGE, this.onHpChange, this);
+            }
+
+            private onHpChange(e: lib.Event): void {
+                let data = DataProxy.data;
+                for (let i = 0; i < data.maxHp; i++) {
+                    if (i + 1 <= data.hp.value) {
+                        this.hearts[i].setTexture(ResourceProxy.getResource("heart"));
+                    } else {
+                        this.hearts[i].setTexture(ResourceProxy.getResource("heart2"));
+                    }
+                }
             }
 
             public showCombo(val: number) {
                 if (val) {
                     this.combo.getComponent(cc.Label).string = "Combo " + val;
-                    lib.Tween.to(this.combo, 0.2, {
+                    DataProxy.data.tweenList.push(lib.Tween.to(this.combo, 0.2, {
                         opacity: 255,
                         scaleX: 1,
                         scaleY: 1
@@ -5059,20 +5291,11 @@ namespace game {
                         opacity: 150,
                         scaleX: 0.5,
                         scaleY: 0.5
-                    });
+                    }));
                 } else {
                     this.combo.getComponent(cc.Label).string = "";
                 }
             }
-
-            // public showOperateResult(type: string) {
-            //     this.operate.getComponent(cc.Label).string = type;
-            //     lib.Tween.to(this.operate, 0.4, {
-            //         scaleX: 2,
-            //         scaleY: 2,
-            //         opacity: 0
-            //     }, null, {scaleX: 1, scaleY: 1, opacity: 255});
-            // }
         }
     }
 }
@@ -5134,6 +5357,9 @@ namespace game {
             }
 
             update() {
+                if (DataProxy.data.gameOver) {
+                    return;
+                }
                 let sprite = this.getComponent(cc.Sprite);
                 sprite.spriteFrame.setTexture(this.pictures[this.frame]);
                 this.frame++;
@@ -5528,7 +5754,7 @@ namespace game {
                     player.y = 150;
                     data.player = player;
 
-                    data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm"), true, 0.05);
+                    data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm" + data.level), true, 0.05);
                 }
             }
         }
@@ -5546,6 +5772,9 @@ namespace game {
                 let findNext = false;
                 let speed = ConfigProxy.getConfig("timeSpeed");
                 for (let i = 0; i < list.length; i++) {
+                    if (list[i].operate == 6 && list[i].time >= data.lastTime && list[i].time < data.time) {
+                        DataProxy.data.progress++;
+                    }
                     if (list[i].operate == 6 && !data.monsterShow[list[i].time]) {
                         if ((list[i].time - 5000 < 0 || (list[i].time - 5000) >= data.lastTime) && (list[i].time - 5000) < data.time) {
                             let node = new cc.Node();
@@ -5572,7 +5801,7 @@ namespace game {
                     let last = data.monsters[i].parentNode.x;
                     data.monsters[i].parentNode.x -= (data.time - data.lastTime) * speed / 1000;
                     if ((last >= lib.data.system.screen.width - 50 && data.monsters[i].parentNode.x < lib.data.system.screen.width - 50) || data.monsters[i].parentNode.x < lib.data.system.screen.width - 100 && !list[i].tween) {
-                        list[i].tween = lib.Tween.to(data.monsters[i], 1.5, {
+                        DataProxy.data.tweenList.push(list[i].tween = lib.Tween.to(data.monsters[i], 1.5, {
                                 opacity: 255,
                                 scaleX: 0.75,
                                 scaleY: 0.75,
@@ -5582,8 +5811,7 @@ namespace game {
                             {
                                 x: 200,
                                 y: 200
-                            });
-                        //lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 0.75, scaleY: 0.75});
+                            }));
                         cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
                     }
                 }
@@ -5621,9 +5849,10 @@ namespace game {
                                         data: list[i],
                                         operateType: "Perfect"
                                     });
-                                    this.showOperateText("Perfect");
                                     //删除节拍对象
                                     this.pressOK(list[i]);
+                                    this.showOperateText("Perfect");
+                                    this.checkHp(true, true);
                                 } else if (Math.abs(data.time - list[i].time) < goodTime) { //good
                                     mainMediator.sendNotification(Command.IN.OPERATE, {
                                         data: list[i],
@@ -5632,12 +5861,14 @@ namespace game {
                                     //删除节拍对象
                                     this.pressOK(list[i]);
                                     this.showOperateText("Good");
+                                    this.checkHp(true);
                                 } else if (Math.abs(data.time - list[i].time) < missTime) { //good
                                     mainMediator.sendNotification(Command.IN.OPERATE, {
                                         data: list[i],
                                         operateType: "Miss"
                                     });
                                     this.showOperateText("Miss");
+                                    this.checkHp(false);
                                 }
                                 find = true;
                                 data.operate[list[i].time] = true;
@@ -5649,6 +5880,7 @@ namespace game {
                     if (!find) {
                         mainMediator.sendNotification(Command.IN.OPERATE, {data: null, operateType: "OutMiss"});
                         this.showOperateText("Miss");
+                        this.checkHp(false);
                     }
                     data.clickFlag = false;
                 }
@@ -5659,7 +5891,32 @@ namespace game {
                             mainMediator.sendNotification(Command.IN.OPERATE, {data: null, operateType: "AutoMiss"});
                             data.operate[list[i].time] = true;
                             this.showOperateText("Miss");
+                            this.checkHp(false);
                         }
+                    }
+                }
+            }
+
+            private checkHp(flag: boolean, perfect: boolean = false): void {
+                if (flag == false) {
+                    if (DataProxy.data.hp.value) {
+                        DataProxy.data.hp.value = DataProxy.data.hp.value - 1;
+                    }
+                    DataProxy.data.continuousPerfect = 0;
+                    //游戏结束，失败!
+                    if (!DataProxy.data.hp.value) {
+                        mainMediator.sendNotification(Command.IN.GAME_OVER,false);
+                    }
+                } else {
+                    if (perfect) {
+                        DataProxy.data.continuousPerfect++;
+                        if (DataProxy.data.continuousPerfect &&
+                            DataProxy.data.continuousPerfect % ConfigProxy.getConfig("addHp") == 0 &&
+                            DataProxy.data.hp.value < DataProxy.data.maxHp) {
+                            DataProxy.data.hp.value++;
+                        }
+                    } else {
+                        DataProxy.data.continuousPerfect = 0;
                     }
                 }
             }
@@ -5675,7 +5932,7 @@ namespace game {
                 node.color = new cc.Color(100 + 155 * Math.random(), 100 + 155 * Math.random(), 100 + 155 * Math.random());
                 let label = node.getComponent(cc.Label);
                 label.string = type;
-                lib.Tween.to(node, 0.5 + 0.2 * Math.random(), {
+                DataProxy.data.tweenList.push(lib.Tween.to(node, 0.5 + 0.2 * Math.random(), {
                     opacity: 0,
                     x: node.x + 100 - 200 * Math.random(),
                     y: node.y - 100 * Math.random()
@@ -5683,7 +5940,7 @@ namespace game {
                     function () {
                         node.destroy();
                     }
-                );
+                ));
             }
 
             private pressOK(cfg: any, type: string = "") {
@@ -5708,6 +5965,26 @@ namespace game {
     }
 }
 
+//////////view/game/gameEvents/GameFinishEvent.ts//////////
+namespace game {
+    export namespace crg {
+        export class GameFinishEvent extends GameEvent {
+
+            execute() {
+                let data = DataProxy.data;
+                let list = data.config;
+                for (let i = 0; i < list.length; i++) {
+                    if (list[i].operate == 9) {
+                        if (data.lastTime <= list[i].time && list[i].time < data.time) {
+                            mainMediator.sendNotification(Command.IN.GAME_OVER, true);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 //////////view/game/GameMain.ts//////////
 namespace game {
     export namespace crg {
@@ -5716,15 +5993,17 @@ namespace game {
             private events: GameEvent[];
 
             start() {
-                DataProxy.data.config = ConfigProxy.getGameConfig();
+                DataProxy.data.config = ConfigProxy.getLevelConfig(DataProxy.data.level);
                 DataProxy.data.configTime = ConfigProxy.getLevelConfigTime(DataProxy.data.config);
+                DataProxy.data.progressAll = DataProxy.data.config.getItemsWith("operate",6).length;
                 DataProxy.data.root = this.node;
                 this.node.x = -lib.data.system.screen.width / 2;
                 this.node.y = -lib.data.system.screen.height / 2;
                 this.events = [
                     new GameStartEvent(),
                     new OperateRhythmEvent(),
-                    new OperateEvent()
+                    new OperateEvent(),
+                    new GameFinishEvent()
                 ];
                 DataProxy.data.monsterLayer = new cc.Node();
                 DataProxy.data.root.addChild(DataProxy.data.monsterLayer);
@@ -5747,9 +6026,8 @@ namespace game {
             }
 
             update() {
-                if (DataProxy.data.configTime - 10000 >= DataProxy.data.lastTime && DataProxy.data.configTime - 10000 < DataProxy.data.time) {
-                    DataProxy.data.config = ConfigProxy.addGameConfig(DataProxy.data.config);
-                    DataProxy.data.configTime = ConfigProxy.getLevelConfigTime(DataProxy.data.config);
+                if (DataProxy.data.gameOver) {
+                    return;
                 }
                 DataProxy.data.lastTime = DataProxy.data.time;
                 DataProxy.data.time += lib.CoreTime.lastTimeGap;
@@ -5792,6 +6070,9 @@ namespace game {
             }
 
             update() {
+                if (DataProxy.data.gameOver) {
+                    return;
+                }
                 for (let i = 0; i < this.bgs.length; i++) {
                     if (this.bgs[i].layer == 1) {
                         this.bgs[i].x -= DataProxy.data.currentMovePosition;
@@ -5881,13 +6162,13 @@ namespace game {
 
             private change() {
                 if (this.data.changeType == 1) {
-                    lib.Tween.to(this, 0.5, {colorH: (1 - this.data.changeValue.value)}, null, {colorH: (1 - this.data.changeValue.old)});
+                    DataProxy.data.tweenList.push(lib.Tween.to(this, 0.5, {colorH: (1 - this.data.changeValue.value)}, null, {colorH: (1 - this.data.changeValue.old)}));
                 }
                 if (this.data.changeType == 2) {
-                    lib.Tween.to(this, 0.5, {colorS: (1 - this.data.changeValue.value)}, null, {colorS: (1 - this.data.changeValue.old)});
+                    DataProxy.data.tweenList.push(lib.Tween.to(this, 0.5, {colorS: (1 - this.data.changeValue.value)}, null, {colorS: (1 - this.data.changeValue.old)}));
                 }
                 if (this.data.changeType == 3) {
-                    lib.Tween.to(this, 0.5, {height: this.image.height * this.data.changeValue.value});
+                    DataProxy.data.tweenList.push(lib.Tween.to(this, 2, {height: this.image.height * this.data.changeValue.value}));
                 }
             }
 
