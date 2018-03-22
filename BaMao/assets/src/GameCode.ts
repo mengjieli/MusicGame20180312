@@ -4791,7 +4791,7 @@ namespace game {
                 }
 
                 //显示操作结果
-                mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type);//type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
+                // mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type);//type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
 
                 //combo文字
                 if (type == "Miss" || type == "AutoMiss" || type == "OutMiss") {
@@ -5065,14 +5065,14 @@ namespace game {
                 }
             }
 
-            public showOperateResult(type: string) {
-                this.operate.getComponent(cc.Label).string = type;
-                lib.Tween.to(this.operate, 0.4, {
-                    scaleX: 2,
-                    scaleY: 2,
-                    opacity: 0
-                }, null, {scaleX: 1, scaleY: 1, opacity: 255});
-            }
+            // public showOperateResult(type: string) {
+            //     this.operate.getComponent(cc.Label).string = type;
+            //     lib.Tween.to(this.operate, 0.4, {
+            //         scaleX: 2,
+            //         scaleY: 2,
+            //         opacity: 0
+            //     }, null, {scaleX: 1, scaleY: 1, opacity: 255});
+            // }
         }
     }
 }
@@ -5548,17 +5548,20 @@ namespace game {
                 for (let i = 0; i < list.length; i++) {
                     if (list[i].operate == 6 && !data.monsterShow[list[i].time]) {
                         if ((list[i].time - 5000 < 0 || (list[i].time - 5000) >= data.lastTime) && (list[i].time - 5000) < data.time) {
-                            let monster:any = new cc.Node();
+                            let node = new cc.Node();
+                            let monster: any = new cc.Node();
                             monster.addComponent(cc.Sprite);
                             let sprite = monster.getComponent(cc.Sprite);
                             sprite.spriteFrame = new cc.SpriteFrame();
                             sprite.spriteFrame.setTexture(ResourceProxy.getResource("monster" + ((~~(6 * Math.random())) + 1)));
-                            data.monsterLayer.addChild(monster);
-                            monster.x = data.player.x + (10*Math.random()) + (list[i].time - data.time) * speed / 1000;
-                            monster.y = data.player.y;
+                            data.monsterLayer.addChild(node);
+                            node.addChild(monster);
+                            node.x = data.player.x + (10 * Math.random()) + (list[i].time - data.time) * speed / 1000;
+                            node.y = data.player.y;
                             monster.opacity = 0;
                             monster.scaleX = 0;
                             monster.scaleY = 0;
+                            monster.parentNode = node;
                             monster.data = list[i];
                             data.monsters.push(monster);
                             data.monsterShow[list[i].time] = true;
@@ -5566,15 +5569,26 @@ namespace game {
                     }
                 }
                 for (let i = 0; i < data.monsters.length; i++) {
-                    let last = data.monsters[i].x;
-                    data.monsters[i].x -= (data.time - data.lastTime) * speed / 1000;
-                    if ((last >= lib.data.system.screen.width - 100 && data.monsters[i].x < lib.data.system.screen.width - 100) || data.monsters[i].x < lib.data.system.screen.width - 100 &&  !list[i].tween) {
-                        list[i].tween = lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 0.75, scaleY: 0.75});
+                    let last = data.monsters[i].parentNode.x;
+                    data.monsters[i].parentNode.x -= (data.time - data.lastTime) * speed / 1000;
+                    if ((last >= lib.data.system.screen.width - 50 && data.monsters[i].parentNode.x < lib.data.system.screen.width - 50) || data.monsters[i].parentNode.x < lib.data.system.screen.width - 100 && !list[i].tween) {
+                        list[i].tween = lib.Tween.to(data.monsters[i], 1.5, {
+                                opacity: 255,
+                                scaleX: 0.75,
+                                scaleY: 0.75,
+                                x: 0,
+                                y: 0
+                            }, lib.Ease.CIRC_EASE_OUT,
+                            {
+                                x: 200,
+                                y: 200
+                            });
+                        //lib.Tween.to(data.monsters[i], 0.3, {opacity: 255, scaleX: 0.75, scaleY: 0.75});
                         cc.audioEngine.play(ResourceProxy.getResource("rhythm" + data.monsters[i].data.music), false, 1);
                     }
                 }
                 for (let i = 0; i < data.monsters.length; i++) {
-                    if (data.monsters[i].x < 0) {
+                    if (data.monsters[i].parentNode.x < 0) {
                         data.monsters[i].destroy();
                         data.monsters.splice(i, 1);
                         i--;
@@ -5607,6 +5621,7 @@ namespace game {
                                         data: list[i],
                                         operateType: "Perfect"
                                     });
+                                    this.showOperateText("Perfect");
                                     //删除节拍对象
                                     this.pressOK(list[i]);
                                 } else if (Math.abs(data.time - list[i].time) < goodTime) { //good
@@ -5616,11 +5631,13 @@ namespace game {
                                     });
                                     //删除节拍对象
                                     this.pressOK(list[i]);
+                                    this.showOperateText("Good");
                                 } else if (Math.abs(data.time - list[i].time) < missTime) { //good
                                     mainMediator.sendNotification(Command.IN.OPERATE, {
                                         data: list[i],
                                         operateType: "Miss"
                                     });
+                                    this.showOperateText("Miss");
                                 }
                                 find = true;
                                 data.operate[list[i].time] = true;
@@ -5631,6 +5648,7 @@ namespace game {
                     //没有踩到节拍点
                     if (!find) {
                         mainMediator.sendNotification(Command.IN.OPERATE, {data: null, operateType: "OutMiss"});
+                        this.showOperateText("Miss");
                     }
                     data.clickFlag = false;
                 }
@@ -5640,12 +5658,35 @@ namespace game {
                         if (!data.operate[list[i].time] && data.time - list[i].time > missTime) {
                             mainMediator.sendNotification(Command.IN.OPERATE, {data: null, operateType: "AutoMiss"});
                             data.operate[list[i].time] = true;
+                            this.showOperateText("Miss");
                         }
                     }
                 }
             }
 
-            private pressOK(cfg: any) {
+            private showOperateText(type: string) {
+                //显示 perfect good 文字
+                let node = new cc.Node();
+                node.x = DataProxy.data.player.x + 20 - (40 * Math.random());
+                node.y = DataProxy.data.player.y - 80 + 20 - (40 * Math.random());
+                // node.rotation = 10 - Math.random() * 20;
+                DataProxy.data.root.addChild(node);
+                node.addComponent(cc.Label);
+                node.color = new cc.Color(100 + 155 * Math.random(), 100 + 155 * Math.random(), 100 + 155 * Math.random());
+                let label = node.getComponent(cc.Label);
+                label.string = type;
+                lib.Tween.to(node, 0.5 + 0.2 * Math.random(), {
+                    opacity: 0,
+                    x: node.x + 100 - 200 * Math.random(),
+                    y: node.y - 100 * Math.random()
+                }).call(
+                    function () {
+                        node.destroy();
+                    }
+                );
+            }
+
+            private pressOK(cfg: any, type: string = "") {
                 //删除节拍对象
                 let monsters = DataProxy.data.monsters;
                 for (let i = 0; i < monsters.length; i++) {
@@ -5840,13 +5881,13 @@ namespace game {
 
             private change() {
                 if (this.data.changeType == 1) {
-                    lib.Tween.to(this, 0.2, {colorH: (1 - this.data.changeValue.value)}, null, {colorH: (1 - this.data.changeValue.old)});
+                    lib.Tween.to(this, 0.5, {colorH: (1 - this.data.changeValue.value)}, null, {colorH: (1 - this.data.changeValue.old)});
                 }
                 if (this.data.changeType == 2) {
-                    lib.Tween.to(this, 0.2, {colorS: (1 - this.data.changeValue.value)}, null, {colorS: (1 - this.data.changeValue.old)});
+                    lib.Tween.to(this, 0.5, {colorS: (1 - this.data.changeValue.value)}, null, {colorS: (1 - this.data.changeValue.old)});
                 }
                 if (this.data.changeType == 3) {
-                    lib.Tween.to(this, 0.2, {height: this.image.height * this.data.changeValue.value});
+                    lib.Tween.to(this, 0.5, {height: this.image.height * this.data.changeValue.value});
                 }
             }
 
