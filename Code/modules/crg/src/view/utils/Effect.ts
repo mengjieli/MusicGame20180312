@@ -54,6 +54,9 @@ namespace game {
             }
 
             update() {
+                if (DataProxy.data.gameOver) {
+                    return;
+                }
                 let sprite = this.getComponent(cc.Sprite);
                 sprite.spriteFrame.setTexture(this.pictures[this.frame]);
                 this.frame++;

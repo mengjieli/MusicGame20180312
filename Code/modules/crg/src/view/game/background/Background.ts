@@ -26,6 +26,9 @@ namespace game {
             }
 
             update() {
+                if (DataProxy.data.gameOver) {
+                    return;
+                }
                 for (let i = 0; i < this.bgs.length; i++) {
                     if (this.bgs[i].layer == 1) {
                         this.bgs[i].x -= DataProxy.data.currentMovePosition;

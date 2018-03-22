@@ -5,6 +5,8 @@ namespace game {
 
         export class MainMediator extends mvc.Mediator {
 
+            private level: number;
+
             constructor() {
                 super(MainMediator.NAME, null);
                 mainMediator = this;
@@ -12,6 +14,7 @@ namespace game {
 
             private initUI(): void {
                 DataProxy.data = new GameData();
+                DataProxy.data.level = this.level;
 
                 this.viewComponent = new cc.Node();
                 this.viewComponent.anchorX = 0;
@@ -49,6 +52,7 @@ namespace game {
                         if (note.body.name != MainMediator.NAME) {
                             return;
                         }
+                        this.level = note.body.data;
                         if (!this.viewComponent) {
                             await this.load();
                         }
@@ -61,8 +65,12 @@ namespace game {
                             return;
                         }
                         if (this.viewComponent && this.viewComponent.parent) {
-                            this.viewComponent.parent.removeChild(this.viewComponent);
-                            this.viewComponent.destroy();
+                            let node = this.viewComponent;
+                            lib.Tween.to(this.viewComponent, 1, {opacity: 0}).call(
+                                function () {
+                                    node.destroy();
+                                }.bind(this)
+                            )
                             this.viewComponent = null;
                         }
                         break;

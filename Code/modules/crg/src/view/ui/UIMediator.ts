@@ -45,8 +45,12 @@ namespace game {
                             return;
                         }
                         if (this.viewComponent && this.viewComponent.parent) {
-                            this.viewComponent.parent.removeChild(this.viewComponent);
-                            this.viewComponent.destroy();
+                            let node = this.viewComponent;
+                            lib.Tween.to(this.viewComponent, 1, {opacity: 0}).call(
+                                function () {
+                                    node.destroy();
+                                }.bind(this)
+                            )
                             this.viewComponent = null;
                         }
                         break;

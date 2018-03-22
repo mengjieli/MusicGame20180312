@@ -10,6 +10,7 @@
 
     "controller/Command.ts",
     "controller/OperateCommand.ts",
+    "controller/GameOverCommand.ts",
 
     "view/CRGModule.ts",
     "view/MainMediator.ts",
@@ -27,6 +28,7 @@
     "view/game/gameEvents/GameStartEvent.ts",
     "view/game/gameEvents/OperateRhythmEvent.ts",
     "view/game/gameEvents/OperateEvent.ts",
+    "view/game/gameEvents/GameFinishEvent.ts",
 
     "view/game/GameMain.ts",
     "view/game/background/Background.ts",

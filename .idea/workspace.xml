@@ -2,18 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dae894-d666-4cb5-82c4-52c720d900f4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Code/modules/bamaoStart/src/proxy/ConfigProxy.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Code/modules/bamaoStart/src/view/MainComponent.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Code/modules/common/src/controller/notification/CloseSceneNB.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Code/modules/crg/src/controller/GameOverCommand.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameFinishEvent.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/bgm/game1.wav" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/bgm/game1.wav" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Level.csv" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Level.csv" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Music.csv" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Music.csv" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/music/miss.wav" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/music/miss.wav" />
-      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/music/readygo.mp3" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/music/readygo.mp3" />
+      <change beforePath="$PROJECT_DIR$/BaMao/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/Go.fire" afterPath="$PROJECT_DIR$/BaMao/assets/Go.fire" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoResult/res/ui.prefab" afterPath="$PROJECT_DIR$/BaMao/assets/resources/baMaoResult/res/ui.prefab" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/baMaoUI.prefab" afterPath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/baMaoUI.prefab" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/res/bgm/startbgm.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/res/bgm/startbgm.wav.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/res/textures/bg0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/res/textures/bg0.png.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/res/textures/bg1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/baMaoStart/res/textures/bg1.png.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/bgm/game1.ogg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/bgm/game1.ogg.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/bgm/game1.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/bgm/game1.wav.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/All.csv" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/All.csv" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/All.csv.meta" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/All.csv.meta" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Level.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Level.csv.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Music.csv.meta" afterPath="$PROJECT_DIR$/BaMao/assets/resources/crg/res/config/Music.csv.meta" />
       <change beforePath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" afterPath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" />
+      <change beforePath="$PROJECT_DIR$/BaMao/creator.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/jsconfig.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/project.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/settings/builder.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/settings/builder.panel.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/settings/project.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/template-banner.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BaMao/template.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/bamaoResult/src/view/MainMediator.ts" afterPath="$PROJECT_DIR$/Code/modules/bamaoResult/src/view/MainMediator.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/bamaoStart/module.json" afterPath="$PROJECT_DIR$/Code/modules/bamaoStart/module.json" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/bamaoStart/src/proxy/Resource.ts" afterPath="$PROJECT_DIR$/Code/modules/bamaoStart/src/proxy/Resource.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/bamaoStart/src/view/MainMediator.ts" afterPath="$PROJECT_DIR$/Code/modules/bamaoStart/src/view/MainMediator.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/common/module.json" afterPath="$PROJECT_DIR$/Code/modules/common/module.json" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/common/src/controller/Command.ts" afterPath="$PROJECT_DIR$/Code/modules/common/src/controller/Command.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/module.json" afterPath="$PROJECT_DIR$/Code/modules/crg/module.json" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/controller/Command.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/controller/Command.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/CRGModule.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/CRGModule.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/MainMediator.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/MainMediator.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/GameMain.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/GameMain.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/Background.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/Background.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundItem.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundItem.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/loading/src/view/LoadingView.ts" afterPath="$PROJECT_DIR$/Code/modules/loading/src/view/LoadingView.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/modules/startup/src/controller/startup/InitModuleCommand.ts" afterPath="$PROJECT_DIR$/Code/modules/startup/src/controller/startup/InitModuleCommand.ts" />
+      <change beforePath="$PROJECT_DIR$/Code/tsconfig.json" afterPath="$PROJECT_DIR$/Code/tsconfig.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,12 +75,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="OperateRhythmEvent.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BackgroundItem.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundItem.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="334">
+              <caret line="49" column="70" lean-forward="false" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -50,23 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lowp</find>
-      <find>CRGModule</find>
-      <find>Resource</find>
-      <find>configLoadComplete</find>
-      <find>designWidth</find>
-      <find>fixHeightWidth</find>
-      <find>/runGame/</find>
-      <find>texture/</find>
-      <find>scaleX</find>
-      <find>effect</find>
-      <find>this.node.addChild</find>
-      <find>),</find>
-      <find>MainMediator</find>
-      <find>miss</find>
-      <find>ConfigProxy</find>
-      <find>event:3</find>
-      <find>wid</find>
       <find>colorFilter</find>
       <find>max</find>
       <find>__old</find>
@@ -80,6 +112,23 @@
       <find>frameTime</find>
       <find>rhythmMiss</find>
       <find>runGame</find>
+      <find>monsters</find>
+      <find>.x</find>
+      <find>initList</find>
+      <find>change</find>
+      <find>lib.Tween</find>
+      <find>levelConfig</find>
+      <find>levelIndex</find>
+      <find>data = new</find>
+      <find>config</find>
+      <find>levelCfg</find>
+      <find>getRandomLevel</find>
+      <find>tweens</find>
+      <find>GameUI</find>
+      <find>update</find>
+      <find>Tween</find>
+      <find>CloseSceneNB</find>
+      <find>configLoadComplete</find>
     </findStrings>
     <replaceStrings>
       <replace>operate: 0</replace>
@@ -105,20 +154,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/gameEvents/OperateEvent.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/Effect.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/gameEvents/OperateRhythmEvent.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/gameEvents/GameStartEvent.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/motion/src/view/MotionModule.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/motion/src/view/MainMediator.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/motion/module.json" />
-        <option value="$PROJECT_DIR$/Code/modules/motion/src/view/MainView.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/runGame/src/proxy/ConfigProxy.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/MainComponent.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/game/BackGround.ts" />
-        <option value="$PROJECT_DIR$/Code/modules.json" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/Effect.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/startup/src/controller/startup/InitModuleCommand.ts" />
         <option value="$PROJECT_DIR$/Code/modules/ui/src/model/proxy/SettingProxy.ts" />
         <option value="$PROJECT_DIR$/Code/modules/startup/src/AppFacade.ts" />
         <option value="$PROJECT_DIR$/Code/modules/runGame/module.json" />
@@ -128,34 +164,47 @@
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundGround.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundItem.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundContainer.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/Background.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameEvent.ts" />
         <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/utils/DisplayFactory.ts" />
         <option value="$PROJECT_DIR$/Code/modules/layer/src/view/GameLayer.ts" />
         <option value="$PROJECT_DIR$/Code/modules/runGame/src/view/MainMediator.ts" />
         <option value="$PROJECT_DIR$/Code/modules/layer/src/view/MainUILayer.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/MainMediator.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/controller/Command.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/CRGModule.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundItemData.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/module.json" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/utils/NoneFilter.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/utils/Filter.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/utils/ColorFilter.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundItem.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundData.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/GameMain.ts" />
         <option value="$PROJECT_DIR$/Code/modules/runGame/src/proxy/Resource.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/startup/src/controller/startup/InitModuleCommand.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/bamaoStart/src/proxy/ConfigProxy.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/bamaoStart/src/proxy/Resource.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/bamaoStart/module.json" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/bamaoStart/src/view/MainComponent.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/module.json" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/controller/Command.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameFinishEvent.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/Background.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts" />
-        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/common/src/controller/Command.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/common/src/controller/notification/CloseSceneNB.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/common/module.json" />
+        <option value="$PROJECT_DIR$/Code/modules/loading/src/view/LoadingView.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/CRGModule.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/MainMediator.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/bamaoStart/src/view/MainMediator.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/bamaoResult/src/view/MainMediator.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts" />
         <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/controller/GameOverCommand.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/GameMain.ts" />
+        <option value="$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundItem.ts" />
       </list>
     </option>
   </component>
@@ -165,7 +214,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
@@ -188,43 +237,164 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="BaMao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoGame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoResult" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoResult" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoResult" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoResult" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoStart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoStart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoStart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bamaoStart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -232,8 +402,8 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -241,8 +411,8 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -251,8 +421,8 @@
               <item name="proxy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -261,8 +431,8 @@
               <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -270,8 +440,8 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -280,8 +450,8 @@
               <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -291,8 +461,8 @@
               <item name="background" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -302,8 +472,8 @@
               <item name="gameEvents" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -312,8 +482,8 @@
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="bamaoProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bamaoProj" type="462c0819:PsiDirectoryNode" />
+              <item name="MusicGame20180312" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicGame20180312" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="crg" type="462c0819:PsiDirectoryNode" />
@@ -325,32 +495,31 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;null&#9;null" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Code/modules/crg/src/controller" />
-      <recent name="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents" />
-      <recent name="$PROJECT_DIR$/Code/modules/crg/src/view" />
-      <recent name="$PROJECT_DIR$/BaMao/build/web-mobile/res/raw-assets/resources/crg" />
-      <recent name="$PROJECT_DIR$/Code/modules/crg/src/view/game/background" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Code/modules/crg/src/view/game/background" />
       <recent name="$PROJECT_DIR$/Code/modules/runGame/src/view/utils" />
       <recent name="$PROJECT_DIR$/Code/modules/runGame/src/model" />
       <recent name="$PROJECT_DIR$/Code/modules/loading/src/view" />
       <recent name="$PROJECT_DIR$/Code/modules" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\MusicGame20180312\Code\modules\common\src\controller\notification" />
+      <recent name="E:\github\MusicGame20180312\Code\modules\crg\src\view\game\gameEvents" />
+      <recent name="E:\github\MusicGame20180312\Code\modules\bamaoStart\src\proxy" />
+      <recent name="$PROJECT_DIR$/Code/modules/crg/src/controller" />
+      <recent name="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -412,24 +581,26 @@
       <workItem from="1521536143818" duration="81000" />
       <workItem from="1521536467389" duration="423000" />
       <workItem from="1521597307134" duration="1086000" />
+      <workItem from="1521686353908" duration="17311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177316000" />
+    <option name="totallyTimeSpent" value="194627000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2635659" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20572917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12034384" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22069694" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -463,225 +634,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="20840" column="17" lean-forward="false" selection-start-line="20840" selection-start-column="17" selection-end-line="20840" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/controller/Command.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/module.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/view/game/BackGroundContainer.ts" />
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundItem.ts" />
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundGround.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/lib/creator.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="3493" column="8" lean-forward="false" selection-start-line="3493" selection-start-column="8" selection-end-line="3493" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundContainer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoGame/src/proxy/RoundProxy.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="235" column="14" lean-forward="false" selection-start-line="116" selection-start-column="12" selection-end-line="235" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameEvent.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/view/gameEvents/GameBackGroundEvent.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/Background.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/view/utils/DisplayFactory.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/lib/pureMVC.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="159" column="8" lean-forward="false" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/layer/src/view/GameLayer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/view/MainMediator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/layer/src/view/MainUILayer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/Command.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoStart/src/view/BaMaoStartModule.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="27" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/DataProxy.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/view/game/BackGround.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="108" column="13" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="108" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BaMao/assets/lib/lib.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6798" column="37" lean-forward="false" selection-start-line="6798" selection-start-column="37" selection-end-line="6798" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/utils/NoneFilter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/module.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BaMao/assets/Go.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="6049" column="15" lean-forward="false" selection-start-line="6049" selection-start-column="12" selection-end-line="6049" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/utils/Filter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/utils/ColorFilter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2853">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/CRGModule.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="86" lean-forward="false" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundItemData.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/view/MainComponent.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="42" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/MainMediator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-259">
-          <caret line="26" column="99" lean-forward="false" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundData.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundItem.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="12" column="97" lean-forward="false" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/proxy/RoundProxy.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-106">
@@ -718,34 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="76" column="22" lean-forward="false" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/GameMain.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/runGame/src/view/gameEvents/GameStartEvent.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -760,60 +684,372 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts">
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundItemData.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="27" lean-forward="false" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+        <state relative-caret-position="305">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/BackgroundData.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/startup/src/AppFacade.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/startup/src/controller/startup/gameEvents/TipRoundStartEvent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/startup/src/controller/startup/InitModuleCommand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoStart/src/view/BaMaoStartModule.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="27" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/lib/pureMVC.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="159" column="8" lean-forward="false" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoStart/module.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoGame/src/view/gameEvents/GameStartEvent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoStart/src/proxy/ConfigProxy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/DataProxy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoGame/src/proxy/ConfigProxy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2602">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoGame/src/proxy/RoundProxy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="231" column="16" lean-forward="false" selection-start-line="231" selection-start-column="16" selection-end-line="234" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/GameUI.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="59" column="44" lean-forward="false" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/module.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/OperateCommand.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="76">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts">
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/Command.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="95" column="37" lean-forward="false" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
+        <state relative-caret-position="190">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameFinishEvent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/Background.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundGround.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundContainer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/common/module.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/common/src/controller/notification/CloseSceneNB.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoStart/src/proxy/Resource.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/loading/src/view/MainMediator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/utils/Effect.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        <state relative-caret-position="210">
+          <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/common/src/controller/Command.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/loading/src/view/LoadingView.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/CRGModule.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="108" lean-forward="false" selection-start-line="9" selection-start-column="108" selection-end-line="9" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ResourceProxy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="168" column="43" lean-forward="false" selection-start-line="168" selection-start-column="43" selection-end-line="168" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoResult/src/view/BaMaoResultModule.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/ui/UIMediator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="48" column="62" lean-forward="false" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoStart/src/view/MainComponent.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="70" column="17" lean-forward="false" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/MainMediator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="72" column="29" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="72" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoResult/src/view/MainMediator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="86" column="64" lean-forward="false" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/bamaoStart/src/view/MainMediator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/proxy/ConfigProxy.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="32" column="73" lean-forward="false" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/model/vo/GameData.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateEvent.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="72" column="69" lean-forward="false" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="69" />
+        <state relative-caret-position="247">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/OperateRhythmEvent.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="171">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/controller/GameOverCommand.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="86" lean-forward="false" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/GameMain.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/background/BackgroundItem.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="49" column="70" lean-forward="false" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

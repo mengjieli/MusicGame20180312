@@ -8,7 +8,7 @@ namespace game {
                 super();
                 this.addComponent(cc.Label);
                 this.label = this.getComponent(cc.Label);
-                this.label.fontSize = 12;
+                this.label.fontSize = 20;
                 this.color = new cc.Color(255, 255, 255);
             }
 

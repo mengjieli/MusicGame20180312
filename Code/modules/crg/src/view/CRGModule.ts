@@ -7,7 +7,7 @@ namespace game {
             }
 
             public listNotificationInterests(): string[] {
-                return [common.Command.INIT_MODULE, common.Command.CHANGE_SCENE, common.Command.REGISTER_NET];
+                return [common.Command.INIT_MODULE, common.Command.CHANGE_SCENE, common.Command.REGISTER_NET,common.Command.CLOSE_SCENE];
             }
 
             public handleNotification(note: mvc.Notification): void {
@@ -20,10 +20,20 @@ namespace game {
 
                         //初始化 controller
                         this.facade.registerCommand(Command.IN.OPERATE, OperateCommand);
+                        this.facade.registerCommand(Command.IN.GAME_OVER, GameOverCommand);
                         break;
                     case common.Command.CHANGE_SCENE: //切换场景
                         if (note.body.sceneName == CRGModule.NAME) {
-                            this.sendNotification(common.Command.OPEN_VIEW, new common.OpenViewNB(MainMediator.NAME));
+                            this.sendNotification(common.Command.OPEN_VIEW, new common.OpenViewNB(MainMediator.NAME,note.body.data));
+                        }
+                        break;
+                    case common.Command.CLOSE_SCENE:
+                        if (note.body.sceneName == CRGModule.NAME) {
+                            mainMediator.sendNotification(common.Command.CLOSE_VIEW,
+                                new common.CloseViewNB(MainMediator.NAME));
+
+                            mainMediator.sendNotification(common.Command.CLOSE_VIEW,
+                                new common.CloseViewNB(UIMediator.NAME));
                         }
                         break;
                 }

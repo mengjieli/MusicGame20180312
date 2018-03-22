@@ -25,7 +25,7 @@ namespace game {
                 if (progress.percent != max) { //如果模块初始化已完成
                     await progress.percentValue.valueEqual(max);
                 }
-                this.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("crg"));
+                this.sendNotification(common.Command.CHANGE_SCENE, new common.ChangeSceneNB("bamaoStart"));
             }
         }
     }

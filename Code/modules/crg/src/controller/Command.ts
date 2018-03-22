@@ -8,6 +8,7 @@ namespace game {
                 OPERATE: "operate", //操作
                 SHOW_COMBO: "show_combo", //显示连击
                 SHOW_OPERATE_RESULT: "show_operate_result", //显示操作结果
+                GAME_OVER : "game_over", //游戏结束
             };
 
             /**

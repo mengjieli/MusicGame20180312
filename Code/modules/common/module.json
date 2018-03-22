@@ -4,6 +4,7 @@
     "controller/notification/OpenViewNB.ts",
     "controller/notification/CloseViewNB.ts",
     "controller/notification/InitModuleNB.ts",
-    "controller/notification/ChangeSceneNB.ts"
+    "controller/notification/ChangeSceneNB.ts",
+    "controller/notification/CloseSceneNB.ts"
   ]
 }

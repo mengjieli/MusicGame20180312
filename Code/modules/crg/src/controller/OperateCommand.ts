@@ -34,7 +34,7 @@ namespace game {
                 }
 
                 //显示操作结果
-                mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type);//type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
+                // mainMediator.sendNotification(Command.IN.SHOW_OPERATE_RESULT, type);//type == "AutoMiss" || type == "OutMiss" ? "Miss" : type);
 
                 //combo文字
                 if (type == "Miss" || type == "AutoMiss" || type == "OutMiss") {

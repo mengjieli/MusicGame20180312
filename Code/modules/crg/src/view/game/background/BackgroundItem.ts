@@ -41,13 +41,13 @@ namespace game {
 
             private change() {
                 if (this.data.changeType == 1) {
-                    lib.Tween.to(this, 0.2, {colorH: (1 - this.data.changeValue.value)}, null, {colorH: (1 - this.data.changeValue.old)});
+                    DataProxy.data.tweenList.push(lib.Tween.to(this, 0.5, {colorH: (1 - this.data.changeValue.value)}, null, {colorH: (1 - this.data.changeValue.old)}));
                 }
                 if (this.data.changeType == 2) {
-                    lib.Tween.to(this, 0.2, {colorS: (1 - this.data.changeValue.value)}, null, {colorS: (1 - this.data.changeValue.old)});
+                    DataProxy.data.tweenList.push(lib.Tween.to(this, 0.5, {colorS: (1 - this.data.changeValue.value)}, null, {colorS: (1 - this.data.changeValue.old)}));
                 }
                 if (this.data.changeType == 3) {
-                    lib.Tween.to(this, 0.2, {height: this.image.height * this.data.changeValue.value});
+                    DataProxy.data.tweenList.push(lib.Tween.to(this, 2, {height: this.image.height * this.data.changeValue.value}));
                 }
             }
 

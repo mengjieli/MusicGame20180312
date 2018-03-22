@@ -5,15 +5,17 @@ namespace game {
             private events: GameEvent[];
 
             start() {
-                DataProxy.data.config = ConfigProxy.getGameConfig();
+                DataProxy.data.config = ConfigProxy.getLevelConfig(DataProxy.data.level);
                 DataProxy.data.configTime = ConfigProxy.getLevelConfigTime(DataProxy.data.config);
+                DataProxy.data.progressAll = DataProxy.data.config.getItemsWith("operate",6).length;
                 DataProxy.data.root = this.node;
                 this.node.x = -lib.data.system.screen.width / 2;
                 this.node.y = -lib.data.system.screen.height / 2;
                 this.events = [
                     new GameStartEvent(),
                     new OperateRhythmEvent(),
-                    new OperateEvent()
+                    new OperateEvent(),
+                    new GameFinishEvent()
                 ];
                 DataProxy.data.monsterLayer = new cc.Node();
                 DataProxy.data.root.addChild(DataProxy.data.monsterLayer);
@@ -36,9 +38,8 @@ namespace game {
             }
 
             update() {
-                if (DataProxy.data.configTime - 10000 >= DataProxy.data.lastTime && DataProxy.data.configTime - 10000 < DataProxy.data.time) {
-                    DataProxy.data.config = ConfigProxy.addGameConfig(DataProxy.data.config);
-                    DataProxy.data.configTime = ConfigProxy.getLevelConfigTime(DataProxy.data.config);
+                if (DataProxy.data.gameOver) {
+                    return;
                 }
                 DataProxy.data.lastTime = DataProxy.data.time;
                 DataProxy.data.time += lib.CoreTime.lastTimeGap;

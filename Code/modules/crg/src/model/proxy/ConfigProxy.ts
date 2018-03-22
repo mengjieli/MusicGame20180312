@@ -28,7 +28,28 @@ namespace game {
 
             public static musicConfig: lib.ArrayValue;
 
-            private static levelConfig: lib.ArrayValue = new lib.ArrayValue();
+            public static levelConfig: lib.ArrayValue = new lib.ArrayValue();
+
+            public static getLevelConfig(levelId: number): lib.ArrayValue {
+                let levelAllCfg = ConfigProxy.levelConfig.getItemWith("LevelId", levelId);
+                let levelCfg: any = ConfigProxy.decodeConfig(ResourceProxy.getResource("level" + levelId));
+
+                let cfg: any[] = [];
+                let time = ConfigProxy.getConfig("gameStartTime");
+                let len = levelCfg.length;
+                for (let i = 0; i < len; i++) {
+                    let levelItemCfg = ConfigProxy.getRandomLevel(time, levelCfg[i]);
+                    cfg = cfg.concat(levelItemCfg);
+                    time = ConfigProxy.getLevelConfigTime(levelItemCfg);
+                }
+
+                cfg.push({
+                    operate: 9, //游戏结束
+                    time: levelAllCfg.time
+                });
+
+                return new lib.ArrayValue(cfg);
+            }
 
             private static decodeConfig(content: string): lib.ArrayValue {
                 let res: lib.ArrayValue = new lib.ArrayValue();
@@ -61,43 +82,8 @@ namespace game {
                 return res;
             }
 
-            public static getGameConfig(): any[] {
-                let cfg: any[] = [];
-                let time = ConfigProxy.getConfig("gameStartTime");
-                let len = 10;
-                for (let i = 0; i < len; i++) {
-                    let levelCfg = ConfigProxy.getRandomLevel(time);
-                    cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg);
-                }
-                // //临时加入游戏结束
-                // cfg.push({
-                //     operate: 9, //游戏结束
-                //     time: time
-                // });
-                return cfg;
-            }
-
-            public static addGameConfig(oldCfg: any): any[] {
-                let time: number = ConfigProxy.getLevelConfigTime(oldCfg);
-                for (let i = 0; i < oldCfg.length; i++) {
-                    if (oldCfg[i].time < time - 30000) {
-                        oldCfg.splice(i, 1);
-                    }
-                }
-                let cfg: any[] = [];
-                let len = 10;
-                for (let i = 0; i < len; i++) {
-                    let levelCfg = ConfigProxy.getRandomLevel(time);
-                    cfg = cfg.concat(levelCfg);
-                    time = ConfigProxy.getLevelConfigTime(levelCfg);
-                }
-                oldCfg = oldCfg.concat(cfg);
-                return oldCfg;
-            }
-
-            private static getRandomLevel(startTime: number): any[] {
-                let levelConfig = ConfigProxy.levelConfig.getItemAt(~~(Math.random() * ConfigProxy.levelConfig.length));
+            private static getRandomLevel(startTime: number, item: any): any[] {
+                let levelConfig = item;
                 let list = [];
                 let time = startTime;
 

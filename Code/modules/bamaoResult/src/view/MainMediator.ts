@@ -12,24 +12,30 @@ namespace game {
             private initUI(): void {
                 this.viewComponent = new cc.Node();
                 this.viewComponent = cc.instantiate(Resource.getResource("ui"));
-                //获取分数
-                let scoreTxt = this.viewComponent.getChildByName("scoreTxt");
-                scoreTxt.getComponent(cc.Label).string = this.data.score + "";
-                //获取perfect
-                let perfectTxt = this.viewComponent.getChildByName("perfectTxt");
-                perfectTxt.getComponent(cc.Label).string = this.data.perfect + "";
-                //获取good
-                let goodTxt = this.viewComponent.getChildByName("goodTxt");
-                goodTxt.getComponent(cc.Label).string = this.data.good + "";
-                //获取miss
-                let missTxt = this.viewComponent.getChildByName("missTxt");
-                missTxt.getComponent(cc.Label).string = this.data.miss + "";
+                // //获取分数
+                // let scoreTxt = this.viewComponent.getChildByName("scoreTxt");
+                // scoreTxt.getComponent(cc.Label).string = this.data.score + "";
+                // //获取perfect
+                // let perfectTxt = this.viewComponent.getChildByName("perfectTxt");
+                // perfectTxt.getComponent(cc.Label).string = this.data.perfect + "";
+                // //获取good
+                // let goodTxt = this.viewComponent.getChildByName("goodTxt");
+                // goodTxt.getComponent(cc.Label).string = this.data.good + "";
+                // //获取miss
+                // let missTxt = this.viewComponent.getChildByName("missTxt");
+                // missTxt.getComponent(cc.Label).string = this.data.miss + "";
+
+
+                //获取progress
+                let progressTxt = this.viewComponent.getChildByName("progress");
+                progressTxt.getComponent(cc.Label).string = "完成进度：" + this.data.progress;
+
                 //获取返回主界面按钮
                 let mainBtn = this.viewComponent.getChildByName("mainBtn");
                 mainBtn.on(cc.Node.EventType.TOUCH_END, this.onClickReturnMainMeu, this);
-                //获取开始游戏按钮
-                let gameBtn = this.viewComponent.getChildByName("gameBtn");
-                gameBtn.on(cc.Node.EventType.TOUCH_END, this.onClickStartGame, this);
+                // //获取开始游戏按钮
+                // let gameBtn = this.viewComponent.getChildByName("gameBtn");
+                // gameBtn.on(cc.Node.EventType.TOUCH_END, this.onClickStartGame, this);
             }
 
             private onClickReturnMainMeu() {
@@ -69,13 +75,20 @@ namespace game {
                             await this.load();
                         }
                         layer.MainUILayer.show(this.viewComponent);
+                        lib.Tween.to(this.viewComponent, 0.8, {y: 0}, lib.Ease.CUBIC_EASE_OUT, {y: lib.data.system.screen.height});
+                        this.sendNotification(common.Command.CLOSE_SCENE, new common.CloseSceneNB("crg"));
                         break;
                     case common.Command.CLOSE_VIEW:
                         if (note.body.name != MainMediator.NAME) {
                             return;
                         }
                         if (this.viewComponent) {
-                            this.viewComponent.destroy();
+                            let node = this.viewComponent;
+                            lib.Tween.to(this.viewComponent, 0.5, {opacity: 0}).call(
+                                function () {
+                                    node.destroy();
+                                }.bind(this)
+                            )
                             this.viewComponent = null;
                         }
                         cc.audioEngine.stop(this.bgm);

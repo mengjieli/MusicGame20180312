@@ -9,24 +9,37 @@ namespace game {
                     let item = {name: "rhythm" + list[i].name, url: "resources/crg/res/rhythm/" + list[i].url};
                     ResourceProxy.loadList.push(item);
                 }
+                list = ConfigProxy.levelConfig;
+                for (let i = 0; i < list.length; i++) {
+                    ResourceProxy.loadList.push({
+                        name: "bgm" + list[i].LevelId,
+                        url: "resources/crg/res/bgm/" + list[i].music
+                    });
+                    ResourceProxy.loadList.push({
+                        name: "level" + list[i].LevelId,
+                        url: "resources/crg/res/config/level" + list[i].LevelId + ".csv"
+                    });
+                }
             }
 
             private static initList: any[] = [
-                {name: "bgm", url: "resources/crg/res/bgm/game1.wav"},
                 {name: "rhythmTip", url: "resources/crg/res/music/tip.wav"},
                 {name: "rhythmMiss", url: "resources/crg/res/music/miss.wav"},
                 {name: "rhythmGood", url: "resources/crg/res/music/good.wav"},
                 {name: "rhythmPerfect", url: "resources/crg/res/music/perfect.wav"},
 
-                {name: "allConfig", url: "resources/crg/res/config/All.csv"},
-                {name: "levelConfig", url: "resources/crg/res/config/Level.csv"},
+
+                {name: "allConfig", url: "resources/crg/res/config/all.csv"},
+                {name: "levelConfig", url: "resources/crg/res/config/allLevel.csv"},
                 {
                     name: "musicConfig",
-                    url: "resources/crg/res/config/Music.csv",
+                    url: "resources/crg/res/config/music.csv",
                     execute: ResourceProxy.configLoadComplete
                 },
 
                 {name: "click", url: "resources/crg/res/textures/ui/click.png"},
+                {name: "heart", url: "resources/crg/res/textures/ui/heart.png"},
+                {name: "heart2", url: "resources/crg/res/textures/ui/heart2.png"},
 
                 {name: "ground", url: "resources/crg/res/textures/bg/ground.png"},
                 {name: "ground1", url: "resources/crg/res/textures/bg/ground1.png"},
@@ -94,7 +107,7 @@ namespace game {
                     nameFileEnd: "png",
                     properties: {
                         frameTime: 33,
-                        anchorY:0
+                        anchorY: 0
                     }
                 },
             ];
@@ -111,9 +124,7 @@ namespace game {
             }
 
             public static async loadResources() {
-                if (!ResourceProxy.loadList) {
-                    ResourceProxy.loadList = ResourceProxy.initList.concat();
-                }
+                ResourceProxy.loadList = ResourceProxy.initList.concat();
                 let list: any[] = ResourceProxy.loadList;
                 return new Promise<void>(function (resolve: Function) {
                     let index = 0;
@@ -139,7 +150,7 @@ namespace game {
                                     }
                                 }
                             } else {
-                                if (res.loadIndex == res.loadLength) {
+                                if (res.loadIndex >= res.loadLength) {
                                     index++;
                                     load();
                                     return;
@@ -150,7 +161,8 @@ namespace game {
                             while (name.length < res.nameCount) {
                                 name = "0" + name;
                             }
-                            cc.loader.load(cc.url.raw(res.url + res.namePre + name + "." + res.nameFileEnd), function (e: any, data: any) {
+                            let loadURL = cc.url.raw(res.url + res.namePre + name + "." + res.nameFileEnd);
+                            cc.loader.load(loadURL, function (e: any, data: any) {
                                 res.data.pictures.push(data);
                                 res.loadIndex++;
                                 if (res.loadIndex == res.loadLength) {

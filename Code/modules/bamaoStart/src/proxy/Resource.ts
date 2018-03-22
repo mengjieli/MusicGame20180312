@@ -6,15 +6,30 @@ namespace game {
 
             loadList: any[] = [
                 {name: "ui", data: game.prefab.ui1, url: "resources/baMaoStart/res/baMaoUI.prefab"},
-                {name: "bgm", url: "resources/baMaoStart/res/bgm/startbgm.wav"},
-                {name: "bg0", url: "resources/baMaoStart/res/textures/bg0.png"},
-                {name: "bg1", url: "resources/baMaoStart/res/textures/bg1.png"},
+                {name: "bgm", url: "resources/baMaoStart/res/bgm/1.mp3"},
+                {
+                    name: "levelConfig",
+                    url: "resources/bamaoStart/res/config/level.csv",
+                    execute: Resource.configLoadComplete
+                }
             ];
 
-            public static async loadResources() {
-                if (!Resource.instance) {
-                    Resource.instance = new Resource();
+            public static configLoadComplete() {
+                ConfigProxy.init();
+                let len = ConfigProxy.levelCount;
+                for (let i = 0; i < len; i++) {
+                    let cfg = ConfigProxy.getLevelAt(i);
+                    Resource.instance.loadList.push(
+                        {name: "levelBackground" + cfg.level, url: "resources/baMaoStart/res/textures/" + cfg.background}
+                    );
+                    Resource.instance.loadList.push(
+                        {name: "levelBgm" + cfg.level, url: "resources/baMaoStart/res/bgm/" + cfg.music}
+                    );
                 }
+            }
+
+            public static async loadResources() {
+                Resource.instance = new Resource();
                 let list: any[] = Resource.instance.loadList;
                 return new Promise<void>(function (resolve: Function) {
                     let index = 0;
@@ -27,7 +42,7 @@ namespace game {
                         }
                         let res = list[index];
                         mainMediator.sendNotification(common.Command.OPEN_VIEW, new common.OpenViewNB("loading.MainMediator", {text: "Loading " + (~~((index / list.length) * 100)) + "%  " + res.name}));
-                        if(res.data) {
+                        if (res.data) {
                             index++;
                             load();
                         } else {
@@ -41,6 +56,9 @@ namespace game {
                                 cc.loader.load(cc.url.raw(res.url), function (e: any, data: any) {
                                     res.data = data;
                                     index++;
+                                    if (res.execute) {
+                                        res.execute();
+                                    }
                                     load();
                                 });
                             }

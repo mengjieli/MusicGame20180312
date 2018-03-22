@@ -37,6 +37,12 @@ namespace game {
              */
             public static CLOSE_VIEW: string = "close_view";
 
+            /**
+             * 关闭场景
+             * @type {string}
+             */
+            public static CLOSE_SCENE:string = "close_scene";
+
 
             /**
              * 注册网络监听
