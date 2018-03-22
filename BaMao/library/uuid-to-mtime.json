@@ -579,11 +579,6 @@
     "meta": 1521685963599,
     "relativePath": "resources\\crg\\res\\bgm"
   },
-  "e048abbe-adad-4aa3-bdf7-f380e2e81708": {
-    "asset": 1521707125994,
-    "meta": 1521685963683,
-    "relativePath": "resources\\crg\\res\\config"
-  },
   "107fbc67-f49e-4c95-9d60-c5b865c232dd": {
     "asset": 1521685963687,
     "meta": 1521685963684,
@@ -1699,16 +1694,6 @@
     "meta": 1521704098432,
     "relativePath": "resources\\crg\\res\\textures\\ui\\heart2.png"
   },
-  "981623a9-086f-4a44-bf22-489a0ffb10c8": {
-    "asset": 1521704758384,
-    "meta": 1521705939564,
-    "relativePath": "resources\\crg\\res\\config\\all.csv"
-  },
-  "ef1ff3ef-bd82-46e4-b1d1-3206a3517ede": {
-    "asset": 1521685963684,
-    "meta": 1521705939565,
-    "relativePath": "resources\\crg\\res\\config\\music.csv"
-  },
   "2e1bc4a8-0613-42e2-b1d8-d4f7370ff0b7": {
     "asset": 1521691680486,
     "meta": 1521705939566,
@@ -1718,16 +1703,6 @@
     "asset": 1521691679799,
     "meta": 1521705939567,
     "relativePath": "resources\\crg\\res\\bgm\\2.mp3"
-  },
-  "0816c239-7cdc-4a48-8aed-e8007fbe8572": {
-    "asset": 1521705297119,
-    "meta": 1521705939571,
-    "relativePath": "resources\\crg\\res\\config\\level1.csv"
-  },
-  "1393843a-cb5d-4a6f-a4a3-19f373f2b4bd": {
-    "asset": 1521705297119,
-    "meta": 1521707125994,
-    "relativePath": "resources\\crg\\res\\config\\level2.csv"
   },
   "66edc5c0-a9ba-4097-9b9a-19b7735a41ec": {
     "asset": 1521710501349,
@@ -1744,19 +1719,44 @@
     "meta": 1521710663402,
     "relativePath": "resources\\baMaoResult\\res\\textures\\ok.png"
   },
-  "5fa8f422-b798-4863-bde9-88bac176f10b": {
-    "asset": 1521711717350,
-    "meta": 1521685963511,
-    "relativePath": "modules.json"
+  "4eedbf29-c057-4e1c-9bd7-fe5643530834": {
+    "asset": 1521712356770,
+    "meta": 1521712356769,
+    "relativePath": "resources\\crg\\res\\config2"
+  },
+  "bca8b225-3835-4450-b0ca-e59a10976ea6": {
+    "asset": 1521704758384,
+    "meta": 1521712356769,
+    "relativePath": "resources\\crg\\res\\config2\\all.csv"
   },
   "c5fc8bac-f0bf-4f58-9d1a-030a067f48e3": {
     "asset": 1521711689805,
     "meta": 1521705939570,
-    "relativePath": "resources\\crg\\res\\config\\allLevel.csv"
+    "relativePath": "resources\\crg\\res\\config2\\allLevel.csv"
+  },
+  "0816c239-7cdc-4a48-8aed-e8007fbe8572": {
+    "asset": 1521705297119,
+    "meta": 1521705939571,
+    "relativePath": "resources\\crg\\res\\config2\\level1.csv"
+  },
+  "1393843a-cb5d-4a6f-a4a3-19f373f2b4bd": {
+    "asset": 1521705297119,
+    "meta": 1521707125994,
+    "relativePath": "resources\\crg\\res\\config2\\level2.csv"
+  },
+  "bec0a236-0c8a-433e-9270-57c010873f43": {
+    "asset": 1521685963684,
+    "meta": 1521712356771,
+    "relativePath": "resources\\crg\\res\\config2\\music.csv"
+  },
+  "5fa8f422-b798-4863-bde9-88bac176f10b": {
+    "asset": 1521712470223,
+    "meta": 1521685963511,
+    "relativePath": "modules.json"
   },
   "a3e4df95-e266-4a8e-9e67-42b23f6a4af3": {
-    "asset": 1521711717351,
-    "meta": 1521711719731,
+    "asset": 1521712470224,
+    "meta": 1521712472479,
     "relativePath": "src\\GameCode.ts"
   }
 }

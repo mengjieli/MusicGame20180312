@@ -4412,7 +4412,7 @@ var esc;
                     });
                     ResourceProxy.loadList.push({
                         name: "level" + list[i].LevelId,
-                        url: "resources/crg/res/config/level" + list[i].LevelId + ".csv"
+                        url: "resources/crg/res/config2/level" + list[i].LevelId + ".csv"
                     });
                 }
             };
@@ -4497,11 +4497,11 @@ var esc;
                 { name: "rhythmMiss", url: "resources/crg/res/music/miss.wav" },
                 { name: "rhythmGood", url: "resources/crg/res/music/good.wav" },
                 { name: "rhythmPerfect", url: "resources/crg/res/music/perfect.wav" },
-                { name: "allConfig", url: "resources/crg/res/config/all.csv" },
-                { name: "levelConfig", url: "resources/crg/res/config/allLevel.csv" },
+                { name: "allConfig", url: "resources/crg/res/config2/all.csv" },
+                { name: "levelConfig", url: "resources/crg/res/config2/allLevel.csv" },
                 {
                     name: "musicConfig",
-                    url: "resources/crg/res/config/music.csv",
+                    url: "resources/crg/res/config2/music.csv",
                     execute: ResourceProxy.configLoadComplete
                 },
                 { name: "click", url: "resources/crg/res/textures/ui/click.png" },
@@ -5512,7 +5512,7 @@ var esc;
                     player.x = 200;
                     player.y = 150;
                     data.player = player;
-                    data.bgm = cc.audioEngine.play(crg.ResourceProxy.getResource("bgm" + data.level), true, 0.05);
+                    data.bgm = cc.audioEngine.play(crg.ResourceProxy.getResource("bgm" + data.level), true, 1);
                 }
             };
             return GameStartEvent;
