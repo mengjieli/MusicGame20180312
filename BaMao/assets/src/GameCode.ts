@@ -5753,7 +5753,7 @@ namespace game {
                     player.x = 200;
                     player.y = 150;
                     data.player = player;
-                    //
+                    //1
 
                     data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm" + data.level), true, 1);
                 }

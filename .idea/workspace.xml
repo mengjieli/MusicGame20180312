@@ -20,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -522,12 +522,12 @@
       <workItem from="1521536143818" duration="81000" />
       <workItem from="1521536467389" duration="423000" />
       <workItem from="1521597307134" duration="1086000" />
-      <workItem from="1521686353908" duration="18522000" />
+      <workItem from="1521686353908" duration="18628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195838000" />
+    <option name="totallyTimeSpent" value="195944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -972,7 +972,7 @@
     <entry file="file://$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding />
         </state>
       </provider>
