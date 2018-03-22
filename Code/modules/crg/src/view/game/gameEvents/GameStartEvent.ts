@@ -11,7 +11,7 @@ namespace game {
                     player.y = 150;
                     data.player = player;
 
-                    data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm" + data.level), true, 0.05);
+                    data.bgm = cc.audioEngine.play(ResourceProxy.getResource("bgm" + data.level), true, 1);
                 }
             }
         }

@@ -17,7 +17,7 @@ namespace game {
                     });
                     ResourceProxy.loadList.push({
                         name: "level" + list[i].LevelId,
-                        url: "resources/crg/res/config/level" + list[i].LevelId + ".csv"
+                        url: "resources/crg/res/config2/level" + list[i].LevelId + ".csv"
                     });
                 }
             }
@@ -29,11 +29,11 @@ namespace game {
                 {name: "rhythmPerfect", url: "resources/crg/res/music/perfect.wav"},
 
 
-                {name: "allConfig", url: "resources/crg/res/config/all.csv"},
-                {name: "levelConfig", url: "resources/crg/res/config/allLevel.csv"},
+                {name: "allConfig", url: "resources/crg/res/config2/all.csv"},
+                {name: "levelConfig", url: "resources/crg/res/config2/allLevel.csv"},
                 {
                     name: "musicConfig",
-                    url: "resources/crg/res/config/music.csv",
+                    url: "resources/crg/res/config2/music.csv",
                     execute: ResourceProxy.configLoadComplete
                 },
 
