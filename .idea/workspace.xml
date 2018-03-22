@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dae894-d666-4cb5-82c4-52c720d900f4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" afterPath="$PROJECT_DIR$/BaMao/assets/src/GameCode.ts" />
       <change beforePath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" afterPath="$PROJECT_DIR$/Code/modules/crg/src/view/game/gameEvents/GameStartEvent.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -522,12 +523,12 @@
       <workItem from="1521536143818" duration="81000" />
       <workItem from="1521536467389" duration="423000" />
       <workItem from="1521597307134" duration="1086000" />
-      <workItem from="1521686353908" duration="18628000" />
+      <workItem from="1521686353908" duration="18659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195944000" />
+    <option name="totallyTimeSpent" value="195975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
