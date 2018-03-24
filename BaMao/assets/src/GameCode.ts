@@ -4429,24 +4429,30 @@ namespace game {
                 {name: "heart", url: "resources/crg/res/textures/ui/heart.png"},
                 {name: "heart2", url: "resources/crg/res/textures/ui/heart2.png"},
 
-                {name: "ground", url: "resources/crg/res/textures/bg/ground.png"},
-                {name: "ground1", url: "resources/crg/res/textures/bg/ground1.png"},
-                {name: "ground2", url: "resources/crg/res/textures/bg/ground2.png"},
-                {name: "ground3", url: "resources/crg/res/textures/bg/ground3.png"},
-                {name: "cloud1", url: "resources/crg/res/textures/bg/cloud1.png"},
-                {name: "cloud2", url: "resources/crg/res/textures/bg/cloud2.png"},
-                {name: "tree1", url: "resources/crg/res/textures/bg/tree1.png"},
-                {name: "tree2", url: "resources/crg/res/textures/bg/tree2.png"},
-                {name: "tree3", url: "resources/crg/res/textures/bg/tree3.png"},
-                {name: "tree4", url: "resources/crg/res/textures/bg/tree4.png"},
-                {name: "tree5", url: "resources/crg/res/textures/bg/tree5.png"},
-                {name: "tree6", url: "resources/crg/res/textures/bg/tree6.png"},
-                {name: "tree7", url: "resources/crg/res/textures/bg/tree7.png"},
                 {name: "bg1", url: "resources/crg/res/textures/bg/bg1.png"},
                 {name: "bg2", url: "resources/crg/res/textures/bg/bg2.png"},
                 {name: "bg3", url: "resources/crg/res/textures/bg/bg3.png"},
                 {name: "bg4", url: "resources/crg/res/textures/bg/bg4.png"},
-                {name: "effect", url: "resources/crg/res/textures/bg/effect.png"},
+                {name: "sunb", url: "resources/crg/res/textures/bg/sunb.png"},
+                {name: "star1b", url: "resources/crg/res/textures/bg/star1b.png"},
+                {name: "star2b", url: "resources/crg/res/textures/bg/star2b.png"},
+                {name: "star3b", url: "resources/crg/res/textures/bg/star3b.png"},
+                {name: "star4b", url: "resources/crg/res/textures/bg/star4b.png"},
+                {name: "hill1b", url: "resources/crg/res/textures/bg/hill1b.png"},
+                {name: "hill2b", url: "resources/crg/res/textures/bg/hill2b.png"},
+                {name: "hill3b", url: "resources/crg/res/textures/bg/hill3b.png"},
+                {name: "cloud1m", url: "resources/crg/res/textures/bg/cloud1m.png"},
+                {name: "cloud2m", url: "resources/crg/res/textures/bg/cloud2m.png"},
+                {name: "hill1m", url: "resources/crg/res/textures/bg/hill1m.png"},
+                {name: "hill2m", url: "resources/crg/res/textures/bg/hill2m.png"},
+                {name: "hill3m", url: "resources/crg/res/textures/bg/hill3m.png"},
+                {name: "ground1", url: "resources/crg/res/textures/bg/ground1.png"},
+                {name: "ground2", url: "resources/crg/res/textures/bg/ground2.png"},
+                {name: "hill1f", url: "resources/crg/res/textures/bg/hill1f.png"},
+                {name: "hill2f", url: "resources/crg/res/textures/bg/hill2f.png"},
+
+
+                // {name: "effect", url: "resources/crg/res/textures/bg/effect.png"},
                 {
                     name: "player1",
                     url: "resources/crg/res/textures/player/run/",
@@ -4824,24 +4830,33 @@ namespace game {
         export class BackgroundData {
 
             public items: BackgroundItemData[] = [
+
                 new BackgroundItemData("bg1", "bg1", 3, 2, 0.1),
                 new BackgroundItemData("bg2", "bg2", 3, 2, 0.1),
                 new BackgroundItemData("bg3", "bg3", 3, 2, 0.1),
                 new BackgroundItemData("bg4", "bg4", 3, 2, 0.1),
+                new BackgroundItemData("sunb", "sunb", 3, 2, 0.1),
+                new BackgroundItemData("star1b", "star1b", 3, 2, 0.1),
+                new BackgroundItemData("star2b", "star2b", 3, 2, 0.1),
+                new BackgroundItemData("star3b", "star3b", 3, 2, 0.1),
+                new BackgroundItemData("star4b", "star4b", 3, 2, 0.1),
 
-                new BackgroundItemData("tree1", "tree1", 2, 3, 0.4),
-                new BackgroundItemData("tree2", "tree2", 2, 3, 0.4),
-                new BackgroundItemData("tree3", "tree3", 2, 3, 0.4),
-                new BackgroundItemData("tree4", "tree4", 2, 3, 0.4),
-                new BackgroundItemData("tree5", "tree5", 2, 3, 0.4),
-                new BackgroundItemData("tree6", "tree6", 2, 3, 0.4),
-                new BackgroundItemData("tree7", "tree7", 2, 3, 0.4),
+                new BackgroundItemData("hill1b", "hill1b", 3, 3, 0.2),
+                new BackgroundItemData("hill2b", "hill2b", 3, 3, 0.2),
+                new BackgroundItemData("hill3b", "hill3b", 3, 3, 0.2),
 
-                new BackgroundItemData("gd1", "ground1", 1, 2, 0.1),
-                new BackgroundItemData("gd2", "ground2", 1, 2, 0.1),
-                new BackgroundItemData("gd3", "ground3", 1, 2, 0.1),
-                new BackgroundItemData("cd1", "cloud1", 1, 3, 0.5),
-                new BackgroundItemData("cd2", "cloud2", 1, 3, 0.5),
+                //
+                new BackgroundItemData("cloud1m", "cloud1m", 2, 3, 0.1),
+                new BackgroundItemData("cloud2m", "cloud2m", 2, 3, 0.1),
+                new BackgroundItemData("hill1m", "hill1m", 2, 3, 0.2),
+                new BackgroundItemData("hill2m", "hill2m", 2, 3, 0.2),
+                new BackgroundItemData("hill3m", "hill3m", 2, 3, 0.2),
+
+                new BackgroundItemData("hill1f", "hill1f", 1, 3, 0.2),
+                new BackgroundItemData("hill2f", "hill2f", 1, 3, 0.2),
+                new BackgroundItemData("ground1", "ground1", 1, 2, 0.1),
+                new BackgroundItemData("ground2", "ground2", 1, 2, 0.1),
+
             ];
         }
     }
